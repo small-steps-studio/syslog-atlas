@@ -1,0 +1,699 @@
+{
+ "01-auth-0.log": {
+  "reportSummary": {
+   "exact": "# Log Summary\n\n14 lines from 4 hosts.\n\n| Format | Lines |\n| --- | ---: |\n| BSD | 14 |\n\nFirst entry: Jan 13 18:31:52 (line 1). Last entry: Mar 27 18:25:40 (line 14).\n\n| Program | Lines |\n| --- | ---: |\n| sshd | 4 |\n| sudo | 4 |\n| kernel | 2 |\n| su | 2 |\n| CRON | 1 |\n| app | 1 |"
+  },
+  "reportParse": {
+   "exact": "# Parse Check\n\nAll 14 lines parsed."
+  },
+  "reportSeverity": {
+   "exact": "# Severity Overview\n\n## Syslog severity\n\n| Severity | Lines |\n| --- | ---: |\n| notice | 1 |\n\n## Facility\n\n| Facility | Lines |\n| --- | ---: |\n| local4 | 1 |\n\n## CEF severity\n\nNo CEF events."
+  },
+  "reportSources": {
+   "exact": "# Sources\n\n## Hosts and programs\n\n| Host | Program | Lines | Errors or worse |\n| --- | --- | ---: | ---: |\n| fw1 | sshd | 2 | 0 |\n| mail.example.test | sudo | 2 | 0 |\n| fw1 | sudo | 1 | 0 |\n| mail.example.test | kernel | 1 | 0 |\n| mail.example.test | su | 1 | 0 |\n| web1 | CRON | 1 | 0 |\n| web1 | kernel | 1 | 0 |\n| web1 | sshd | 1 | 0 |\n| web2 | app | 1 | 0 |\n| web2 | sshd | 1 | 0 |\n| web2 | su | 1 | 0 |\n| web2 | sudo | 1 | 0 |\n\n## CEF devices\n\nNo CEF events."
+  },
+  "reportSecurity": {
+   "exact": "# Security Events\n\n10 events.\n\n| Event | Count |\n| --- | ---: |\n| sudo | 4 |\n| authentication failure | 2 |\n| accepted login | 1 |\n| failed login | 1 |\n| failed login \\(invalid user\\) | 1 |\n| invalid user | 1 |\n\n## Possible brute force\n\nNo source with 5 or more failed attempts.\n\n## Events\n\n| Line | Time | Event | User | Source |\n| ---: | --- | --- | --- | --- |\n| 2 | Mar 25 16:34:44 | authentication failure | alice | - |\n| 3 | Nov 14 01:32:08 | sudo | deploy | - |\n| 4 | Oct 24 07:24:50 | invalid user | oracle | 198.51.100.23 |\n| 6 | Feb 13 15:56:51 | accepted login | admin | 10.0.0.8 |\n| 7 | Feb 17 02:13:08 | failed login \\(invalid user\\) | root | 198.51.100.23 |\n| 9 | Mar  8 02:17:58 | sudo | alice | - |\n| 10 | Nov 19 23:41:48 | sudo | root | - |\n| 12 | Feb 22 07:47:36 | authentication failure | alice | - |\n| 13 | Mar 15 07:48:30 | failed login | root | 198.51.100.23 |\n| 14 | Mar 27 18:25:40 | sudo | backup | - |"
+  }
+ },
+ "02-auth-1.log": {
+  "reportSummary": {
+   "exact": "# Log Summary\n\n32 lines from 5 hosts.\n\n| Format | Lines |\n| --- | ---: |\n| BSD | 32 |\n\nFirst entry: Jun 28 21:33:28 (line 1). Last entry: Jul  4 23:00:24 (line 32).\n\n| Program | Lines |\n| --- | ---: |\n| sshd | 11 |\n| kernel | 5 |\n| CRON | 4 |\n| systemd | 4 |\n| su | 3 |\n| sudo | 3 |\n| app | 2 |"
+  },
+  "reportParse": {
+   "exact": "# Parse Check\n\nAll 32 lines parsed."
+  },
+  "reportSeverity": {
+   "exact": "# Severity Overview\n\n## Syslog severity\n\n| Severity | Lines |\n| --- | ---: |\n| critical | 1 |\n| error | 1 |\n\n## Facility\n\n| Facility | Lines |\n| --- | ---: |\n| user | 1 |\n| auth | 1 |\n\n## CEF severity\n\nNo CEF events."
+  },
+  "reportSources": {
+   "exact": "# Sources\n\n## Hosts and programs\n\n| Host | Program | Lines | Errors or worse |\n| --- | --- | ---: | ---: |\n| web1 | sshd | 5 | 0 |\n| web2 | sshd | 3 | 0 |\n| fw1 | CRON | 2 | 0 |\n| fw1 | systemd | 2 | 0 |\n| mail.example.test | sshd | 2 | 0 |\n| mail.example.test | systemd | 2 | 0 |\n| web1 | app | 2 | 2 |\n| web2 | kernel | 2 | 0 |\n| db1 | CRON | 1 | 0 |\n| db1 | kernel | 1 | 0 |\n| db1 | su | 1 | 0 |\n| fw1 | kernel | 1 | 0 |\n| fw1 | sshd | 1 | 0 |\n| mail.example.test | sudo | 1 | 0 |\n| web1 | kernel | 1 | 0 |\n| web1 | su | 1 | 0 |\n| web1 | sudo | 1 | 0 |\n| web2 | CRON | 1 | 0 |\n| web2 | su | 1 | 0 |\n| web2 | sudo | 1 | 0 |\n\n## CEF devices\n\nNo CEF events."
+  },
+  "reportSecurity": {
+   "exact": "# Security Events\n\n17 events.\n\n| Event | Count |\n| --- | ---: |\n| failed login | 6 |\n| authentication failure | 3 |\n| invalid user | 3 |\n| sudo | 3 |\n| accepted login | 1 |\n| failed login \\(invalid user\\) | 1 |\n\n## Possible brute force\n\nNo source with 5 or more failed attempts.\n\n## Events\n\n| Line | Time | Event | User | Source |\n| ---: | --- | --- | --- | --- |\n| 2 | Aug 24 02:49:06 | failed login | root | 10.0.0.8 |\n| 4 | Jul 27 13:07:47 | sudo | backup | - |\n| 6 | Dec 19 04:24:33 | accepted login | alice | 10.0.0.8 |\n| 7 | Jun 16 18:33:25 | authentication failure | alice | - |\n| 8 | Aug 13 07:34:23 | invalid user | test | 10.0.0.8 |\n| 9 | Nov  2 00:56:46 | sudo | alice | - |\n| 10 | Jul 11 01:12:25 | failed login | backup | 192.0.2.44 |\n| 11 | Nov  2 17:05:26 | invalid user | test | 198.51.100.23 |\n| 13 | Jan 13 06:29:46 | authentication failure | alice | - |\n| 16 | Oct  5 10:07:47 | invalid user | oracle | 10.0.0.8 |\n| 18 | Mar  2 12:48:06 | failed login | deploy | 198.51.100.23 |\n| 19 | Apr 12 02:58:46 | failed login | root | 10.0.0.8 |\n| 21 | Apr  2 19:20:56 | failed login | alice | 203.0.113.7 |\n| 23 | Mar  7 00:47:11 | sudo | root | - |\n| 25 | May  7 20:01:23 | failed login \\(invalid user\\) | alice | 192.0.2.44 |\n| 27 | Oct 18 10:52:05 | authentication failure | alice | - |\n| 30 | Oct 19 12:54:28 | failed login | deploy | 203.0.113.7 |"
+  }
+ },
+ "03-auth-2.log": {
+  "reportSummary": {
+   "exact": "# Log Summary\n\n30 lines from 5 hosts.\n\n| Format | Lines |\n| --- | ---: |\n| BSD | 30 |\n\nFirst entry: Feb  6 21:22:02 (line 1). Last entry: Jan  7 04:29:45 (line 30).\n\n| Program | Lines |\n| --- | ---: |\n| sshd | 15 |\n| CRON | 3 |\n| kernel | 3 |\n| su | 3 |\n| dhcpd | 2 |\n| sudo | 2 |\n| systemd | 2 |"
+  },
+  "reportParse": {
+   "exact": "# Parse Check\n\nAll 30 lines parsed."
+  },
+  "reportSeverity": {
+   "exact": "# Severity Overview\n\n## Syslog severity\n\n| Severity | Lines |\n| --- | ---: |\n| informational | 2 |\n\n## Facility\n\n| Facility | Lines |\n| --- | ---: |\n| auth | 1 |\n| authpriv | 1 |\n\n## CEF severity\n\nNo CEF events."
+  },
+  "reportSources": {
+   "exact": "# Sources\n\n## Hosts and programs\n\n| Host | Program | Lines | Errors or worse |\n| --- | --- | ---: | ---: |\n| web1 | sshd | 8 | 0 |\n| db1 | sshd | 3 | 0 |\n| web2 | CRON | 3 | 0 |\n| web2 | sshd | 3 | 0 |\n| web2 | su | 3 | 0 |\n| db1 | dhcpd | 1 | 0 |\n| fw1 | kernel | 1 | 0 |\n| fw1 | sshd | 1 | 0 |\n| mail.example.test | systemd | 1 | 0 |\n| web1 | dhcpd | 1 | 0 |\n| web1 | kernel | 1 | 0 |\n| web1 | sudo | 1 | 0 |\n| web1 | systemd | 1 | 0 |\n| web2 | kernel | 1 | 0 |\n| web2 | sudo | 1 | 0 |\n\n## CEF devices\n\nNo CEF events."
+  },
+  "reportSecurity": {
+   "exact": "# Security Events\n\n20 events.\n\n| Event | Count |\n| --- | ---: |\n| invalid user | 7 |\n| accepted login | 5 |\n| authentication failure | 3 |\n| failed login | 2 |\n| sudo | 2 |\n| failed login \\(invalid user\\) | 1 |\n\n## Possible brute force\n\nNo source with 5 or more failed attempts.\n\n## Events\n\n| Line | Time | Event | User | Source |\n| ---: | --- | --- | --- | --- |\n| 1 | Feb  6 21:22:02 | invalid user | pi | 192.0.2.44 |\n| 2 | Sep 26 08:34:04 | authentication failure | alice | - |\n| 4 | Jan  9 13:06:25 | authentication failure | alice | - |\n| 5 | Oct 12 00:18:14 | invalid user | oracle | 192.0.2.44 |\n| 7 | Nov  3 19:16:21 | invalid user | oracle | 198.51.100.23 |\n| 9 | Nov 21 07:18:43 | sudo | alice | - |\n| 10 | Jun 10 10:36:44 | accepted login | backup | 10.0.0.8 |\n| 12 | Jan 19 12:04:13 | invalid user | test | 192.0.2.44 |\n| 13 | May 19 09:49:32 | accepted login | admin | 192.0.2.44 |\n| 14 | Apr 24 20:48:00 | failed login | admin | 203.0.113.7 |\n| 15 | Sep  8 17:35:54 | invalid user | test | 198.51.100.23 |\n| 17 | Aug 11 20:50:04 | sudo | alice | - |\n| 19 | Sep  3 02:05:47 | accepted login | root | 198.51.100.23 |\n| 22 | Dec  3 01:04:43 | failed login \\(invalid user\\) | deploy | 192.0.2.44 |\n| 23 | Mar  4 11:00:13 | accepted login | deploy | 192.0.2.44 |\n| 26 | Feb 15 09:28:32 | invalid user | oracle | 10.0.0.8 |\n| 27 | Nov 27 01:45:27 | invalid user | oracle | 10.0.0.8 |\n| 28 | Dec 24 14:24:54 | authentication failure | alice | - |\n| 29 | May 28 17:36:18 | failed login | admin | 10.0.0.8 |\n| 30 | Jan  7 04:29:45 | accepted login | backup | 10.0.0.8 |"
+  }
+ },
+ "04-auth-3.log": {
+  "reportSummary": {
+   "exact": "# Log Summary\n\n19 lines from 5 hosts.\n\n| Format | Lines |\n| --- | ---: |\n| BSD | 19 |\n\nFirst entry: Feb  2 05:20:32 (line 1). Last entry: Oct 13 12:24:00 (line 19).\n\n| Program | Lines |\n| --- | ---: |\n| sshd | 6 |\n| sudo | 4 |\n| su | 3 |\n| CRON | 2 |\n| systemd | 2 |\n| dhcpd | 1 |\n| kernel | 1 |"
+  },
+  "reportParse": {
+   "exact": "# Parse Check\n\nAll 19 lines parsed."
+  },
+  "reportSeverity": {
+   "exact": "# Severity Overview\n\n## Syslog severity\n\n| Severity | Lines |\n| --- | ---: |\n| debug | 1 |\n\n## Facility\n\n| Facility | Lines |\n| --- | ---: |\n| local7 | 1 |\n\n## CEF severity\n\nNo CEF events."
+  },
+  "reportSources": {
+   "exact": "# Sources\n\n## Hosts and programs\n\n| Host | Program | Lines | Errors or worse |\n| --- | --- | ---: | ---: |\n| mail.example.test | sshd | 3 | 0 |\n| db1 | sshd | 2 | 0 |\n| web1 | su | 2 | 0 |\n| web2 | sudo | 2 | 0 |\n| db1 | CRON | 1 | 0 |\n| db1 | dhcpd | 1 | 0 |\n| db1 | kernel | 1 | 0 |\n| db1 | sudo | 1 | 0 |\n| fw1 | sshd | 1 | 0 |\n| fw1 | systemd | 1 | 0 |\n| mail.example.test | CRON | 1 | 0 |\n| mail.example.test | sudo | 1 | 0 |\n| mail.example.test | systemd | 1 | 0 |\n| web2 | su | 1 | 0 |\n\n## CEF devices\n\nNo CEF events."
+  },
+  "reportSecurity": {
+   "exact": "# Security Events\n\n13 events.\n\n| Event | Count |\n| --- | ---: |\n| sudo | 4 |\n| accepted login | 3 |\n| authentication failure | 3 |\n| failed login | 2 |\n| failed login \\(invalid user\\) | 1 |\n\n## Possible brute force\n\nNo source with 5 or more failed attempts.\n\n## Events\n\n| Line | Time | Event | User | Source |\n| ---: | --- | --- | --- | --- |\n| 2 | Dec  3 04:13:18 | sudo | alice | - |\n| 3 | Jul  3 19:42:35 | authentication failure | alice | - |\n| 4 | Nov  5 16:41:38 | accepted login | deploy | 203.0.113.7 |\n| 5 | Nov 26 17:02:31 | authentication failure | alice | - |\n| 6 | May  3 11:50:05 | sudo | alice | - |\n| 8 | Jun 11 12:05:47 | sudo | deploy | - |\n| 10 | Nov  7 05:56:05 | sudo | alice | - |\n| 12 | Feb 12 19:31:25 | accepted login | backup | 10.0.0.8 |\n| 13 | Mar  5 11:12:05 | failed login | root | 192.0.2.44 |\n| 15 | Jul  1 22:55:11 | accepted login | backup | 10.0.0.8 |\n| 16 | Aug 13 20:07:02 | authentication failure | alice | - |\n| 17 | Feb 27 04:50:06 | failed login | backup | 10.0.0.8 |\n| 18 | May  9 10:03:11 | failed login \\(invalid user\\) | backup | 203.0.113.7 |"
+  }
+ },
+ "05-auth-4.log": {
+  "reportSummary": {
+   "exact": "# Log Summary\n\n16 lines from 5 hosts.\n\n| Format | Lines |\n| --- | ---: |\n| BSD | 16 |\n\nFirst entry: Aug 27 05:14:25 (line 1). Last entry: Sep 17 16:48:02 (line 16).\n\n| Program | Lines |\n| --- | ---: |\n| sshd | 6 |\n| dhcpd | 3 |\n| su | 3 |\n| kernel | 2 |\n| app | 1 |\n| postfix/smtpd | 1 |"
+  },
+  "reportParse": {
+   "exact": "# Parse Check\n\nAll 16 lines parsed."
+  },
+  "reportSeverity": {
+   "exact": "# Severity Overview\n\n## Syslog severity\n\n| Severity | Lines |\n| --- | ---: |\n| emergency | 1 |\n| critical | 1 |\n| notice | 1 |\n| debug | 2 |\n\n## Facility\n\n| Facility | Lines |\n| --- | ---: |\n| kern | 1 |\n| auth | 1 |\n| local4 | 1 |\n| local7 | 2 |\n\n## CEF severity\n\nNo CEF events."
+  },
+  "reportSources": {
+   "exact": "# Sources\n\n## Hosts and programs\n\n| Host | Program | Lines | Errors or worse |\n| --- | --- | ---: | ---: |\n| mail.example.test | sshd | 4 | 0 |\n| db1 | sshd | 2 | 0 |\n| db1 | su | 1 | 0 |\n| fw1 | app | 1 | 0 |\n| fw1 | dhcpd | 1 | 0 |\n| fw1 | kernel | 1 | 0 |\n| mail.example.test | dhcpd | 1 | 0 |\n| mail.example.test | kernel | 1 | 0 |\n| mail.example.test | su | 1 | 0 |\n| web1 | su | 1 | 0 |\n| web2 | dhcpd | 1 | 1 |\n| web2 | postfix/smtpd | 1 | 1 |\n\n## CEF devices\n\nNo CEF events."
+  },
+  "reportSecurity": {
+   "exact": "# Security Events\n\n9 events.\n\n| Event | Count |\n| --- | ---: |\n| accepted login | 3 |\n| authentication failure | 3 |\n| failed login | 1 |\n| failed login \\(invalid user\\) | 1 |\n| invalid user | 1 |\n\n## Possible brute force\n\nNo source with 5 or more failed attempts.\n\n## Events\n\n| Line | Time | Event | User | Source |\n| ---: | --- | --- | --- | --- |\n| 1 | Aug 27 05:14:25 | failed login | deploy | 10.0.0.8 |\n| 4 | Aug 11 06:46:40 | authentication failure | alice | - |\n| 5 | Jan  9 17:46:01 | authentication failure | alice | - |\n| 6 | Jan 28 03:15:26 | accepted login | root | 192.0.2.44 |\n| 9 | Jul  3 15:49:09 | failed login \\(invalid user\\) | deploy | 192.0.2.44 |\n| 10 | Aug 25 13:26:33 | accepted login | deploy | 192.0.2.44 |\n| 11 | Apr 19 16:56:51 | authentication failure | alice | - |\n| 12 | Apr 27 08:55:18 | accepted login | admin | 203.0.113.7 |\n| 14 | Aug  8 15:21:24 | invalid user | test | 203.0.113.7 |"
+  }
+ },
+ "06-auth-5.log": {
+  "reportSummary": {
+   "exact": "# Log Summary\n\n26 lines from 5 hosts.\n\n| Format | Lines |\n| --- | ---: |\n| BSD | 26 |\n\nFirst entry: Aug 10 15:51:25 (line 1). Last entry: Aug  6 12:52:44 (line 26).\n\n| Program | Lines |\n| --- | ---: |\n| sshd | 9 |\n| CRON | 5 |\n| sudo | 5 |\n| systemd | 3 |\n| kernel | 2 |\n| postfix/smtpd | 1 |\n| su | 1 |"
+  },
+  "reportParse": {
+   "exact": "# Parse Check\n\nAll 26 lines parsed."
+  },
+  "reportSeverity": {
+   "exact": "# Severity Overview\n\n## Syslog severity\n\n| Severity | Lines |\n| --- | ---: |\n| error | 1 |\n\n## Facility\n\n| Facility | Lines |\n| --- | ---: |\n| user | 1 |\n\n## CEF severity\n\nNo CEF events."
+  },
+  "reportSources": {
+   "exact": "# Sources\n\n## Hosts and programs\n\n| Host | Program | Lines | Errors or worse |\n| --- | --- | ---: | ---: |\n| db1 | sshd | 3 | 0 |\n| mail.example.test | sshd | 3 | 0 |\n| db1 | CRON | 2 | 0 |\n| db1 | sudo | 2 | 0 |\n| db1 | systemd | 2 | 0 |\n| web1 | CRON | 2 | 0 |\n| web2 | sshd | 2 | 0 |\n| db1 | kernel | 1 | 0 |\n| fw1 | CRON | 1 | 0 |\n| fw1 | sudo | 1 | 0 |\n| mail.example.test | postfix/smtpd | 1 | 1 |\n| mail.example.test | sudo | 1 | 0 |\n| mail.example.test | systemd | 1 | 0 |\n| web1 | sshd | 1 | 0 |\n| web1 | su | 1 | 0 |\n| web1 | sudo | 1 | 0 |\n| web2 | kernel | 1 | 0 |\n\n## CEF devices\n\nNo CEF events."
+  },
+  "reportSecurity": {
+   "exact": "# Security Events\n\n15 events.\n\n| Event | Count |\n| --- | ---: |\n| accepted login | 5 |\n| sudo | 5 |\n| failed login | 3 |\n| authentication failure | 1 |\n| invalid user | 1 |\n\n## Possible brute force\n\nNo source with 5 or more failed attempts.\n\n## Events\n\n| Line | Time | Event | User | Source |\n| ---: | --- | --- | --- | --- |\n| 1 | Aug 10 15:51:25 | sudo | alice | - |\n| 2 | Feb  9 17:33:34 | accepted login | alice | 192.0.2.44 |\n| 6 | Aug 13 22:12:57 | accepted login | deploy | 192.0.2.44 |\n| 9 | Apr 24 19:23:18 | failed login | deploy | 198.51.100.23 |\n| 10 | Jan  4 09:27:45 | accepted login | deploy | 198.51.100.23 |\n| 12 | Mar 27 09:30:26 | failed login | root | 203.0.113.7 |\n| 13 | Aug 24 12:35:18 | authentication failure | alice | - |\n| 14 | Mar  7 10:31:42 | failed login | admin | 192.0.2.44 |\n| 15 | Dec  4 21:16:38 | accepted login | admin | 192.0.2.44 |\n| 18 | Jan 12 21:40:41 | sudo | backup | - |\n| 20 | Aug 14 14:32:04 | sudo | admin | - |\n| 21 | Mar  5 01:38:43 | accepted login | deploy | 10.0.0.8 |\n| 23 | Feb 12 01:30:58 | sudo | admin | - |\n| 25 | Nov  7 21:14:52 | sudo | deploy | - |\n| 26 | Aug  6 12:52:44 | invalid user | oracle | 192.0.2.44 |"
+  }
+ },
+ "07-auth-6.log": {
+  "reportSummary": {
+   "exact": "# Log Summary\n\n12 lines from 5 hosts.\n\n| Format | Lines |\n| --- | ---: |\n| BSD | 12 |\n\nFirst entry: May 18 01:15:36 (line 1). Last entry: Oct 24 20:52:13 (line 12).\n\n| Program | Lines |\n| --- | ---: |\n| CRON | 3 |\n| kernel | 3 |\n| sshd | 2 |\n| sudo | 2 |\n| su | 1 |\n| systemd | 1 |"
+  },
+  "reportParse": {
+   "exact": "# Parse Check\n\nAll 12 lines parsed."
+  },
+  "reportSeverity": {
+   "exact": "# Severity Overview\n\n## Syslog severity\n\nNo line carries a PRI value.\n\n## Facility\n\nNo line carries a PRI value.\n\n## CEF severity\n\nNo CEF events."
+  },
+  "reportSources": {
+   "exact": "# Sources\n\n## Hosts and programs\n\n| Host | Program | Lines | Errors or worse |\n| --- | --- | ---: | ---: |\n| fw1 | kernel | 2 | 0 |\n| db1 | sshd | 1 | 0 |\n| fw1 | sudo | 1 | 0 |\n| mail.example.test | CRON | 1 | 0 |\n| mail.example.test | kernel | 1 | 0 |\n| mail.example.test | systemd | 1 | 0 |\n| web1 | CRON | 1 | 0 |\n| web2 | CRON | 1 | 0 |\n| web2 | sshd | 1 | 0 |\n| web2 | su | 1 | 0 |\n| web2 | sudo | 1 | 0 |\n\n## CEF devices\n\nNo CEF events."
+  },
+  "reportSecurity": {
+   "exact": "# Security Events\n\n5 events.\n\n| Event | Count |\n| --- | ---: |\n| sudo | 2 |\n| authentication failure | 1 |\n| failed login | 1 |\n| failed login \\(invalid user\\) | 1 |\n\n## Possible brute force\n\nNo source with 5 or more failed attempts.\n\n## Events\n\n| Line | Time | Event | User | Source |\n| ---: | --- | --- | --- | --- |\n| 3 | Mar 10 09:48:53 | failed login | backup | 10.0.0.8 |\n| 5 | Mar 20 02:14:37 | sudo | backup | - |\n| 6 | Jan 25 12:25:14 | failed login \\(invalid user\\) | deploy | 10.0.0.8 |\n| 10 | Dec  7 22:16:57 | authentication failure | alice | - |\n| 12 | Oct 24 20:52:13 | sudo | root | - |"
+  }
+ },
+ "08-auth-7.log": {
+  "reportSummary": {
+   "exact": "# Log Summary\n\n14 lines from 5 hosts.\n\n| Format | Lines |\n| --- | ---: |\n| BSD | 14 |\n\nFirst entry: Mar 22 23:32:19 (line 1). Last entry: Jul  7 05:53:57 (line 14).\n\n| Program | Lines |\n| --- | ---: |\n| sshd | 9 |\n| CRON | 1 |\n| postfix/smtpd | 1 |\n| su | 1 |\n| sudo | 1 |\n| systemd | 1 |"
+  },
+  "reportParse": {
+   "exact": "# Parse Check\n\nAll 14 lines parsed."
+  },
+  "reportSeverity": {
+   "exact": "# Severity Overview\n\n## Syslog severity\n\n| Severity | Lines |\n| --- | ---: |\n| emergency | 1 |\n\n## Facility\n\n| Facility | Lines |\n| --- | ---: |\n| kern | 1 |\n\n## CEF severity\n\nNo CEF events."
+  },
+  "reportSources": {
+   "exact": "# Sources\n\n## Hosts and programs\n\n| Host | Program | Lines | Errors or worse |\n| --- | --- | ---: | ---: |\n| mail.example.test | sshd | 3 | 0 |\n| web2 | sshd | 3 | 0 |\n| db1 | sshd | 1 | 0 |\n| fw1 | sshd | 1 | 0 |\n| fw1 | sudo | 1 | 0 |\n| mail.example.test | su | 1 | 0 |\n| web1 | CRON | 1 | 0 |\n| web1 | sshd | 1 | 0 |\n| web2 | postfix/smtpd | 1 | 1 |\n| web2 | systemd | 1 | 0 |\n\n## CEF devices\n\nNo CEF events."
+  },
+  "reportSecurity": {
+   "exact": "# Security Events\n\n11 events.\n\n| Event | Count |\n| --- | ---: |\n| invalid user | 3 |\n| accepted login | 2 |\n| failed login | 2 |\n| failed login \\(invalid user\\) | 2 |\n| authentication failure | 1 |\n| sudo | 1 |\n\n## Possible brute force\n\nNo source with 5 or more failed attempts.\n\n## Events\n\n| Line | Time | Event | User | Source |\n| ---: | --- | --- | --- | --- |\n| 1 | Mar 22 23:32:19 | failed login \\(invalid user\\) | deploy | 198.51.100.23 |\n| 2 | Oct  4 23:23:46 | accepted login | alice | 203.0.113.7 |\n| 3 | Apr 12 07:42:39 | failed login | backup | 203.0.113.7 |\n| 5 | Aug 27 02:42:32 | accepted login | backup | 192.0.2.44 |\n| 6 | May  8 20:52:36 | invalid user | pi | 198.51.100.23 |\n| 7 | Jan 18 03:49:13 | invalid user | test | 10.0.0.8 |\n| 9 | Apr  8 09:15:22 | authentication failure | alice | - |\n| 11 | May 28 22:44:31 | failed login | admin | 198.51.100.23 |\n| 12 | May 13 22:41:06 | sudo | deploy | - |\n| 13 | Feb 21 10:19:35 | failed login \\(invalid user\\) | backup | 198.51.100.23 |\n| 14 | Jul  7 05:53:57 | invalid user | test | 192.0.2.44 |"
+  }
+ },
+ "09-auth-8.log": {
+  "reportSummary": {
+   "exact": "# Log Summary\n\n35 lines from 5 hosts.\n\n| Format | Lines |\n| --- | ---: |\n| BSD | 35 |\n\nFirst entry: Apr  4 12:43:50 (line 1). Last entry: Mar 23 06:25:07 (line 35).\n\n| Program | Lines |\n| --- | ---: |\n| sshd | 12 |\n| kernel | 5 |\n| sudo | 5 |\n| CRON | 4 |\n| su | 4 |\n| systemd | 3 |\n| dhcpd | 2 |"
+  },
+  "reportParse": {
+   "exact": "# Parse Check\n\nAll 35 lines parsed."
+  },
+  "reportSeverity": {
+   "exact": "# Severity Overview\n\n## Syslog severity\n\n| Severity | Lines |\n| --- | ---: |\n| critical | 1 |\n| informational | 1 |\n\n## Facility\n\n| Facility | Lines |\n| --- | ---: |\n| auth | 1 |\n| authpriv | 1 |\n\n## CEF severity\n\nNo CEF events."
+  },
+  "reportSources": {
+   "exact": "# Sources\n\n## Hosts and programs\n\n| Host | Program | Lines | Errors or worse |\n| --- | --- | ---: | ---: |\n| web1 | sshd | 5 | 0 |\n| db1 | sshd | 3 | 0 |\n| web2 | sshd | 3 | 0 |\n| db1 | sudo | 2 | 0 |\n| fw1 | kernel | 2 | 0 |\n| mail.example.test | CRON | 2 | 0 |\n| mail.example.test | kernel | 2 | 0 |\n| mail.example.test | sudo | 2 | 0 |\n| web1 | systemd | 2 | 0 |\n| web2 | CRON | 2 | 0 |\n| db1 | su | 1 | 0 |\n| fw1 | su | 1 | 0 |\n| mail.example.test | sshd | 1 | 0 |\n| web1 | dhcpd | 1 | 1 |\n| web1 | kernel | 1 | 0 |\n| web1 | su | 1 | 0 |\n| web2 | dhcpd | 1 | 0 |\n| web2 | su | 1 | 0 |\n| web2 | sudo | 1 | 0 |\n| web2 | systemd | 1 | 0 |\n\n## CEF devices\n\nNo CEF events."
+  },
+  "reportSecurity": {
+   "exact": "# Security Events\n\n21 events.\n\n| Event | Count |\n| --- | ---: |\n| invalid user | 6 |\n| sudo | 5 |\n| authentication failure | 4 |\n| failed login | 3 |\n| accepted login | 2 |\n| failed login \\(invalid user\\) | 1 |\n\n## Possible brute force\n\nNo source with 5 or more failed attempts.\n\n## Events\n\n| Line | Time | Event | User | Source |\n| ---: | --- | --- | --- | --- |\n| 2 | Oct 21 23:33:35 | sudo | root | - |\n| 4 | Apr 11 19:38:53 | sudo | alice | - |\n| 5 | Aug 17 13:58:45 | invalid user | test | 198.51.100.23 |\n| 6 | Dec  6 10:55:20 | invalid user | pi | 10.0.0.8 |\n| 7 | Jun  1 00:50:26 | failed login | backup | 10.0.0.8 |\n| 8 | Nov  2 12:02:12 | accepted login | alice | 203.0.113.7 |\n| 9 | Oct 16 01:39:19 | invalid user | pi | 192.0.2.44 |\n| 10 | Sep 14 13:19:48 | invalid user | oracle | 192.0.2.44 |\n| 11 | Mar 26 18:10:53 | sudo | alice | - |\n| 12 | Aug  4 22:34:13 | invalid user | test | 203.0.113.7 |\n| 13 | Aug  2 19:28:35 | failed login \\(invalid user\\) | alice | 10.0.0.8 |\n| 15 | Mar 10 15:55:06 | sudo | backup | - |\n| 16 | Dec  8 17:22:25 | sudo | admin | - |\n| 19 | Sep  5 03:11:48 | authentication failure | alice | - |\n| 25 | Dec  8 12:53:20 | authentication failure | alice | - |\n| 28 | Jan  1 15:31:54 | authentication failure | alice | - |\n| 29 | Dec 11 20:35:51 | failed login | backup | 203.0.113.7 |\n| 30 | Jul 17 17:31:23 | invalid user | test | 10.0.0.8 |\n| 31 | Aug  4 13:33:34 | failed login | deploy | 203.0.113.7 |\n| 32 | Jun  8 07:04:21 | authentication failure | alice | - |\n| 33 | Feb 20 01:22:47 | accepted login | alice | 198.51.100.23 |"
+  }
+ },
+ "10-auth-9.log": {
+  "reportSummary": {
+   "exact": "# Log Summary\n\n27 lines from 4 hosts.\n\n| Format | Lines |\n| --- | ---: |\n| BSD | 27 |\n\nFirst entry: Dec 22 13:23:28 (line 1). Last entry: Jun 21 18:56:18 (line 27).\n\n| Program | Lines |\n| --- | ---: |\n| sshd | 10 |\n| kernel | 5 |\n| systemd | 4 |\n| CRON | 3 |\n| postfix/smtpd | 3 |\n| sudo | 2 |"
+  },
+  "reportParse": {
+   "exact": "# Parse Check\n\nAll 27 lines parsed."
+  },
+  "reportSeverity": {
+   "exact": "# Severity Overview\n\n## Syslog severity\n\n| Severity | Lines |\n| --- | ---: |\n| emergency | 1 |\n| error | 1 |\n| debug | 1 |\n\n## Facility\n\n| Facility | Lines |\n| --- | ---: |\n| kern | 1 |\n| user | 1 |\n| local7 | 1 |\n\n## CEF severity\n\nNo CEF events."
+  },
+  "reportSources": {
+   "exact": "# Sources\n\n## Hosts and programs\n\n| Host | Program | Lines | Errors or worse |\n| --- | --- | ---: | ---: |\n| fw1 | kernel | 3 | 0 |\n| fw1 | sshd | 3 | 0 |\n| mail.example.test | sshd | 3 | 0 |\n| db1 | sshd | 2 | 0 |\n| fw1 | sudo | 2 | 0 |\n| fw1 | systemd | 2 | 0 |\n| web2 | sshd | 2 | 0 |\n| db1 | kernel | 1 | 0 |\n| db1 | postfix/smtpd | 1 | 0 |\n| db1 | systemd | 1 | 0 |\n| fw1 | CRON | 1 | 0 |\n| fw1 | postfix/smtpd | 1 | 1 |\n| mail.example.test | CRON | 1 | 0 |\n| mail.example.test | postfix/smtpd | 1 | 1 |\n| mail.example.test | systemd | 1 | 0 |\n| web2 | CRON | 1 | 0 |\n| web2 | kernel | 1 | 0 |\n\n## CEF devices\n\nNo CEF events."
+  },
+  "reportSecurity": {
+   "exact": "# Security Events\n\n12 events.\n\n| Event | Count |\n| --- | ---: |\n| invalid user | 7 |\n| accepted login | 2 |\n| sudo | 2 |\n| failed login | 1 |\n\n## Possible brute force\n\nNo source with 5 or more failed attempts.\n\n## Events\n\n| Line | Time | Event | User | Source |\n| ---: | --- | --- | --- | --- |\n| 1 | Dec 22 13:23:28 | invalid user | test | 198.51.100.23 |\n| 3 | Aug 16 20:28:39 | sudo | deploy | - |\n| 8 | Feb  1 14:26:21 | accepted login | backup | 203.0.113.7 |\n| 9 | Jun 11 02:25:26 | invalid user | oracle | 192.0.2.44 |\n| 10 | Jul 18 15:40:52 | invalid user | pi | 10.0.0.8 |\n| 11 | Nov 27 21:48:52 | invalid user | pi | 198.51.100.23 |\n| 15 | Dec  7 19:18:00 | invalid user | pi | 10.0.0.8 |\n| 16 | Dec  3 16:36:11 | accepted login | root | 10.0.0.8 |\n| 18 | Mar 18 19:23:56 | invalid user | oracle | 10.0.0.8 |\n| 20 | Oct 17 01:08:24 | sudo | backup | - |\n| 21 | Dec 16 15:14:34 | failed login | admin | 10.0.0.8 |\n| 24 | Nov 27 16:39:13 | invalid user | test | 203.0.113.7 |"
+  }
+ },
+ "11-auth-10.log": {
+  "reportSummary": {
+   "exact": "# Log Summary\n\n14 lines from 5 hosts.\n\n| Format | Lines |\n| --- | ---: |\n| BSD | 14 |\n\nFirst entry: Mar 25 07:22:36 (line 1). Last entry: May  6 08:38:46 (line 14).\n\n| Program | Lines |\n| --- | ---: |\n| sshd | 6 |\n| systemd | 5 |\n| dhcpd | 1 |\n| kernel | 1 |\n| postfix/smtpd | 1 |"
+  },
+  "reportParse": {
+   "exact": "# Parse Check\n\nAll 14 lines parsed."
+  },
+  "reportSeverity": {
+   "exact": "# Severity Overview\n\n## Syslog severity\n\n| Severity | Lines |\n| --- | ---: |\n| informational | 2 |\n\n## Facility\n\n| Facility | Lines |\n| --- | ---: |\n| auth | 1 |\n| authpriv | 1 |\n\n## CEF severity\n\nNo CEF events."
+  },
+  "reportSources": {
+   "exact": "# Sources\n\n## Hosts and programs\n\n| Host | Program | Lines | Errors or worse |\n| --- | --- | ---: | ---: |\n| web2 | sshd | 3 | 0 |\n| db1 | systemd | 2 | 0 |\n| fw1 | systemd | 2 | 0 |\n| db1 | kernel | 1 | 0 |\n| fw1 | dhcpd | 1 | 0 |\n| fw1 | sshd | 1 | 0 |\n| mail.example.test | postfix/smtpd | 1 | 0 |\n| mail.example.test | sshd | 1 | 0 |\n| web1 | sshd | 1 | 0 |\n| web1 | systemd | 1 | 0 |\n\n## CEF devices\n\nNo CEF events."
+  },
+  "reportSecurity": {
+   "exact": "# Security Events\n\n6 events.\n\n| Event | Count |\n| --- | ---: |\n| accepted login | 2 |\n| failed login \\(invalid user\\) | 2 |\n| invalid user | 2 |\n\n## Possible brute force\n\nNo source with 5 or more failed attempts.\n\n## Events\n\n| Line | Time | Event | User | Source |\n| ---: | --- | --- | --- | --- |\n| 2 | Jun  2 02:23:16 | accepted login | backup | 198.51.100.23 |\n| 3 | Nov  8 20:22:06 | failed login \\(invalid user\\) | admin | 203.0.113.7 |\n| 5 | Feb 23 14:26:53 | accepted login | deploy | 198.51.100.23 |\n| 6 | Sep 14 12:27:20 | invalid user | test | 198.51.100.23 |\n| 7 | Jun  5 23:13:00 | failed login \\(invalid user\\) | root | 10.0.0.8 |\n| 11 | Mar 11 01:14:12 | invalid user | test | 203.0.113.7 |"
+  }
+ },
+ "12-auth-11.log": {
+  "reportSummary": {
+   "exact": "# Log Summary\n\n18 lines from 4 hosts.\n\n| Format | Lines |\n| --- | ---: |\n| BSD | 18 |\n\nFirst entry: Apr  6 13:58:53 (line 1). Last entry: Oct 13 02:55:37 (line 18).\n\n| Program | Lines |\n| --- | ---: |\n| sshd | 6 |\n| systemd | 4 |\n| kernel | 3 |\n| CRON | 2 |\n| su | 2 |\n| postfix/smtpd | 1 |"
+  },
+  "reportParse": {
+   "exact": "# Parse Check\n\nAll 18 lines parsed."
+  },
+  "reportSeverity": {
+   "exact": "# Severity Overview\n\n## Syslog severity\n\n| Severity | Lines |\n| --- | ---: |\n| notice | 1 |\n\n## Facility\n\n| Facility | Lines |\n| --- | ---: |\n| user | 1 |\n\n## CEF severity\n\nNo CEF events."
+  },
+  "reportSources": {
+   "exact": "# Sources\n\n## Hosts and programs\n\n| Host | Program | Lines | Errors or worse |\n| --- | --- | ---: | ---: |\n| db1 | sshd | 4 | 0 |\n| mail.example.test | systemd | 2 | 0 |\n| web2 | kernel | 2 | 0 |\n| web2 | systemd | 2 | 0 |\n| db1 | CRON | 1 | 0 |\n| db1 | su | 1 | 0 |\n| fw1 | postfix/smtpd | 1 | 0 |\n| fw1 | su | 1 | 0 |\n| mail.example.test | CRON | 1 | 0 |\n| mail.example.test | kernel | 1 | 0 |\n| mail.example.test | sshd | 1 | 0 |\n| web2 | sshd | 1 | 0 |\n\n## CEF devices\n\nNo CEF events."
+  },
+  "reportSecurity": {
+   "exact": "# Security Events\n\n8 events.\n\n| Event | Count |\n| --- | ---: |\n| accepted login | 2 |\n| authentication failure | 2 |\n| failed login | 2 |\n| invalid user | 2 |\n\n## Possible brute force\n\nNo source with 5 or more failed attempts.\n\n## Events\n\n| Line | Time | Event | User | Source |\n| ---: | --- | --- | --- | --- |\n| 2 | Jan 10 07:48:25 | accepted login | deploy | 198.51.100.23 |\n| 3 | Jun 19 09:31:01 | authentication failure | alice | - |\n| 5 | Oct 23 10:47:34 | failed login | admin | 198.51.100.23 |\n| 8 | Jan 22 10:45:01 | failed login | deploy | 192.0.2.44 |\n| 9 | Apr  8 17:33:17 | accepted login | alice | 192.0.2.44 |\n| 10 | Aug 12 00:05:17 | invalid user | oracle | 192.0.2.44 |\n| 12 | May  4 01:33:08 | authentication failure | alice | - |\n| 17 | Nov  3 12:03:03 | invalid user | pi | 203.0.113.7 |"
+  }
+ },
+ "13-auth-12.log": {
+  "reportSummary": {
+   "exact": "# Log Summary\n\n17 lines from 5 hosts.\n\n| Format | Lines |\n| --- | ---: |\n| BSD | 17 |\n\nFirst entry: Dec 11 21:37:28 (line 1). Last entry: Jun 14 10:48:31 (line 17).\n\n| Program | Lines |\n| --- | ---: |\n| sshd | 7 |\n| kernel | 3 |\n| sudo | 3 |\n| systemd | 2 |\n| dhcpd | 1 |\n| su | 1 |"
+  },
+  "reportParse": {
+   "exact": "# Parse Check\n\nAll 17 lines parsed."
+  },
+  "reportSeverity": {
+   "exact": "# Severity Overview\n\n## Syslog severity\n\n| Severity | Lines |\n| --- | ---: |\n| informational | 1 |\n\n## Facility\n\n| Facility | Lines |\n| --- | ---: |\n| auth | 1 |\n\n## CEF severity\n\nNo CEF events."
+  },
+  "reportSources": {
+   "exact": "# Sources\n\n## Hosts and programs\n\n| Host | Program | Lines | Errors or worse |\n| --- | --- | ---: | ---: |\n| db1 | sshd | 3 | 0 |\n| mail.example.test | sshd | 2 | 0 |\n| mail.example.test | sudo | 2 | 0 |\n| web2 | kernel | 2 | 0 |\n| db1 | sudo | 1 | 0 |\n| db1 | systemd | 1 | 0 |\n| fw1 | kernel | 1 | 0 |\n| fw1 | sshd | 1 | 0 |\n| fw1 | systemd | 1 | 0 |\n| web1 | sshd | 1 | 0 |\n| web2 | dhcpd | 1 | 0 |\n| web2 | su | 1 | 0 |\n\n## CEF devices\n\nNo CEF events."
+  },
+  "reportSecurity": {
+   "exact": "# Security Events\n\n11 events.\n\n| Event | Count |\n| --- | ---: |\n| failed login | 3 |\n| sudo | 3 |\n| accepted login | 2 |\n| failed login \\(invalid user\\) | 2 |\n| authentication failure | 1 |\n\n## Possible brute force\n\nNo source with 5 or more failed attempts.\n\n## Events\n\n| Line | Time | Event | User | Source |\n| ---: | --- | --- | --- | --- |\n| 4 | May 18 06:58:29 | failed login | backup | 203.0.113.7 |\n| 5 | May  7 07:06:59 | failed login | alice | 192.0.2.44 |\n| 7 | Jun 28 21:55:36 | authentication failure | alice | - |\n| 8 | May 13 05:32:43 | accepted login | alice | 203.0.113.7 |\n| 9 | Dec 20 09:25:13 | sudo | deploy | - |\n| 10 | Jan 18 11:44:56 | accepted login | root | 198.51.100.23 |\n| 11 | Feb 17 12:58:20 | failed login \\(invalid user\\) | deploy | 10.0.0.8 |\n| 12 | Sep 23 02:13:20 | sudo | deploy | - |\n| 13 | May 11 05:46:30 | failed login | admin | 10.0.0.8 |\n| 15 | Dec 17 12:19:07 | sudo | admin | - |\n| 16 | May 10 12:38:19 | failed login \\(invalid user\\) | alice | 10.0.0.8 |"
+  }
+ },
+ "14-auth-13.log": {
+  "reportSummary": {
+   "exact": "# Log Summary\n\n8 lines from 4 hosts.\n\n| Format | Lines |\n| --- | ---: |\n| BSD | 8 |\n\nFirst entry: Dec  2 10:48:20 (line 1). Last entry: Aug  7 13:35:02 (line 8).\n\n| Program | Lines |\n| --- | ---: |\n| sshd | 3 |\n| CRON | 1 |\n| dhcpd | 1 |\n| su | 1 |\n| sudo | 1 |\n| systemd | 1 |"
+  },
+  "reportParse": {
+   "exact": "# Parse Check\n\nAll 8 lines parsed."
+  },
+  "reportSeverity": {
+   "exact": "# Severity Overview\n\n## Syslog severity\n\n| Severity | Lines |\n| --- | ---: |\n| critical | 1 |\n\n## Facility\n\n| Facility | Lines |\n| --- | ---: |\n| auth | 1 |\n\n## CEF severity\n\nNo CEF events."
+  },
+  "reportSources": {
+   "exact": "# Sources\n\n## Hosts and programs\n\n| Host | Program | Lines | Errors or worse |\n| --- | --- | ---: | ---: |\n| mail.example.test | sshd | 2 | 0 |\n| db1 | sshd | 1 | 0 |\n| db1 | systemd | 1 | 0 |\n| web1 | CRON | 1 | 0 |\n| web1 | dhcpd | 1 | 1 |\n| web1 | su | 1 | 0 |\n| web2 | sudo | 1 | 0 |\n\n## CEF devices\n\nNo CEF events."
+  },
+  "reportSecurity": {
+   "exact": "# Security Events\n\n5 events.\n\n| Event | Count |\n| --- | ---: |\n| accepted login | 2 |\n| authentication failure | 1 |\n| invalid user | 1 |\n| sudo | 1 |\n\n## Possible brute force\n\nNo source with 5 or more failed attempts.\n\n## Events\n\n| Line | Time | Event | User | Source |\n| ---: | --- | --- | --- | --- |\n| 1 | Dec  2 10:48:20 | invalid user | pi | 203.0.113.7 |\n| 3 | Mar 22 14:52:44 | authentication failure | alice | - |\n| 5 | Oct 17 07:46:14 | accepted login | alice | 203.0.113.7 |\n| 7 | Jan 10 20:21:29 | accepted login | deploy | 192.0.2.44 |\n| 8 | Aug  7 13:35:02 | sudo | admin | - |"
+  }
+ },
+ "15-auth-14.log": {
+  "reportSummary": {
+   "exact": "# Log Summary\n\n17 lines from 5 hosts.\n\n| Format | Lines |\n| --- | ---: |\n| BSD | 17 |\n\nFirst entry: Feb 23 22:21:12 (line 1). Last entry: Sep  3 01:45:03 (line 17).\n\n| Program | Lines |\n| --- | ---: |\n| sshd | 8 |\n| app | 2 |\n| sudo | 2 |\n| CRON | 1 |\n| dhcpd | 1 |\n| kernel | 1 |\n| su | 1 |\n| systemd | 1 |"
+  },
+  "reportParse": {
+   "exact": "# Parse Check\n\nAll 17 lines parsed."
+  },
+  "reportSeverity": {
+   "exact": "# Severity Overview\n\n## Syslog severity\n\n| Severity | Lines |\n| --- | ---: |\n| emergency | 1 |\n| notice | 2 |\n\n## Facility\n\n| Facility | Lines |\n| --- | ---: |\n| kern | 1 |\n| user | 1 |\n| local4 | 1 |\n\n## CEF severity\n\nNo CEF events."
+  },
+  "reportSources": {
+   "exact": "# Sources\n\n## Hosts and programs\n\n| Host | Program | Lines | Errors or worse |\n| --- | --- | ---: | ---: |\n| mail.example.test | sshd | 3 | 0 |\n| fw1 | sshd | 2 | 0 |\n| web1 | sshd | 2 | 0 |\n| db1 | CRON | 1 | 0 |\n| db1 | dhcpd | 1 | 1 |\n| db1 | sshd | 1 | 0 |\n| fw1 | app | 1 | 0 |\n| fw1 | su | 1 | 0 |\n| mail.example.test | kernel | 1 | 0 |\n| mail.example.test | sudo | 1 | 0 |\n| mail.example.test | systemd | 1 | 0 |\n| web2 | app | 1 | 0 |\n| web2 | sudo | 1 | 0 |\n\n## CEF devices\n\nNo CEF events."
+  },
+  "reportSecurity": {
+   "exact": "# Security Events\n\n11 events.\n\n| Event | Count |\n| --- | ---: |\n| accepted login | 5 |\n| invalid user | 2 |\n| sudo | 2 |\n| authentication failure | 1 |\n| failed login | 1 |\n\n## Possible brute force\n\nNo source with 5 or more failed attempts.\n\n## Events\n\n| Line | Time | Event | User | Source |\n| ---: | --- | --- | --- | --- |\n| 1 | Feb 23 22:21:12 | sudo | admin | - |\n| 2 | Apr 26 11:44:23 | invalid user | test | 198.51.100.23 |\n| 4 | Feb  1 17:59:37 | authentication failure | alice | - |\n| 5 | Mar 26 08:42:25 | accepted login | admin | 203.0.113.7 |\n| 6 | Jun 24 04:51:12 | invalid user | test | 10.0.0.8 |\n| 7 | Oct 19 02:39:50 | failed login | root | 203.0.113.7 |\n| 8 | Aug 12 04:58:22 | accepted login | root | 10.0.0.8 |\n| 10 | Jan  4 17:39:02 | sudo | deploy | - |\n| 14 | Jan 12 05:12:12 | accepted login | alice | 10.0.0.8 |\n| 15 | Sep 20 17:40:05 | accepted login | backup | 192.0.2.44 |\n| 16 | Sep  3 11:46:12 | accepted login | alice | 203.0.113.7 |"
+  }
+ },
+ "16-auth-15.log": {
+  "reportSummary": {
+   "exact": "# Log Summary\n\n15 lines from 5 hosts.\n\n| Format | Lines |\n| --- | ---: |\n| BSD | 15 |\n\nFirst entry: May  5 11:43:18 (line 1). Last entry: Nov 22 10:37:42 (line 15).\n\n| Program | Lines |\n| --- | ---: |\n| sshd | 7 |\n| CRON | 2 |\n| systemd | 2 |\n| dhcpd | 1 |\n| postfix/smtpd | 1 |\n| su | 1 |\n| sudo | 1 |"
+  },
+  "reportParse": {
+   "exact": "# Parse Check\n\nAll 15 lines parsed."
+  },
+  "reportSeverity": {
+   "exact": "# Severity Overview\n\n## Syslog severity\n\n| Severity | Lines |\n| --- | ---: |\n| error | 1 |\n| informational | 1 |\n\n## Facility\n\n| Facility | Lines |\n| --- | ---: |\n| user | 1 |\n| authpriv | 1 |\n\n## CEF severity\n\nNo CEF events."
+  },
+  "reportSources": {
+   "exact": "# Sources\n\n## Hosts and programs\n\n| Host | Program | Lines | Errors or worse |\n| --- | --- | ---: | ---: |\n| web1 | sshd | 4 | 0 |\n| web2 | CRON | 2 | 0 |\n| db1 | sshd | 1 | 0 |\n| db1 | systemd | 1 | 0 |\n| fw1 | sshd | 1 | 0 |\n| fw1 | su | 1 | 0 |\n| mail.example.test | sudo | 1 | 0 |\n| web1 | postfix/smtpd | 1 | 1 |\n| web2 | dhcpd | 1 | 0 |\n| web2 | sshd | 1 | 0 |\n| web2 | systemd | 1 | 0 |\n\n## CEF devices\n\nNo CEF events."
+  },
+  "reportSecurity": {
+   "exact": "# Security Events\n\n9 events.\n\n| Event | Count |\n| --- | ---: |\n| failed login \\(invalid user\\) | 3 |\n| accepted login | 2 |\n| invalid user | 2 |\n| authentication failure | 1 |\n| sudo | 1 |\n\n## Possible brute force\n\nNo source with 5 or more failed attempts.\n\n## Events\n\n| Line | Time | Event | User | Source |\n| ---: | --- | --- | --- | --- |\n| 3 | May 20 12:30:26 | failed login \\(invalid user\\) | deploy | 192.0.2.44 |\n| 4 | Dec  6 01:42:42 | invalid user | pi | 203.0.113.7 |\n| 5 | Aug 26 08:38:10 | accepted login | alice | 198.51.100.23 |\n| 7 | Apr  9 12:57:29 | failed login \\(invalid user\\) | root | 10.0.0.8 |\n| 8 | Dec 19 00:17:18 | invalid user | test | 10.0.0.8 |\n| 9 | Aug 26 08:25:17 | authentication failure | alice | - |\n| 11 | Nov 11 13:39:18 | failed login \\(invalid user\\) | alice | 198.51.100.23 |\n| 13 | Jul 13 14:52:29 | sudo | deploy | - |\n| 14 | Aug 16 05:54:21 | accepted login | root | 10.0.0.8 |"
+  }
+ },
+ "17-auth-16.log": {
+  "reportSummary": {
+   "exact": "# Log Summary\n\n12 lines from 5 hosts.\n\n| Format | Lines |\n| --- | ---: |\n| BSD | 12 |\n\nFirst entry: Nov 16 07:56:56 (line 1). Last entry: Dec  9 11:33:30 (line 12).\n\n| Program | Lines |\n| --- | ---: |\n| sshd | 6 |\n| su | 3 |\n| systemd | 2 |\n| dhcpd | 1 |"
+  },
+  "reportParse": {
+   "exact": "# Parse Check\n\nAll 12 lines parsed."
+  },
+  "reportSeverity": {
+   "exact": "# Severity Overview\n\n## Syslog severity\n\n| Severity | Lines |\n| --- | ---: |\n| informational | 1 |\n\n## Facility\n\n| Facility | Lines |\n| --- | ---: |\n| authpriv | 1 |\n\n## CEF severity\n\nNo CEF events."
+  },
+  "reportSources": {
+   "exact": "# Sources\n\n## Hosts and programs\n\n| Host | Program | Lines | Errors or worse |\n| --- | --- | ---: | ---: |\n| db1 | sshd | 2 | 0 |\n| fw1 | sshd | 2 | 0 |\n| web2 | systemd | 2 | 0 |\n| db1 | su | 1 | 0 |\n| fw1 | su | 1 | 0 |\n| mail.example.test | dhcpd | 1 | 0 |\n| mail.example.test | sshd | 1 | 0 |\n| web1 | su | 1 | 0 |\n| web2 | sshd | 1 | 0 |\n\n## CEF devices\n\nNo CEF events."
+  },
+  "reportSecurity": {
+   "exact": "# Security Events\n\n9 events.\n\n| Event | Count |\n| --- | ---: |\n| accepted login | 3 |\n| authentication failure | 3 |\n| invalid user | 2 |\n| failed login | 1 |\n\n## Possible brute force\n\nNo source with 5 or more failed attempts.\n\n## Events\n\n| Line | Time | Event | User | Source |\n| ---: | --- | --- | --- | --- |\n| 2 | Nov  1 09:00:50 | authentication failure | alice | - |\n| 3 | Jan 20 20:41:09 | authentication failure | alice | - |\n| 5 | Feb  8 22:18:06 | accepted login | admin | 203.0.113.7 |\n| 6 | Feb  3 06:23:11 | failed login | deploy | 203.0.113.7 |\n| 8 | Mar 17 01:25:05 | invalid user | test | 10.0.0.8 |\n| 9 | Feb 28 17:05:44 | accepted login | backup | 192.0.2.44 |\n| 10 | Feb 28 08:15:25 | accepted login | alice | 203.0.113.7 |\n| 11 | Nov  6 02:54:32 | authentication failure | alice | - |\n| 12 | Dec  9 11:33:30 | invalid user | test | 10.0.0.8 |"
+  }
+ },
+ "18-auth-17.log": {
+  "reportSummary": {
+   "exact": "# Log Summary\n\n24 lines from 5 hosts.\n\n| Format | Lines |\n| --- | ---: |\n| BSD | 24 |\n\nFirst entry: Mar 26 16:43:03 (line 1). Last entry: Oct  3 02:18:35 (line 24).\n\n| Program | Lines |\n| --- | ---: |\n| sshd | 6 |\n| systemd | 5 |\n| CRON | 3 |\n| kernel | 3 |\n| app | 2 |\n| sudo | 2 |\n| dhcpd | 1 |\n| postfix/smtpd | 1 |\n| su | 1 |"
+  },
+  "reportParse": {
+   "exact": "# Parse Check\n\nAll 24 lines parsed."
+  },
+  "reportSeverity": {
+   "exact": "# Severity Overview\n\n## Syslog severity\n\n| Severity | Lines |\n| --- | ---: |\n| emergency | 1 |\n| error | 1 |\n| notice | 1 |\n| informational | 1 |\n\n## Facility\n\n| Facility | Lines |\n| --- | ---: |\n| kern | 1 |\n| user | 2 |\n| authpriv | 1 |\n\n## CEF severity\n\nNo CEF events."
+  },
+  "reportSources": {
+   "exact": "# Sources\n\n## Hosts and programs\n\n| Host | Program | Lines | Errors or worse |\n| --- | --- | ---: | ---: |\n| fw1 | CRON | 2 | 0 |\n| fw1 | sshd | 2 | 0 |\n| mail.example.test | systemd | 2 | 0 |\n| web2 | sshd | 2 | 0 |\n| db1 | kernel | 1 | 0 |\n| db1 | sshd | 1 | 0 |\n| db1 | sudo | 1 | 0 |\n| db1 | systemd | 1 | 0 |\n| fw1 | app | 1 | 1 |\n| mail.example.test | dhcpd | 1 | 1 |\n| web1 | CRON | 1 | 0 |\n| web1 | app | 1 | 0 |\n| web1 | kernel | 1 | 0 |\n| web1 | sshd | 1 | 0 |\n| web1 | su | 1 | 0 |\n| web1 | systemd | 1 | 0 |\n| web2 | kernel | 1 | 0 |\n| web2 | postfix/smtpd | 1 | 0 |\n| web2 | sudo | 1 | 0 |\n| web2 | systemd | 1 | 0 |\n\n## CEF devices\n\nNo CEF events."
+  },
+  "reportSecurity": {
+   "exact": "# Security Events\n\n9 events.\n\n| Event | Count |\n| --- | ---: |\n| accepted login | 2 |\n| failed login | 2 |\n| sudo | 2 |\n| authentication failure | 1 |\n| failed login \\(invalid user\\) | 1 |\n| invalid user | 1 |\n\n## Possible brute force\n\nNo source with 5 or more failed attempts.\n\n## Events\n\n| Line | Time | Event | User | Source |\n| ---: | --- | --- | --- | --- |\n| 5 | Jan 21 08:49:09 | sudo | admin | - |\n| 6 | Jun 25 01:24:02 | invalid user | pi | 10.0.0.8 |\n| 9 | Aug  4 05:31:53 | accepted login | root | 198.51.100.23 |\n| 10 | Jan 11 23:57:27 | failed login \\(invalid user\\) | alice | 203.0.113.7 |\n| 11 | Apr 14 23:25:31 | authentication failure | alice | - |\n| 16 | May 15 18:55:50 | accepted login | backup | 192.0.2.44 |\n| 18 | Jan 19 01:09:33 | sudo | alice | - |\n| 23 | Jul 12 02:06:27 | failed login | alice | 10.0.0.8 |\n| 24 | Oct  3 02:18:35 | failed login | backup | 10.0.0.8 |"
+  }
+ },
+ "19-rfc5424-0.log": {
+  "reportSummary": {
+   "exact": "# Log Summary\n\n5 lines from 3 hosts.\n\n| Format | Lines |\n| --- | ---: |\n| RFC 5424 | 5 |\n\nFirst entry: 2026-03-15T23:37:00Z (line 1). Last entry: 2026-04-05T10:59:00Z (line 5).\n\n| Program | Lines |\n| --- | ---: |\n| app | 2 |\n| postgres | 2 |\n| su | 1 |"
+  },
+  "reportParse": {
+   "exact": "# Parse Check\n\nAll 5 lines parsed."
+  },
+  "reportSeverity": {
+   "exact": "# Severity Overview\n\n## Syslog severity\n\n| Severity | Lines |\n| --- | ---: |\n| critical | 1 |\n| informational | 4 |\n\n## Facility\n\n| Facility | Lines |\n| --- | ---: |\n| user | 2 |\n| auth | 1 |\n| local7 | 2 |\n\n## CEF severity\n\nNo CEF events."
+  },
+  "reportSources": {
+   "exact": "# Sources\n\n## Hosts and programs\n\n| Host | Program | Lines | Errors or worse |\n| --- | --- | ---: | ---: |\n| fw1 | app | 2 | 0 |\n| db1 | postgres | 1 | 0 |\n| db1 | su | 1 | 0 |\n| web2 | postgres | 1 | 1 |\n\n## CEF devices\n\nNo CEF events."
+  },
+  "reportSecurity": {
+   "exact": "# Security Events\n\nNo security events found."
+  }
+ },
+ "20-rfc5424-1.log": {
+  "reportSummary": {
+   "exact": "# Log Summary\n\n13 lines from 5 hosts.\n\n| Format | Lines |\n| --- | ---: |\n| RFC 5424 | 13 |\n\nFirst entry: 2026-07-04T15:35:00.123Z (line 1). Last entry: 2026-12-11T17:20:00.123Z (line 13).\n\n| Program | Lines |\n| --- | ---: |\n| postgres | 3 |\n| su | 3 |\n| app | 2 |"
+  },
+  "reportParse": {
+   "exact": "# Parse Check\n\nAll 13 lines parsed."
+  },
+  "reportSeverity": {
+   "exact": "# Severity Overview\n\n## Syslog severity\n\n| Severity | Lines |\n| --- | ---: |\n| critical | 5 |\n| error | 3 |\n| notice | 2 |\n| informational | 3 |\n\n## Facility\n\n| Facility | Lines |\n| --- | ---: |\n| kern | 3 |\n| user | 1 |\n| auth | 5 |\n| local4 | 2 |\n| local7 | 2 |\n\n## CEF severity\n\nNo CEF events."
+  },
+  "reportSources": {
+   "exact": "# Sources\n\n## Hosts and programs\n\n| Host | Program | Lines | Errors or worse |\n| --- | --- | ---: | ---: |\n| fw1 | - | 2 | 1 |\n| db1 | - | 1 | 1 |\n| db1 | postgres | 1 | 1 |\n| db1 | su | 1 | 0 |\n| fw1 | postgres | 1 | 1 |\n| fw1 | su | 1 | 0 |\n| mail.example.test | app | 1 | 1 |\n| web1 | - | 1 | 1 |\n| web1 | app | 1 | 0 |\n| web1 | su | 1 | 1 |\n| web2 | - | 1 | 0 |\n| web2 | postgres | 1 | 1 |\n\n## CEF devices\n\nNo CEF events."
+  },
+  "reportSecurity": {
+   "exact": "# Security Events\n\nNo security events found."
+  }
+ },
+ "21-rfc5424-2.log": {
+  "reportSummary": {
+   "exact": "# Log Summary\n\n9 lines from 4 hosts.\n\n| Format | Lines |\n| --- | ---: |\n| RFC 5424 | 9 |\n\nFirst entry: 2026-07-02T19:32:00\\+01:00 (line 1). Last entry: 2026-10-01T02:50:00Z (line 9).\n\n| Program | Lines |\n| --- | ---: |\n| postgres | 5 |\n| app | 2 |"
+  },
+  "reportParse": {
+   "exact": "# Parse Check\n\nAll 9 lines parsed."
+  },
+  "reportSeverity": {
+   "exact": "# Severity Overview\n\n## Syslog severity\n\n| Severity | Lines |\n| --- | ---: |\n| critical | 2 |\n| error | 1 |\n| notice | 2 |\n| informational | 4 |\n\n## Facility\n\n| Facility | Lines |\n| --- | ---: |\n| kern | 1 |\n| user | 2 |\n| auth | 2 |\n| local4 | 2 |\n| local7 | 2 |\n\n## CEF severity\n\nNo CEF events."
+  },
+  "reportSources": {
+   "exact": "# Sources\n\n## Hosts and programs\n\n| Host | Program | Lines | Errors or worse |\n| --- | --- | ---: | ---: |\n| fw1 | postgres | 2 | 0 |\n| db1 | app | 1 | 1 |\n| db1 | postgres | 1 | 0 |\n| fw1 | - | 1 | 0 |\n| web1 | - | 1 | 0 |\n| web1 | postgres | 1 | 1 |\n| web2 | app | 1 | 0 |\n| web2 | postgres | 1 | 1 |\n\n## CEF devices\n\nNo CEF events."
+  },
+  "reportSecurity": {
+   "exact": "# Security Events\n\nNo security events found."
+  }
+ },
+ "22-rfc5424-3.log": {
+  "reportSummary": {
+   "exact": "# Log Summary\n\n15 lines from 5 hosts.\n\n| Format | Lines |\n| --- | ---: |\n| RFC 5424 | 15 |\n\nFirst entry: 2026-10-10T02:47:00\\+01:00 (line 1). Last entry: 2026-05-25T15:01:00.123Z (line 15).\n\n| Program | Lines |\n| --- | ---: |\n| app | 5 |\n| su | 3 |\n| postgres | 2 |"
+  },
+  "reportParse": {
+   "exact": "# Parse Check\n\nAll 15 lines parsed."
+  },
+  "reportSeverity": {
+   "exact": "# Severity Overview\n\n## Syslog severity\n\n| Severity | Lines |\n| --- | ---: |\n| critical | 4 |\n| error | 1 |\n| notice | 2 |\n| informational | 8 |\n\n## Facility\n\n| Facility | Lines |\n| --- | ---: |\n| kern | 1 |\n| user | 3 |\n| auth | 4 |\n| local4 | 2 |\n| local7 | 5 |\n\n## CEF severity\n\nNo CEF events."
+  },
+  "reportSources": {
+   "exact": "# Sources\n\n## Hosts and programs\n\n| Host | Program | Lines | Errors or worse |\n| --- | --- | ---: | ---: |\n| web2 | app | 4 | 0 |\n| web1 | - | 3 | 2 |\n| fw1 | su | 2 | 1 |\n| db1 | - | 1 | 0 |\n| db1 | app | 1 | 0 |\n| mail.example.test | - | 1 | 0 |\n| mail.example.test | su | 1 | 1 |\n| web1 | postgres | 1 | 0 |\n| web2 | postgres | 1 | 1 |\n\n## CEF devices\n\nNo CEF events."
+  },
+  "reportSecurity": {
+   "exact": "# Security Events\n\nNo security events found."
+  }
+ },
+ "23-rfc5424-4.log": {
+  "reportSummary": {
+   "exact": "# Log Summary\n\n12 lines from 5 hosts.\n\n| Format | Lines |\n| --- | ---: |\n| RFC 5424 | 12 |\n\nFirst entry: 2026-12-13T23:14:00\\+01:00 (line 1). Last entry: 2026-06-01T07:07:00Z (line 12).\n\n| Program | Lines |\n| --- | ---: |\n| app | 3 |\n| postgres | 3 |\n| su | 3 |"
+  },
+  "reportParse": {
+   "exact": "# Parse Check\n\nAll 12 lines parsed."
+  },
+  "reportSeverity": {
+   "exact": "# Severity Overview\n\n## Syslog severity\n\n| Severity | Lines |\n| --- | ---: |\n| critical | 1 |\n| error | 2 |\n| notice | 5 |\n| informational | 4 |\n\n## Facility\n\n| Facility | Lines |\n| --- | ---: |\n| kern | 2 |\n| user | 3 |\n| auth | 1 |\n| local4 | 5 |\n| local7 | 1 |\n\n## CEF severity\n\nNo CEF events."
+  },
+  "reportSources": {
+   "exact": "# Sources\n\n## Hosts and programs\n\n| Host | Program | Lines | Errors or worse |\n| --- | --- | ---: | ---: |\n| web2 | app | 3 | 1 |\n| fw1 | su | 2 | 0 |\n| db1 | - | 1 | 0 |\n| db1 | postgres | 1 | 1 |\n| fw1 | postgres | 1 | 1 |\n| mail.example.test | su | 1 | 0 |\n| web1 | - | 1 | 0 |\n| web1 | postgres | 1 | 0 |\n| web2 | - | 1 | 0 |\n\n## CEF devices\n\nNo CEF events."
+  },
+  "reportSecurity": {
+   "exact": "# Security Events\n\n1 event.\n\n| Event | Count |\n| --- | ---: |\n| su failure | 1 |\n\n## Possible brute force\n\nNo source with 5 or more failed attempts.\n\n## Events\n\n| Line | Time | Event | User | Source |\n| ---: | --- | --- | --- | --- |\n| 6 | 2026-02-13T10:53:00.123Z | su failure | lonvick | - |"
+  }
+ },
+ "24-rfc5424-5.log": {
+  "reportSummary": {
+   "exact": "# Log Summary\n\n15 lines from 5 hosts.\n\n| Format | Lines |\n| --- | ---: |\n| RFC 5424 | 15 |\n\nFirst entry: 2026-08-19T05:37:00\\+01:00 (line 1). Last entry: 2026-03-12T16:00:00.123Z (line 15).\n\n| Program | Lines |\n| --- | ---: |\n| postgres | 5 |\n| app | 4 |\n| su | 4 |"
+  },
+  "reportParse": {
+   "exact": "# Parse Check\n\nAll 15 lines parsed."
+  },
+  "reportSeverity": {
+   "exact": "# Severity Overview\n\n## Syslog severity\n\n| Severity | Lines |\n| --- | ---: |\n| critical | 4 |\n| error | 3 |\n| notice | 2 |\n| informational | 6 |\n\n## Facility\n\n| Facility | Lines |\n| --- | ---: |\n| kern | 3 |\n| user | 2 |\n| auth | 4 |\n| local4 | 2 |\n| local7 | 4 |\n\n## CEF severity\n\nNo CEF events."
+  },
+  "reportSources": {
+   "exact": "# Sources\n\n## Hosts and programs\n\n| Host | Program | Lines | Errors or worse |\n| --- | --- | ---: | ---: |\n| mail.example.test | app | 2 | 1 |\n| mail.example.test | postgres | 2 | 2 |\n| web2 | postgres | 2 | 2 |\n| db1 | app | 1 | 0 |\n| db1 | su | 1 | 0 |\n| fw1 | - | 1 | 0 |\n| fw1 | postgres | 1 | 1 |\n| mail.example.test | su | 1 | 0 |\n| web1 | - | 1 | 1 |\n| web1 | app | 1 | 0 |\n| web1 | su | 1 | 0 |\n| web2 | su | 1 | 0 |\n\n## CEF devices\n\nNo CEF events."
+  },
+  "reportSecurity": {
+   "exact": "# Security Events\n\n1 event.\n\n| Event | Count |\n| --- | ---: |\n| su failure | 1 |\n\n## Possible brute force\n\nNo source with 5 or more failed attempts.\n\n## Events\n\n| Line | Time | Event | User | Source |\n| ---: | --- | --- | --- | --- |\n| 10 | 2026-12-18T17:43:00Z | su failure | lonvick | - |"
+  }
+ },
+ "25-cef-0.log": {
+  "reportSummary": {
+   "exact": "# Log Summary\n\n3 lines from 0 hosts.\n\n| Format | Lines |\n| --- | ---: |\n| CEF | 3 |\n\nFirst entry: Dec 17 03:43:23 (line 3). Last entry: Dec 17 03:43:23 (line 3).\n\nNo program names."
+  },
+  "reportParse": {
+   "exact": "# Parse Check\n\n1 of 3 lines with problems.\n\n| Line | Problem | Text |\n| ---: | --- | --- |\n| 3 | CEF severity 12 is not 0 to 10 or Low, Medium, High, Very-High | Dec 17 03:43:23 CEF:0\\|Example Security\\|Web Proxy\\|2.3\\|1041\\|Malware download block... |"
+  },
+  "reportSeverity": {
+   "exact": "# Severity Overview\n\n## Syslog severity\n\nNo line carries a PRI value.\n\n## Facility\n\nNo line carries a PRI value.\n\n## CEF severity\n\n| Severity | Events |\n| --- | ---: |\n| Low | 1 |\n| High | 1 |"
+  },
+  "reportSources": {
+   "exact": "# Sources\n\n## Hosts and programs\n\nNo host or program names.\n\n## CEF devices\n\n| Vendor | Product | Events |\n| --- | --- | ---: |\n| Example Security | Web Proxy | 2 |\n| Example Security | Edge FW | 1 |\n\n## Top CEF signatures\n\n| Signature | Name | Events |\n| --- | --- | ---: |\n| 1032 | Malware download blocked | 1 |\n| 1041 | Malware download blocked | 1 |\n| 1047 | Port scan detected | 1 |"
+  },
+  "reportSecurity": {
+   "exact": "# Security Events\n\n2 events.\n\n| Event | Count |\n| --- | ---: |\n| CEF : Malware download blocked | 1 |\n| CEF High: Malware download blocked | 1 |\n\n## Possible brute force\n\nNo source with 5 or more failed attempts.\n\n## Events\n\n| Line | Time | Event | User | Source |\n| ---: | --- | --- | --- | --- |\n| 2 | - | CEF High: Malware download blocked | alice | 203.0.113.7 |\n| 3 | Dec 17 03:43:23 | CEF : Malware download blocked | deploy | 203.0.113.7 |"
+  }
+ },
+ "26-cef-1.log": {
+  "reportSummary": {
+   "exact": "# Log Summary\n\n15 lines from 4 hosts.\n\n| Format | Lines |\n| --- | ---: |\n| BSD | 6 |\n| CEF | 9 |\n\nFirst entry: Dec 15 10:54:14 (line 1). Last entry: Feb 18 22:49:40 (line 14).\n\n| Program | Lines |\n| --- | ---: |\n| CEF | 6 |"
+  },
+  "reportParse": {
+   "exact": "# Parse Check\n\n1 of 15 lines with problems.\n\n| Line | Problem | Text |\n| ---: | --- | --- |\n| 8 | CEF severity 12 is not 0 to 10 or Low, Medium, High, Very-High | CEF:0\\|Example Security\\|IDS\\|2.0\\|1025\\|Blocked URL\\|12\\|src=203.0.113.7 dst=10.0.0.5 ... |"
+  },
+  "reportSeverity": {
+   "exact": "# Severity Overview\n\n## Syslog severity\n\nNo line carries a PRI value.\n\n## Facility\n\nNo line carries a PRI value.\n\n## CEF severity\n\n| Severity | Events |\n| --- | ---: |\n| Low | 3 |\n| Medium | 1 |\n| High | 3 |\n| Very-High | 1 |"
+  },
+  "reportSources": {
+   "exact": "# Sources\n\n## Hosts and programs\n\n| Host | Program | Lines | Errors or worse |\n| --- | --- | ---: | ---: |\n| db1 | CEF | 2 | 0 |\n| web2 | CEF | 2 | 0 |\n| fw1 | CEF | 1 | 0 |\n| web1 | CEF | 1 | 0 |\n\n## CEF devices\n\n| Vendor | Product | Events |\n| --- | --- | ---: |\n| Example Security | IDS | 5 |\n| Example Security | Edge FW | 2 |\n| Example Security | Web Proxy | 2 |\n\n## Top CEF signatures\n\n| Signature | Name | Events |\n| --- | --- | ---: |\n| 1006 | Malware download blocked | 1 |\n| 1010 | Allowed connection | 1 |\n| 1013 | Blocked URL | 1 |\n| 1018 | Malware download blocked | 1 |\n| 1025 | Blocked URL | 1 |\n| 1035 | Pipe\\|in name | 1 |\n| 1039 | Malware download blocked | 1 |\n| 1046 | Blocked URL | 1 |\n| 1048 | Port scan detected | 1 |"
+  },
+  "reportSecurity": {
+   "exact": "# Security Events\n\n5 events.\n\n| Event | Count |\n| --- | ---: |\n| CEF : Blocked URL | 1 |\n| CEF High: Blocked URL | 1 |\n| CEF High: Malware download blocked | 1 |\n| CEF High: Port scan detected | 1 |\n| CEF Very-High: Allowed connection | 1 |\n\n## Possible brute force\n\nNo source with 5 or more failed attempts.\n\n## Events\n\n| Line | Time | Event | User | Source |\n| ---: | --- | --- | --- | --- |\n| 3 | - | CEF High: Malware download blocked | admin | 192.0.2.44 |\n| 6 | Sep 20 23:12:19 | CEF High: Port scan detected | - | 10.0.0.8 |\n| 8 | - | CEF : Blocked URL | root | 203.0.113.7 |\n| 9 | - | CEF Very-High: Allowed connection | admin | 203.0.113.7 |\n| 15 | - | CEF High: Blocked URL | backup | 10.0.0.8 |"
+  }
+ },
+ "27-cef-2.log": {
+  "reportSummary": {
+   "exact": "# Log Summary\n\n17 lines from 2 hosts.\n\n| Format | Lines |\n| --- | ---: |\n| BSD | 2 |\n| CEF | 15 |\n\nFirst entry: Aug 27 23:45:04 (line 1). Last entry: Jan  3 13:53:49 (line 17).\n\n| Program | Lines |\n| --- | ---: |\n| CEF | 2 |"
+  },
+  "reportParse": {
+   "exact": "# Parse Check\n\n1 of 17 lines with problems.\n\n| Line | Problem | Text |\n| ---: | --- | --- |\n| 13 | CEF severity 12 is not 0 to 10 or Low, Medium, High, Very-High | CEF:0\\|Example Security\\|Web Proxy\\|2.4\\|1049\\|Pipe\\\\\\|in name\\|12\\|src=203.0.113.7 dst=1... |"
+  },
+  "reportSeverity": {
+   "exact": "# Severity Overview\n\n## Syslog severity\n\nNo line carries a PRI value.\n\n## Facility\n\nNo line carries a PRI value.\n\n## CEF severity\n\n| Severity | Events |\n| --- | ---: |\n| Low | 7 |\n| Medium | 2 |\n| High | 3 |\n| Very-High | 2 |"
+  },
+  "reportSources": {
+   "exact": "# Sources\n\n## Hosts and programs\n\n| Host | Program | Lines | Errors or worse |\n| --- | --- | ---: | ---: |\n| mail.example.test | CEF | 1 | 0 |\n| web1 | CEF | 1 | 0 |\n\n## CEF devices\n\n| Vendor | Product | Events |\n| --- | --- | ---: |\n| Example Security | Edge FW | 5 |\n| Example Security | IDS | 5 |\n| Example Security | Web Proxy | 5 |\n\n## Top CEF signatures\n\n| Signature | Name | Events |\n| --- | --- | ---: |\n| 1023 | Blocked URL | 2 |\n| 1006 | Allowed connection | 1 |\n| 1006 | Pipe\\|in name | 1 |\n| 1008 | Pipe\\|in name | 1 |\n| 1016 | Allowed connection | 1 |\n| 1017 | Port scan detected | 1 |\n| 1031 | Blocked URL | 1 |\n| 1035 | Blocked URL | 1 |\n| 1038 | Pipe\\|in name | 1 |\n| 1040 | Port scan detected | 1 |\n| 1045 | Blocked URL | 1 |\n| 1046 | Port scan detected | 1 |\n| 1047 | Pipe\\|in name | 1 |\n| 1049 | Pipe\\|in name | 1 |"
+  },
+  "reportSecurity": {
+   "exact": "# Security Events\n\n6 events.\n\n| Event | Count |\n| --- | ---: |\n| CEF High: Pipe\\|in name | 2 |\n| CEF : Pipe\\|in name | 1 |\n| CEF High: Blocked URL | 1 |\n| CEF Very-High: Allowed connection | 1 |\n| CEF Very-High: Port scan detected | 1 |\n\n## Possible brute force\n\nNo source with 5 or more failed attempts.\n\n## Events\n\n| Line | Time | Event | User | Source |\n| ---: | --- | --- | --- | --- |\n| 2 | - | CEF Very-High: Allowed connection | - | 192.0.2.44 |\n| 4 | - | CEF High: Pipe\\|in name | - | 203.0.113.7 |\n| 6 | - | CEF High: Pipe\\|in name | - | 10.0.0.8 |\n| 7 | - | CEF High: Blocked URL | - | 192.0.2.44 |\n| 13 | - | CEF : Pipe\\|in name | admin | 203.0.113.7 |\n| 16 | Jun 14 16:35:33 | CEF Very-High: Port scan detected | - | 203.0.113.7 |"
+  }
+ },
+ "28-cef-3.log": {
+  "reportSummary": {
+   "exact": "# Log Summary\n\n20 lines from 4 hosts.\n\n| Format | Lines |\n| --- | ---: |\n| BSD | 8 |\n| CEF | 12 |\n\nFirst entry: May  6 10:52:42 (line 1). Last entry: Jun 25 20:08:55 (line 19).\n\n| Program | Lines |\n| --- | ---: |\n| CEF | 8 |"
+  },
+  "reportParse": {
+   "exact": "# Parse Check\n\n1 of 20 lines with problems.\n\n| Line | Problem | Text |\n| ---: | --- | --- |\n| 12 | CEF severity 12 is not 0 to 10 or Low, Medium, High, Very-High | CEF:0\\|Example Security\\|Edge FW\\|2.1\\|1035\\|Pipe\\\\\\|in name\\|12\\|src=198.51.100.23 dst=1... |"
+  },
+  "reportSeverity": {
+   "exact": "# Severity Overview\n\n## Syslog severity\n\nNo line carries a PRI value.\n\n## Facility\n\nNo line carries a PRI value.\n\n## CEF severity\n\n| Severity | Events |\n| --- | ---: |\n| Low | 3 |\n| Medium | 2 |\n| High | 3 |\n| Very-High | 3 |"
+  },
+  "reportSources": {
+   "exact": "# Sources\n\n## Hosts and programs\n\n| Host | Program | Lines | Errors or worse |\n| --- | --- | ---: | ---: |\n| db1 | CEF | 3 | 0 |\n| fw1 | CEF | 2 | 0 |\n| web2 | CEF | 2 | 0 |\n| web1 | CEF | 1 | 0 |\n\n## CEF devices\n\n| Vendor | Product | Events |\n| --- | --- | ---: |\n| Example Security | Web Proxy | 6 |\n| Example Security | Edge FW | 3 |\n| Example Security | IDS | 3 |\n\n## Top CEF signatures\n\n| Signature | Name | Events |\n| --- | --- | ---: |\n| 1004 | Allowed connection | 1 |\n| 1011 | Allowed connection | 1 |\n| 1015 | Allowed connection | 1 |\n| 1016 | Pipe\\|in name | 1 |\n| 1019 | Allowed connection | 1 |\n| 1021 | Malware download blocked | 1 |\n| 1029 | Pipe\\|in name | 1 |\n| 1033 | Port scan detected | 1 |\n| 1035 | Pipe\\|in name | 1 |\n| 1039 | Blocked URL | 1 |\n| 1044 | Allowed connection | 1 |\n| 1045 | Pipe\\|in name | 1 |"
+  },
+  "reportSecurity": {
+   "exact": "# Security Events\n\n7 events.\n\n| Event | Count |\n| --- | ---: |\n| CEF High: Allowed connection | 2 |\n| CEF Very-High: Pipe\\|in name | 2 |\n| CEF : Pipe\\|in name | 1 |\n| CEF High: Port scan detected | 1 |\n| CEF Very-High: Blocked URL | 1 |\n\n## Possible brute force\n\nNo source with 5 or more failed attempts.\n\n## Events\n\n| Line | Time | Event | User | Source |\n| ---: | --- | --- | --- | --- |\n| 3 | - | CEF Very-High: Blocked URL | - | 10.0.0.8 |\n| 4 | - | CEF High: Port scan detected | deploy | 192.0.2.44 |\n| 6 | - | CEF High: Allowed connection | admin | 198.51.100.23 |\n| 8 | - | CEF Very-High: Pipe\\|in name | - | 192.0.2.44 |\n| 12 | - | CEF : Pipe\\|in name | - | 198.51.100.23 |\n| 13 | - | CEF High: Allowed connection | - | 198.51.100.23 |\n| 16 | - | CEF Very-High: Pipe\\|in name | backup | 10.0.0.8 |"
+  }
+ },
+ "29-cef-4.log": {
+  "reportSummary": {
+   "exact": "# Log Summary\n\n11 lines from 2 hosts.\n\n| Format | Lines |\n| --- | ---: |\n| BSD | 2 |\n| CEF | 9 |\n\nFirst entry: Oct 20 06:08:43 (line 1). Last entry: Nov 10 18:00:14 (line 11).\n\n| Program | Lines |\n| --- | ---: |\n| CEF | 2 |"
+  },
+  "reportParse": {
+   "exact": "# Parse Check\n\n1 of 11 lines with problems.\n\n| Line | Problem | Text |\n| ---: | --- | --- |\n| 3 | CEF severity 12 is not 0 to 10 or Low, Medium, High, Very-High | CEF:0\\|Example Security\\|Edge FW\\|2.7\\|1011\\|Pipe\\\\\\|in name\\|12\\|src=203.0.113.7 dst=10.... |"
+  },
+  "reportSeverity": {
+   "exact": "# Severity Overview\n\n## Syslog severity\n\nNo line carries a PRI value.\n\n## Facility\n\nNo line carries a PRI value.\n\n## CEF severity\n\n| Severity | Events |\n| --- | ---: |\n| Low | 2 |\n| Medium | 1 |\n| High | 2 |\n| Very-High | 3 |"
+  },
+  "reportSources": {
+   "exact": "# Sources\n\n## Hosts and programs\n\n| Host | Program | Lines | Errors or worse |\n| --- | --- | ---: | ---: |\n| mail.example.test | CEF | 1 | 0 |\n| web2 | CEF | 1 | 0 |\n\n## CEF devices\n\n| Vendor | Product | Events |\n| --- | --- | ---: |\n| Example Security | Web Proxy | 5 |\n| Example Security | Edge FW | 3 |\n| Example Security | IDS | 1 |\n\n## Top CEF signatures\n\n| Signature | Name | Events |\n| --- | --- | ---: |\n| 1011 | Pipe\\|in name | 1 |\n| 1016 | Pipe\\|in name | 1 |\n| 1020 | Blocked URL | 1 |\n| 1025 | Port scan detected | 1 |\n| 1031 | Port scan detected | 1 |\n| 1032 | Pipe\\|in name | 1 |\n| 1035 | Blocked URL | 1 |\n| 1047 | Malware download blocked | 1 |\n| 1049 | Pipe\\|in name | 1 |"
+  },
+  "reportSecurity": {
+   "exact": "# Security Events\n\n6 events.\n\n| Event | Count |\n| --- | ---: |\n| CEF : Pipe\\|in name | 1 |\n| CEF High: Blocked URL | 1 |\n| CEF High: Pipe\\|in name | 1 |\n| CEF Very-High: Blocked URL | 1 |\n| CEF Very-High: Pipe\\|in name | 1 |\n| CEF Very-High: Port scan detected | 1 |\n\n## Possible brute force\n\nNo source with 5 or more failed attempts.\n\n## Events\n\n| Line | Time | Event | User | Source |\n| ---: | --- | --- | --- | --- |\n| 2 | - | CEF Very-High: Port scan detected | backup | 192.0.2.44 |\n| 3 | - | CEF : Pipe\\|in name | - | 203.0.113.7 |\n| 5 | - | CEF Very-High: Pipe\\|in name | root | 203.0.113.7 |\n| 6 | - | CEF Very-High: Blocked URL | - | 203.0.113.7 |\n| 9 | Nov 13 13:20:53 | CEF High: Pipe\\|in name | - | 192.0.2.44 |\n| 10 | Jun  8 20:30:59 | CEF High: Blocked URL | - | 192.0.2.44 |"
+  }
+ },
+ "30-cef-5.log": {
+  "reportSummary": {
+   "exact": "# Log Summary\n\n15 lines from 1 host.\n\n| Format | Lines |\n| --- | ---: |\n| BSD | 1 |\n| CEF | 14 |\n\nFirst entry: Jun  9 05:16:33 (line 5). Last entry: Aug 10 07:06:15 (line 15).\n\n| Program | Lines |\n| --- | ---: |\n| CEF | 1 |"
+  },
+  "reportParse": {
+   "exact": "# Parse Check\n\n1 of 15 lines with problems.\n\n| Line | Problem | Text |\n| ---: | --- | --- |\n| 8 | CEF severity 12 is not 0 to 10 or Low, Medium, High, Very-High | CEF:0\\|Example Security\\|Web Proxy\\|2.5\\|1033\\|Allowed connection\\|12\\|src=203.0.113.7 ... |"
+  },
+  "reportSeverity": {
+   "exact": "# Severity Overview\n\n## Syslog severity\n\nNo line carries a PRI value.\n\n## Facility\n\nNo line carries a PRI value.\n\n## CEF severity\n\n| Severity | Events |\n| --- | ---: |\n| Low | 6 |\n| Medium | 1 |\n| High | 3 |\n| Very-High | 3 |"
+  },
+  "reportSources": {
+   "exact": "# Sources\n\n## Hosts and programs\n\n| Host | Program | Lines | Errors or worse |\n| --- | --- | ---: | ---: |\n| fw1 | CEF | 1 | 0 |\n\n## CEF devices\n\n| Vendor | Product | Events |\n| --- | --- | ---: |\n| Example Security | Edge FW | 10 |\n| Example Security | Web Proxy | 3 |\n| Example Security | IDS | 1 |\n\n## Top CEF signatures\n\n| Signature | Name | Events |\n| --- | --- | ---: |\n| 1031 | Pipe\\|in name | 2 |\n| 1049 | Port scan detected | 2 |\n| 1002 | Blocked URL | 1 |\n| 1008 | Pipe\\|in name | 1 |\n| 1020 | Malware download blocked | 1 |\n| 1025 | Blocked URL | 1 |\n| 1033 | Allowed connection | 1 |\n| 1036 | Port scan detected | 1 |\n| 1037 | Blocked URL | 1 |\n| 1042 | Allowed connection | 1 |\n| 1045 | Port scan detected | 1 |\n| 1049 | Blocked URL | 1 |"
+  },
+  "reportSecurity": {
+   "exact": "# Security Events\n\n7 events.\n\n| Event | Count |\n| --- | ---: |\n| CEF High: Pipe\\|in name | 2 |\n| CEF : Allowed connection | 1 |\n| CEF High: Malware download blocked | 1 |\n| CEF Very-High: Allowed connection | 1 |\n| CEF Very-High: Blocked URL | 1 |\n| CEF Very-High: Port scan detected | 1 |\n\n## Possible brute force\n\nNo source with 5 or more failed attempts.\n\n## Events\n\n| Line | Time | Event | User | Source |\n| ---: | --- | --- | --- | --- |\n| 2 | - | CEF Very-High: Port scan detected | - | 10.0.0.8 |\n| 5 | Jun  9 05:16:33 | CEF Very-High: Blocked URL | - | 198.51.100.23 |\n| 6 | - | CEF Very-High: Allowed connection | alice | 198.51.100.23 |\n| 7 | - | CEF High: Pipe\\|in name | - | 203.0.113.7 |\n| 8 | - | CEF : Allowed connection | alice | 203.0.113.7 |\n| 10 | - | CEF High: Malware download blocked | - | 10.0.0.8 |\n| 11 | - | CEF High: Pipe\\|in name | - | 192.0.2.44 |"
+  }
+ },
+ "31-mixed.log": {
+  "reportSummary": {
+   "exact": "# Log Summary\n\n40 lines from 5 hosts.\n\n| Format | Lines |\n| --- | ---: |\n| RFC 5424 | 16 |\n| BSD | 15 |\n| CEF | 9 |\n\nFirst entry: 2026-01-19T12:16:00.123Z (line 1). Last entry: 2026-04-19T17:44:00\\+01:00 (line 40).\n\n| Program | Lines |\n| --- | ---: |\n| app | 6 |\n| su | 6 |\n| postgres | 5 |\n| kernel | 3 |\n| sshd | 3 |\n| sudo | 3 |\n| CEF | 1 |\n| CRON | 1 |\n| systemd | 1 |"
+  },
+  "reportParse": {
+   "exact": "# Parse Check\n\nAll 40 lines parsed."
+  },
+  "reportSeverity": {
+   "exact": "# Severity Overview\n\n## Syslog severity\n\n| Severity | Lines |\n| --- | ---: |\n| critical | 4 |\n| error | 1 |\n| notice | 3 |\n| informational | 9 |\n\n## Facility\n\n| Facility | Lines |\n| --- | ---: |\n| kern | 1 |\n| user | 6 |\n| auth | 5 |\n| local4 | 3 |\n| local7 | 2 |\n\n## CEF severity\n\n| Severity | Events |\n| --- | ---: |\n| Low | 5 |\n| Medium | 1 |\n| High | 2 |\n| Very-High | 1 |"
+  },
+  "reportSources": {
+   "exact": "# Sources\n\n## Hosts and programs\n\n| Host | Program | Lines | Errors or worse |\n| --- | --- | ---: | ---: |\n| web1 | app | 3 | 1 |\n| web2 | su | 3 | 0 |\n| db1 | postgres | 2 | 0 |\n| mail.example.test | postgres | 2 | 1 |\n| web1 | su | 2 | 1 |\n| db1 | - | 1 | 1 |\n| db1 | CEF | 1 | 0 |\n| db1 | sshd | 1 | 0 |\n| db1 | sudo | 1 | 0 |\n| db1 | systemd | 1 | 0 |\n| fw1 | - | 1 | 0 |\n| fw1 | app | 1 | 0 |\n| fw1 | kernel | 1 | 0 |\n| fw1 | postgres | 1 | 0 |\n| fw1 | sudo | 1 | 0 |\n| mail.example.test | app | 1 | 0 |\n| mail.example.test | kernel | 1 | 0 |\n| mail.example.test | sshd | 1 | 0 |\n| mail.example.test | su | 1 | 1 |\n| mail.example.test | sudo | 1 | 0 |\n| web1 | kernel | 1 | 0 |\n| web1 | sshd | 1 | 0 |\n| web2 | CRON | 1 | 0 |\n| web2 | app | 1 | 0 |\n\n## CEF devices\n\n| Vendor | Product | Events |\n| --- | --- | ---: |\n| Example Security | IDS | 4 |\n| Example Security | Edge FW | 3 |\n| Example Security | Web Proxy | 2 |\n\n## Top CEF signatures\n\n| Signature | Name | Events |\n| --- | --- | ---: |\n| 1000 | Malware download blocked | 1 |\n| 1020 | Blocked URL | 1 |\n| 1038 | Allowed connection | 1 |\n| 1039 | Allowed connection | 1 |\n| 1040 | Malware download blocked | 1 |\n| 1040 | Pipe\\|in name | 1 |\n| 1042 | Port scan detected | 1 |\n| 1046 | Allowed connection | 1 |\n| 1049 | Malware download blocked | 1 |"
+  },
+  "reportSecurity": {
+   "exact": "# Security Events\n\n11 events.\n\n| Event | Count |\n| --- | ---: |\n| sudo | 3 |\n| CEF High: Malware download blocked | 2 |\n| accepted login | 2 |\n| authentication failure | 2 |\n| CEF Very-High: Blocked URL | 1 |\n| failed login | 1 |\n\n## Possible brute force\n\nNo source with 5 or more failed attempts.\n\n## Events\n\n| Line | Time | Event | User | Source |\n| ---: | --- | --- | --- | --- |\n| 2 | Oct 27 02:06:02 | accepted login | backup | 10.0.0.8 |\n| 6 | Aug 11 21:14:14 | accepted login | deploy | 203.0.113.7 |\n| 9 | Feb 19 14:26:55 | authentication failure | alice | - |\n| 10 | Sep 16 05:11:33 | sudo | admin | - |\n| 11 | Jan  7 22:32:15 | CEF Very-High: Blocked URL | - | 192.0.2.44 |\n| 16 | Sep  2 09:44:47 | CEF High: Malware download blocked | - | 10.0.0.8 |\n| 25 | Jan  5 14:58:06 | sudo | root | - |\n| 30 | - | CEF High: Malware download blocked | - | 203.0.113.7 |\n| 34 | Sep  5 15:46:26 | authentication failure | alice | - |\n| 36 | Jun  9 22:26:53 | failed login | backup | 10.0.0.8 |\n| 37 | May 21 15:50:30 | sudo | alice | - |"
+  }
+ },
+ "32-brute-force.log": {
+  "reportSummary": {
+   "exact": "# Log Summary\n\n13 lines from 1 host.\n\n| Format | Lines |\n| --- | ---: |\n| BSD | 13 |\n\nFirst entry: Nov 18 10:00:00 (line 1). Last entry: Nov 18 10:01:00 (line 13).\n\n| Program | Lines |\n| --- | ---: |\n| sshd | 13 |"
+  },
+  "reportParse": {
+   "exact": "# Parse Check\n\nAll 13 lines parsed."
+  },
+  "reportSeverity": {
+   "exact": "# Severity Overview\n\n## Syslog severity\n\nNo line carries a PRI value.\n\n## Facility\n\nNo line carries a PRI value.\n\n## CEF severity\n\nNo CEF events."
+  },
+  "reportSources": {
+   "exact": "# Sources\n\n## Hosts and programs\n\n| Host | Program | Lines | Errors or worse |\n| --- | --- | ---: | ---: |\n| web1 | sshd | 13 | 0 |\n\n## CEF devices\n\nNo CEF events."
+  },
+  "reportSecurity": {
+   "exact": "# Security Events\n\n13 events.\n\n| Event | Count |\n| --- | ---: |\n| failed login | 12 |\n| accepted login | 1 |\n\n## Possible brute force\n\n| Source | Failed attempts |\n| --- | ---: |\n| 203.0.113.99 | 12 |\n\n## Events\n\n| Line | Time | Event | User | Source |\n| ---: | --- | --- | --- | --- |\n| 1 | Nov 18 10:00:00 | failed login | root | 203.0.113.99 |\n| 2 | Nov 18 10:00:01 | failed login | root | 203.0.113.99 |\n| 3 | Nov 18 10:00:02 | failed login | root | 203.0.113.99 |\n| 4 | Nov 18 10:00:03 | failed login | root | 203.0.113.99 |\n| 5 | Nov 18 10:00:04 | failed login | root | 203.0.113.99 |\n| 6 | Nov 18 10:00:05 | failed login | root | 203.0.113.99 |\n| 7 | Nov 18 10:00:06 | failed login | root | 203.0.113.99 |\n| 8 | Nov 18 10:00:07 | failed login | root | 203.0.113.99 |\n| 9 | Nov 18 10:00:08 | failed login | root | 203.0.113.99 |\n| 10 | Nov 18 10:00:09 | failed login | root | 203.0.113.99 |\n| 11 | Nov 18 10:00:10 | failed login | root | 203.0.113.99 |\n| 12 | Nov 18 10:00:11 | failed login | root | 203.0.113.99 |\n| 13 | Nov 18 10:01:00 | accepted login | root | 203.0.113.99 |"
+  }
+ },
+ "33-bad-lines.log": {
+  "reportSummary": {
+   "exact": "# Log Summary\n\n5 lines from 0 hosts.\n\n| Format | Lines |\n| --- | ---: |\n| CEF | 2 |\n| unknown | 3 |\n\nNo timestamps.\n\nNo program names."
+  },
+  "reportParse": {
+   "exact": "# Parse Check\n\n5 of 5 lines with problems.\n\n| Line | Problem | Text |\n| ---: | --- | --- |\n| 1 | PRI 999 is above 191 | \\<999\\>too big |\n| 2 | the text after the PRI is neither RFC 5424 nor BSD syslog | \\<12\\>not a syslog line |\n| 3 | the CEF header has 3 of 8 fields | CEF:0\\|Short\\|Header |\n| 4 | CEF severity 99 is not 0 to 10 or Low, Medium, High, Very-High | CEF:0\\|V\\|P\\|1\\|2\\|N\\|99\\|x=y |\n| 5 | the line matches no syslog or CEF format | just text |"
+  },
+  "reportSeverity": {
+   "exact": "# Severity Overview\n\n## Syslog severity\n\n| Severity | Lines |\n| --- | ---: |\n| warning | 1 |\n\n## Facility\n\n| Facility | Lines |\n| --- | ---: |\n| user | 1 |\n\n## CEF severity\n\nNo CEF events."
+  },
+  "reportSources": {
+   "exact": "# Sources\n\n## Hosts and programs\n\nNo host or program names.\n\n## CEF devices\n\n| Vendor | Product | Events |\n| --- | --- | ---: |\n| V | P | 1 |\n\n## Top CEF signatures\n\n| Signature | Name | Events |\n| --- | --- | ---: |\n| 2 | N | 1 |"
+  },
+  "reportSecurity": {
+   "exact": "# Security Events\n\n1 event.\n\n| Event | Count |\n| --- | ---: |\n| CEF : N | 1 |\n\n## Possible brute force\n\nNo source with 5 or more failed attempts.\n\n## Events\n\n| Line | Time | Event | User | Source |\n| ---: | --- | --- | --- | --- |\n| 4 | - | CEF : N | - | - |"
+  }
+ },
+ "34-empty.log": {
+  "reportSummary": {
+   "exact": "# Log Summary\n\nThe file contains no log lines."
+  },
+  "reportParse": {
+   "exact": "# Parse Check\n\nThe file contains no log lines."
+  },
+  "reportSeverity": {
+   "exact": "# Severity Overview\n\nThe file contains no log lines."
+  },
+  "reportSources": {
+   "exact": "# Sources\n\nThe file contains no log lines."
+  },
+  "reportSecurity": {
+   "exact": "# Security Events\n\nThe file contains no log lines."
+  }
+ },
+ "35-blank.log": {
+  "reportSummary": {
+   "exact": "# Log Summary\n\nThe file contains no log lines."
+  },
+  "reportParse": {
+   "exact": "# Parse Check\n\nThe file contains no log lines."
+  },
+  "reportSeverity": {
+   "exact": "# Severity Overview\n\nThe file contains no log lines."
+  },
+  "reportSources": {
+   "exact": "# Sources\n\nThe file contains no log lines."
+  },
+  "reportSecurity": {
+   "exact": "# Security Events\n\nThe file contains no log lines."
+  }
+ },
+ "36-crlf.log": {
+  "reportSummary": {
+   "exact": "# Log Summary\n\n8 lines from 4 hosts.\n\n| Format | Lines |\n| --- | ---: |\n| BSD | 8 |\n\nFirst entry: Aug  3 11:56:23 (line 1). Last entry: Nov 14 06:55:34 (line 8).\n\n| Program | Lines |\n| --- | ---: |\n| dhcpd | 2 |\n| postfix/smtpd | 2 |\n| sshd | 1 |\n| su | 1 |\n| sudo | 1 |\n| systemd | 1 |"
+  },
+  "reportParse": {
+   "exact": "# Parse Check\n\nAll 8 lines parsed."
+  },
+  "reportSeverity": {
+   "exact": "# Severity Overview\n\n## Syslog severity\n\n| Severity | Lines |\n| --- | ---: |\n| emergency | 1 |\n| critical | 1 |\n| notice | 2 |\n\n## Facility\n\n| Facility | Lines |\n| --- | ---: |\n| kern | 1 |\n| user | 1 |\n| auth | 1 |\n| local4 | 1 |\n\n## CEF severity\n\nNo CEF events."
+  },
+  "reportSources": {
+   "exact": "# Sources\n\n## Hosts and programs\n\n| Host | Program | Lines | Errors or worse |\n| --- | --- | ---: | ---: |\n| db1 | dhcpd | 1 | 0 |\n| db1 | su | 1 | 0 |\n| db1 | sudo | 1 | 0 |\n| fw1 | postfix/smtpd | 1 | 1 |\n| fw1 | sshd | 1 | 0 |\n| mail.example.test | postfix/smtpd | 1 | 1 |\n| mail.example.test | systemd | 1 | 0 |\n| web1 | dhcpd | 1 | 0 |\n\n## CEF devices\n\nNo CEF events."
+  },
+  "reportSecurity": {
+   "exact": "# Security Events\n\n3 events.\n\n| Event | Count |\n| --- | ---: |\n| accepted login | 1 |\n| authentication failure | 1 |\n| sudo | 1 |\n\n## Possible brute force\n\nNo source with 5 or more failed attempts.\n\n## Events\n\n| Line | Time | Event | User | Source |\n| ---: | --- | --- | --- | --- |\n| 3 | Dec 10 15:32:47 | authentication failure | alice | - |\n| 4 | Mar 18 00:56:12 | accepted login | admin | 10.0.0.8 |\n| 8 | Nov 14 06:55:34 | sudo | backup | - |"
+  }
+ },
+ "37-bom.log": {
+  "reportSummary": {
+   "exact": "# Log Summary\n\n4 lines from 3 hosts.\n\n| Format | Lines |\n| --- | ---: |\n| BSD | 4 |\n\nFirst entry: Sep 20 16:05:14 (line 1). Last entry: Feb 25 00:45:22 (line 4).\n\n| Program | Lines |\n| --- | ---: |\n| CRON | 2 |\n| app | 1 |\n| systemd | 1 |"
+  },
+  "reportParse": {
+   "exact": "# Parse Check\n\nAll 4 lines parsed."
+  },
+  "reportSeverity": {
+   "exact": "# Severity Overview\n\n## Syslog severity\n\n| Severity | Lines |\n| --- | ---: |\n| error | 1 |\n\n## Facility\n\n| Facility | Lines |\n| --- | ---: |\n| user | 1 |\n\n## CEF severity\n\nNo CEF events."
+  },
+  "reportSources": {
+   "exact": "# Sources\n\n## Hosts and programs\n\n| Host | Program | Lines | Errors or worse |\n| --- | --- | ---: | ---: |\n| web2 | CRON | 2 | 0 |\n| fw1 | systemd | 1 | 0 |\n| mail.example.test | app | 1 | 1 |\n\n## CEF devices\n\nNo CEF events."
+  },
+  "reportSecurity": {
+   "exact": "# Security Events\n\nNo security events found."
+  }
+ },
+ "38-iso-bsd.log": {
+  "reportSummary": {
+   "exact": "# Log Summary\n\n2 lines from 1 host.\n\n| Format | Lines |\n| --- | ---: |\n| BSD | 2 |\n\nFirst entry: 2026-11-18T10:00:00\\+01:00 (line 1). Last entry: 2026-11-18T10:00:01Z (line 2).\n\n| Program | Lines |\n| --- | ---: |\n| nginx | 1 |\n| sshd | 1 |"
+  },
+  "reportParse": {
+   "exact": "# Parse Check\n\nAll 2 lines parsed."
+  },
+  "reportSeverity": {
+   "exact": "# Severity Overview\n\n## Syslog severity\n\nNo line carries a PRI value.\n\n## Facility\n\nNo line carries a PRI value.\n\n## CEF severity\n\nNo CEF events."
+  },
+  "reportSources": {
+   "exact": "# Sources\n\n## Hosts and programs\n\n| Host | Program | Lines | Errors or worse |\n| --- | --- | ---: | ---: |\n| web1 | nginx | 1 | 0 |\n| web1 | sshd | 1 | 0 |\n\n## CEF devices\n\nNo CEF events."
+  },
+  "reportSecurity": {
+   "exact": "# Security Events\n\n1 event.\n\n| Event | Count |\n| --- | ---: |\n| failed login | 1 |\n\n## Possible brute force\n\nNo source with 5 or more failed attempts.\n\n## Events\n\n| Line | Time | Event | User | Source |\n| ---: | --- | --- | --- | --- |\n| 2 | 2026-11-18T10:00:01Z | failed login | alice | 192.0.2.1 |"
+  }
+ },
+ "39-no-program.log": {
+  "reportSummary": {
+   "exact": "# Log Summary\n\n1 line from 1 host.\n\n| Format | Lines |\n| --- | ---: |\n| BSD | 1 |\n\nFirst entry: Nov 18 10:00:00 (line 1). Last entry: Nov 18 10:00:00 (line 1).\n\nNo program names."
+  },
+  "reportParse": {
+   "exact": "# Parse Check\n\nAll 1 line parsed."
+  },
+  "reportSeverity": {
+   "exact": "# Severity Overview\n\n## Syslog severity\n\nNo line carries a PRI value.\n\n## Facility\n\nNo line carries a PRI value.\n\n## CEF severity\n\nNo CEF events."
+  },
+  "reportSources": {
+   "exact": "# Sources\n\n## Hosts and programs\n\n| Host | Program | Lines | Errors or worse |\n| --- | --- | ---: | ---: |\n| web1 | - | 1 | 0 |\n\n## CEF devices\n\nNo CEF events."
+  },
+  "reportSecurity": {
+   "exact": "# Security Events\n\nNo security events found."
+  }
+ },
+ "40-long-lines.log": {
+  "reportSummary": {
+   "exact": "# Log Summary\n\n5 lines from 1 host.\n\n| Format | Lines |\n| --- | ---: |\n| BSD | 5 |\n\nFirst entry: Nov 18 10:00:00 (line 1). Last entry: Nov 18 10:00:00 (line 5).\n\n| Program | Lines |\n| --- | ---: |\n| app | 5 |"
+  },
+  "reportParse": {
+   "exact": "# Parse Check\n\nAll 5 lines parsed."
+  },
+  "reportSeverity": {
+   "exact": "# Severity Overview\n\n## Syslog severity\n\nNo line carries a PRI value.\n\n## Facility\n\nNo line carries a PRI value.\n\n## CEF severity\n\nNo CEF events."
+  },
+  "reportSources": {
+   "exact": "# Sources\n\n## Hosts and programs\n\n| Host | Program | Lines | Errors or worse |\n| --- | --- | ---: | ---: |\n| web1 | app | 5 | 0 |\n\n## CEF devices\n\nNo CEF events."
+  },
+  "reportSecurity": {
+   "exact": "# Security Events\n\nNo security events found."
+  }
+ },
+ "41-many-lines.log": {
+  "reportSummary": {
+   "exact": "# Log Summary\n\n3000 lines from 5 hosts.\n\n| Format | Lines |\n| --- | ---: |\n| BSD | 3000 |\n\nFirst entry: Apr  2 20:38:15 (line 1). Last entry: Feb  2 12:54:01 (line 3000).\n\n| Program | Lines |\n| --- | ---: |\n| sshd | 955 |\n| CRON | 376 |\n| kernel | 347 |\n| su | 328 |\n| sudo | 327 |\n| systemd | 320 |\n| postfix/smtpd | 124 |\n| dhcpd | 122 |\n| app | 101 |"
+  },
+  "reportParse": {
+   "exact": "# Parse Check\n\nAll 3000 lines parsed."
+  },
+  "reportSeverity": {
+   "exact": "# Severity Overview\n\n## Syslog severity\n\n| Severity | Lines |\n| --- | ---: |\n| emergency | 43 |\n| critical | 42 |\n| error | 39 |\n| notice | 88 |\n| informational | 92 |\n| debug | 43 |\n\n## Facility\n\n| Facility | Lines |\n| --- | ---: |\n| kern | 43 |\n| user | 85 |\n| auth | 91 |\n| authpriv | 43 |\n| local4 | 42 |\n| local7 | 43 |\n\n## CEF severity\n\nNo CEF events."
+  },
+  "reportSources": {
+   "exact": "# Sources\n\n## Hosts and programs\n\n| Host | Program | Lines | Errors or worse |\n| --- | --- | ---: | ---: |\n| db1 | sshd | 200 | 0 |\n| web2 | sshd | 198 | 0 |\n| fw1 | sshd | 195 | 0 |\n| web1 | sshd | 187 | 0 |\n| mail.example.test | sshd | 175 | 0 |\n| web2 | CRON | 90 | 0 |\n| db1 | CRON | 86 | 0 |\n| fw1 | systemd | 78 | 0 |\n| mail.example.test | sudo | 78 | 0 |\n| db1 | su | 75 | 0 |\n| fw1 | kernel | 75 | 0 |\n| mail.example.test | CRON | 74 | 0 |\n| fw1 | sudo | 73 | 0 |\n| web1 | su | 72 | 0 |\n| mail.example.test | kernel | 70 | 0 |\n| mail.example.test | su | 70 | 0 |\n| db1 | sudo | 69 | 0 |\n| db1 | kernel | 68 | 0 |\n| web2 | kernel | 68 | 0 |\n| web1 | kernel | 66 | 0 |\n| fw1 | CRON | 65 | 0 |\n| web1 | systemd | 65 | 0 |\n| db1 | systemd | 63 | 0 |\n| web1 | CRON | 61 | 0 |\n| mail.example.test | systemd | 58 | 0 |\n| web1 | sudo | 58 | 0 |\n| web2 | su | 57 | 0 |\n| web2 | systemd | 56 | 0 |\n| fw1 | su | 54 | 0 |\n| web2 | sudo | 49 | 0 |\n| web1 | postfix/smtpd | 39 | 9 |\n| web1 | dhcpd | 32 | 10 |\n| mail.example.test | dhcpd | 30 | 10 |\n| web2 | dhcpd | 26 | 8 |\n| web1 | app | 25 | 13 |\n| fw1 | postfix/smtpd | 23 | 8 |\n| web2 | postfix/smtpd | 23 | 10 |\n| db1 | postfix/smtpd | 22 | 9 |\n| db1 | app | 20 | 7 |\n| db1 | dhcpd | 19 | 9 |\n| fw1 | app | 19 | 5 |\n| web2 | app | 19 | 7 |\n| mail.example.test | app | 18 | 4 |\n| mail.example.test | postfix/smtpd | 17 | 7 |\n| fw1 | dhcpd | 15 | 8 |\n\n## CEF devices\n\nNo CEF events."
+  },
+  "reportSecurity": {
+   "exact": "# Security Events\n\n1610 events.\n\n| Event | Count |\n| --- | ---: |\n| authentication failure | 328 |\n| sudo | 327 |\n| accepted login | 326 |\n| invalid user | 312 |\n| failed login | 197 |\n| failed login \\(invalid user\\) | 120 |\n\n## Possible brute force\n\n| Source | Failed attempts |\n| --- | ---: |\n| 10.0.0.8 | 179 |\n| 192.0.2.44 | 156 |\n| 198.51.100.23 | 155 |\n| 203.0.113.7 | 139 |\n\n## Events\n\n| Line | Time | Event | User | Source |\n| ---: | --- | --- | --- | --- |\n| 2 | Feb 16 07:32:12 | failed login \\(invalid user\\) | alice | 203.0.113.7 |\n| 3 | Aug 24 02:09:12 | invalid user | oracle | 192.0.2.44 |\n| 4 | Feb  6 00:42:54 | authentication failure | alice | - |\n| 9 | Mar 18 22:02:07 | failed login \\(invalid user\\) | deploy | 198.51.100.23 |\n| 10 | Mar 22 00:38:10 | authentication failure | alice | - |\n| 11 | Aug  3 21:46:51 | invalid user | oracle | 192.0.2.44 |\n| 12 | Jun 14 06:06:01 | failed login \\(invalid user\\) | alice | 203.0.113.7 |\n| 15 | Jan 17 15:34:43 | failed login | backup | 192.0.2.44 |\n| 17 | Sep 20 01:51:37 | failed login \\(invalid user\\) | admin | 10.0.0.8 |\n| 18 | Feb 26 14:29:58 | authentication failure | alice | - |\n| 21 | Jul  4 07:51:05 | authentication failure | alice | - |\n| 22 | May 21 10:56:31 | accepted login | root | 10.0.0.8 |\n| 24 | Jul 12 10:14:29 | invalid user | pi | 192.0.2.44 |\n| 25 | Nov 28 20:40:42 | accepted login | alice | 203.0.113.7 |\n| 26 | Jan 10 02:18:40 | sudo | admin | - |\n| 33 | Nov 17 02:54:57 | authentication failure | alice | - |\n| 34 | Mar 12 09:34:13 | accepted login | admin | 10.0.0.8 |\n| 37 | Mar 22 05:05:16 | invalid user | pi | 203.0.113.7 |\n| 38 | Sep  4 18:09:44 | invalid user | oracle | 203.0.113.7 |\n| 39 | Mar 18 20:32:37 | sudo | deploy | - |\n| 41 | Feb 28 13:39:01 | authentication failure | alice | - |\n| 44 | Oct  1 09:25:31 | accepted login | admin | 203.0.113.7 |\n| 45 | Jan 25 04:12:29 | sudo | alice | - |\n| 49 | Oct  7 16:35:07 | sudo | root | - |\n| 50 | Apr  5 18:14:04 | accepted login | root | 10.0.0.8 |\n| 52 | Jan 18 09:45:21 | failed login | admin | 192.0.2.44 |\n| 56 | Jul 10 13:33:55 | sudo | alice | - |\n| 57 | Nov  8 21:50:23 | failed login \\(invalid user\\) | backup | 192.0.2.44 |\n| 63 | Jul 24 23:53:30 | invalid user | test | 10.0.0.8 |\n| 65 | Dec  4 22:54:46 | failed login \\(invalid user\\) | deploy | 192.0.2.44 |\n| 69 | Feb 26 07:32:02 | sudo | backup | - |\n| 71 | Jul 10 15:03:18 | accepted login | alice | 10.0.0.8 |\n| 73 | Jun 26 17:35:35 | failed login \\(invalid user\\) | root | 198.51.100.23 |\n| 77 | Oct 19 06:35:21 | invalid user | pi | 192.0.2.44 |\n| 78 | Sep  3 20:48:58 | accepted login | backup | 203.0.113.7 |\n| 80 | Apr 28 19:47:56 | failed login | admin | 10.0.0.8 |\n| 81 | Apr  3 07:24:46 | failed login | root | 192.0.2.44 |\n| 83 | Aug 26 02:40:01 | sudo | admin | - |\n| 84 | Jul 25 07:26:31 | sudo | admin | - |\n| 85 | Jun 10 07:20:46 | accepted login | deploy | 192.0.2.44 |\n| 89 | May  3 22:47:34 | sudo | backup | - |\n| 90 | Apr 10 04:13:43 | failed login \\(invalid user\\) | deploy | 10.0.0.8 |\n| 91 | Sep 23 09:58:10 | accepted login | admin | 10.0.0.8 |\n| 92 | Feb 22 23:32:38 | accepted login | backup | 198.51.100.23 |\n| 94 | Jun  2 16:23:48 | authentication failure | alice | - |\n| 96 | Nov 20 00:54:22 | invalid user | test | 192.0.2.44 |\n| 97 | Jul  2 04:15:49 | accepted login | alice | 198.51.100.23 |\n| 99 | Mar  9 14:41:10 | accepted login | backup | 10.0.0.8 |\n| 103 | Feb 23 23:31:02 | failed login \\(invalid user\\) | admin | 192.0.2.44 |\n| 104 | Apr 16 00:22:56 | failed login \\(invalid user\\) | admin | 10.0.0.8 |\n| 105 | Feb 23 03:22:23 | failed login | deploy | 192.0.2.44 |\n| 106 | Feb 21 05:37:53 | sudo | admin | - |\n| 109 | May 15 11:24:42 | sudo | alice | - |\n| 112 | Jan 25 09:08:21 | failed login \\(invalid user\\) | admin | 192.0.2.44 |\n| 115 | Dec 11 19:11:38 | authentication failure | alice | - |\n| 116 | Jan  8 09:48:24 | accepted login | backup | 192.0.2.44 |\n| 117 | Sep 19 21:33:07 | invalid user | oracle | 203.0.113.7 |\n| 118 | Dec 23 11:15:35 | sudo | admin | - |\n| 120 | Dec  3 09:11:06 | accepted login | root | 10.0.0.8 |\n| 127 | Jan 27 14:55:04 | authentication failure | alice | - |\n| 128 | Sep 11 17:04:55 | accepted login | admin | 203.0.113.7 |\n| 131 | Oct  8 22:23:52 | invalid user | test | 198.51.100.23 |\n| 132 | Aug 26 06:31:30 | authentication failure | alice | - |\n| 134 | Nov  7 21:23:17 | failed login \\(invalid user\\) | admin | 198.51.100.23 |\n| 136 | Jun 24 10:19:25 | accepted login | deploy | 10.0.0.8 |\n| 140 | Jan 24 23:35:48 | authentication failure | alice | - |\n| 143 | Oct 23 14:45:18 | sudo | deploy | - |\n| 152 | Sep  1 07:02:28 | accepted login | deploy | 198.51.100.23 |\n| 154 | Oct 19 23:27:05 | accepted login | alice | 198.51.100.23 |\n| 155 | Nov 11 15:49:53 | sudo | alice | - |\n| 157 | Dec 18 02:07:32 | invalid user | pi | 10.0.0.8 |\n| 159 | Sep 26 05:34:33 | invalid user | oracle | 203.0.113.7 |\n| 160 | Oct  3 11:16:55 | invalid user | oracle | 10.0.0.8 |\n| 166 | Dec 20 10:17:14 | failed login | backup | 198.51.100.23 |\n| 168 | May 14 23:27:34 | authentication failure | alice | - |\n| 171 | Mar  1 19:25:47 | authentication failure | alice | - |\n| 172 | Oct  2 04:15:33 | authentication failure | alice | - |\n| 175 | Nov 24 14:56:44 | accepted login | backup | 198.51.100.23 |\n| 179 | Sep  7 04:34:17 | accepted login | admin | 198.51.100.23 |\n| 182 | Sep  8 03:32:09 | failed login \\(invalid user\\) | alice | 203.0.113.7 |\n| 184 | May 23 18:18:23 | sudo | root | - |\n| 185 | Nov 18 18:51:59 | invalid user | oracle | 192.0.2.44 |\n| 190 | Aug 27 02:13:25 | sudo | root | - |\n| 192 | Oct 28 02:16:30 | failed login \\(invalid user\\) | backup | 198.51.100.23 |\n| 198 | Jan 18 05:11:54 | accepted login | backup | 192.0.2.44 |\n| 202 | May 18 21:19:50 | authentication failure | alice | - |\n| 208 | Aug 14 06:29:53 | sudo | admin | - |\n| 213 | Jun 25 05:00:07 | invalid user | test | 10.0.0.8 |\n| 214 | Feb 26 00:34:11 | authentication failure | alice | - |\n| 216 | Jan 11 05:51:32 | sudo | admin | - |\n| 217 | Nov  1 08:54:39 | authentication failure | alice | - |\n| 219 | Dec 12 03:18:11 | authentication failure | alice | - |\n| 221 | Oct 25 21:02:06 | sudo | backup | - |\n| 224 | Jun  3 03:30:27 | sudo | backup | - |\n| 225 | Oct 16 16:25:13 | authentication failure | alice | - |\n| 226 | Mar  1 18:27:27 | invalid user | pi | 192.0.2.44 |\n| 227 | Sep 10 15:14:51 | authentication failure | alice | - |\n| 228 | Apr 11 06:58:33 | invalid user | oracle | 198.51.100.23 |\n| 231 | Oct 22 19:54:34 | invalid user | pi | 10.0.0.8 |\n| 232 | May 22 11:51:25 | authentication failure | alice | - |\n| 233 | Oct 12 20:17:06 | failed login | admin | 10.0.0.8 |\n| 234 | Jun 12 19:56:47 | accepted login | alice | 10.0.0.8 |\n| 236 | Sep  1 06:22:45 | accepted login | alice | 203.0.113.7 |\n| 237 | Feb  5 14:13:57 | failed login | admin | 198.51.100.23 |\n| 238 | Mar 21 21:30:34 | accepted login | backup | 192.0.2.44 |\n| 244 | Jan 17 09:37:56 | sudo | alice | - |\n| 246 | Feb 16 13:40:51 | authentication failure | alice | - |\n| 248 | Apr  7 10:08:46 | accepted login | backup | 198.51.100.23 |\n| 249 | Jan 20 19:35:14 | sudo | deploy | - |\n| 250 | May 17 03:16:00 | invalid user | pi | 192.0.2.44 |\n| 251 | Jun 28 01:45:57 | accepted login | alice | 203.0.113.7 |\n| 252 | Apr  2 12:04:31 | sudo | root | - |\n| 253 | Jun 16 04:47:56 | failed login | alice | 198.51.100.23 |\n| 256 | Jul 27 23:50:43 | sudo | root | - |\n| 261 | Dec 24 18:05:23 | invalid user | oracle | 192.0.2.44 |\n| 262 | Dec 19 12:11:25 | sudo | alice | - |\n| 263 | Jan 27 22:09:35 | accepted login | admin | 198.51.100.23 |\n| 266 | Feb 16 15:43:50 | sudo | root | - |\n| 268 | Apr 17 13:50:54 | invalid user | test | 192.0.2.44 |\n| 270 | Aug  5 13:07:19 | authentication failure | alice | - |\n| 271 | Oct 28 07:10:09 | invalid user | test | 203.0.113.7 |\n| 273 | Mar 14 17:19:11 | accepted login | backup | 198.51.100.23 |\n| 275 | Nov 24 23:15:28 | accepted login | root | 10.0.0.8 |\n| 276 | Mar 28 16:54:08 | sudo | root | - |\n| 277 | Feb 19 05:51:06 | authentication failure | alice | - |\n| 278 | Mar  2 18:09:04 | authentication failure | alice | - |\n| 282 | Mar  9 22:37:12 | sudo | deploy | - |\n| 283 | Apr  5 01:24:48 | invalid user | pi | 10.0.0.8 |\n| 284 | Sep  6 03:49:32 | authentication failure | alice | - |\n| 286 | Dec 20 08:23:16 | sudo | alice | - |\n| 287 | Feb 22 21:18:35 | invalid user | oracle | 198.51.100.23 |\n| 288 | Nov 23 00:14:40 | accepted login | alice | 10.0.0.8 |\n| 289 | Aug 24 02:02:06 | invalid user | pi | 10.0.0.8 |\n| 290 | Apr 27 01:03:10 | failed login | backup | 203.0.113.7 |\n| 291 | May 10 14:07:37 | accepted login | alice | 198.51.100.23 |\n| 292 | Sep  7 16:52:03 | authentication failure | alice | - |\n| 294 | Aug  5 12:07:53 | authentication failure | alice | - |\n| 295 | Sep 27 16:04:32 | invalid user | oracle | 10.0.0.8 |\n| 296 | Aug 17 22:39:51 | failed login \\(invalid user\\) | root | 10.0.0.8 |\n| 298 | May 15 09:03:17 | sudo | admin | - |\n| 301 | Oct 21 17:12:29 | accepted login | deploy | 198.51.100.23 |\n| 304 | Aug 20 09:40:55 | failed login \\(invalid user\\) | admin | 192.0.2.44 |\n| 305 | Apr  2 12:06:44 | invalid user | pi | 10.0.0.8 |\n| 307 | Nov  2 12:04:01 | failed login \\(invalid user\\) | admin | 198.51.100.23 |\n| 309 | Oct 10 09:53:30 | authentication failure | alice | - |\n| 311 | Aug 10 14:46:07 | sudo | root | - |\n| 312 | May  4 17:18:27 | failed login | backup | 203.0.113.7 |\n| 313 | Apr  6 10:13:03 | authentication failure | alice | - |\n| 314 | May 27 04:33:47 | invalid user | pi | 203.0.113.7 |\n| 316 | Mar  5 11:54:54 | accepted login | alice | 198.51.100.23 |\n| 322 | Oct 13 17:12:05 | invalid user | oracle | 192.0.2.44 |\n| 323 | Aug  9 12:44:22 | sudo | root | - |\n| 324 | Mar 10 16:32:29 | failed login | admin | 192.0.2.44 |\n| 325 | Apr 23 14:42:26 | invalid user | pi | 10.0.0.8 |\n| 326 | Mar  4 12:25:52 | sudo | admin | - |\n| 328 | May 14 10:38:00 | sudo | root | - |\n| 330 | Jan 15 08:20:51 | authentication failure | alice | - |\n| 331 | Feb  2 05:33:49 | invalid user | test | 198.51.100.23 |\n| 332 | Aug  9 22:57:25 | failed login \\(invalid user\\) | admin | 203.0.113.7 |\n| 333 | Jun  1 00:26:50 | authentication failure | alice | - |\n| 334 | Jan  9 12:04:20 | authentication failure | alice | - |\n| 336 | Sep  4 14:43:46 | authentication failure | alice | - |\n| 337 | Jan 22 02:46:48 | failed login | admin | 10.0.0.8 |\n| 338 | Jan 25 15:49:08 | sudo | admin | - |\n| 340 | Oct  8 23:08:19 | failed login | alice | 203.0.113.7 |\n| 341 | Mar 18 15:57:00 | invalid user | test | 192.0.2.44 |\n| 342 | Feb 10 02:30:42 | failed login \\(invalid user\\) | admin | 192.0.2.44 |\n| 344 | Apr 28 02:56:53 | invalid user | test | 10.0.0.8 |\n| 346 | Jan 17 10:55:24 | failed login | deploy | 192.0.2.44 |\n| 348 | Jun 22 21:13:15 | accepted login | admin | 192.0.2.44 |\n| 349 | Oct 11 23:17:46 | authentication failure | alice | - |\n| 350 | Nov 13 15:03:46 | failed login \\(invalid user\\) | alice | 10.0.0.8 |\n| 353 | Mar 21 14:19:07 | invalid user | oracle | 10.0.0.8 |\n| 354 | Dec 21 16:30:31 | authentication failure | alice | - |\n| 356 | Nov 24 15:31:48 | sudo | admin | - |\n| 357 | Apr 19 01:19:44 | authentication failure | alice | - |\n| 358 | Feb  4 19:38:03 | authentication failure | alice | - |\n| 360 | Aug  7 21:29:05 | failed login | admin | 10.0.0.8 |\n| 361 | Sep 28 07:42:08 | accepted login | deploy | 192.0.2.44 |\n| 363 | Jun 17 04:12:33 | failed login | root | 10.0.0.8 |\n| 364 | Mar 20 10:33:45 | accepted login | deploy | 192.0.2.44 |\n| 365 | Jan 20 10:42:23 | authentication failure | alice | - |\n| 367 | Sep 10 20:52:18 | invalid user | oracle | 198.51.100.23 |\n| 369 | Dec 10 17:27:08 | invalid user | oracle | 10.0.0.8 |\n| 370 | Sep  3 03:39:49 | invalid user | test | 192.0.2.44 |\n| 371 | Oct 23 02:41:44 | failed login | admin | 203.0.113.7 |\n| 372 | Aug 23 23:04:26 | sudo | backup | - |\n| 375 | Aug 16 05:12:04 | invalid user | pi | 10.0.0.8 |\n| 377 | Jun 27 12:26:29 | sudo | admin | - |\n| 380 | Nov 16 04:50:12 | accepted login | alice | 10.0.0.8 |\n| 381 | Jun 13 21:12:15 | sudo | backup | - |\n| 383 | Aug 10 22:02:43 | authentication failure | alice | - |\n| 387 | Jun  6 10:04:31 | failed login | root | 198.51.100.23 |\n| 389 | May 14 08:40:02 | sudo | backup | - |\n| 392 | Nov 20 07:26:04 | accepted login | alice | 198.51.100.23 |\n| 393 | Oct  9 20:24:48 | failed login \\(invalid user\\) | alice | 203.0.113.7 |\n| 396 | Oct 11 22:25:45 | failed login | root | 203.0.113.7 |\n| 398 | Jul 25 01:55:01 | sudo | root | - |\n| 400 | Oct 26 11:18:26 | invalid user | pi | 192.0.2.44 |\n| 401 | Jul 15 20:27:44 | accepted login | alice | 203.0.113.7 |\n| 402 | Apr 16 09:52:26 | authentication failure | alice | - |\n| 404 | Mar  1 03:37:41 | authentication failure | alice | - |\n| 406 | Dec  6 19:00:54 | accepted login | backup | 10.0.0.8 |\n| 407 | Jun  8 16:57:02 | failed login | backup | 198.51.100.23 |\n| 408 | Dec 26 05:46:47 | failed login \\(invalid user\\) | alice | 10.0.0.8 |\n| 410 | Oct 19 02:50:14 | authentication failure | alice | - |\n| 411 | Nov  6 20:22:47 | accepted login | root | 192.0.2.44 |\n| 413 | Jun 13 16:20:11 | invalid user | test | 192.0.2.44 |\n| 414 | Mar 26 10:08:08 | accepted login | deploy | 198.51.100.23 |\n| 415 | Sep 21 03:27:54 | sudo | deploy | - |\n| 416 | Nov  8 15:20:08 | accepted login | alice | 10.0.0.8 |\n| 417 | Apr  8 22:20:52 | sudo | deploy | - |\n| 420 | Jul 11 08:42:26 | sudo | root | - |\n| 421 | Dec  9 11:11:04 | authentication failure | alice | - |\n| 422 | Dec 25 10:36:10 | accepted login | backup | 192.0.2.44 |\n| 423 | Nov  1 19:07:59 | sudo | deploy | - |\n| 424 | Dec  8 19:11:16 | sudo | backup | - |\n| 425 | Apr 18 06:52:07 | invalid user | pi | 10.0.0.8 |\n| 426 | Aug  4 03:45:13 | invalid user | test | 192.0.2.44 |\n| 430 | Sep 19 22:44:42 | failed login | alice | 10.0.0.8 |\n| 431 | Sep 19 14:39:33 | sudo | alice | - |\n| 432 | Aug 11 21:25:56 | accepted login | root | 10.0.0.8 |\n| 433 | Apr 17 22:57:31 | invalid user | oracle | 192.0.2.44 |\n| 437 | Jan 11 07:57:38 | sudo | root | - |\n| 438 | Nov  8 07:15:34 | accepted login | root | 192.0.2.44 |\n| 439 | Aug 25 00:45:51 | accepted login | admin | 10.0.0.8 |\n| 441 | Sep 26 20:43:38 | sudo | admin | - |\n| 442 | Jun 10 22:48:41 | invalid user | test | 192.0.2.44 |\n| 443 | Dec  3 09:50:08 | invalid user | test | 203.0.113.7 |\n| 444 | Dec 15 16:52:36 | failed login | alice | 198.51.100.23 |\n| 445 | Sep 21 20:44:44 | sudo | deploy | - |\n| 447 | Nov 21 05:16:13 | invalid user | oracle | 203.0.113.7 |\n| 449 | Mar 26 18:30:50 | authentication failure | alice | - |\n| 450 | Dec 21 18:00:53 | authentication failure | alice | - |\n| 451 | Mar 21 02:29:03 | invalid user | oracle | 192.0.2.44 |\n| 452 | May 11 01:42:17 | invalid user | test | 10.0.0.8 |\n| 454 | Aug  7 05:22:31 | sudo | root | - |\n| 455 | Nov  8 00:43:01 | authentication failure | alice | - |\n| 456 | Apr 27 11:39:51 | failed login | alice | 203.0.113.7 |\n| 457 | Mar  1 15:56:55 | accepted login | alice | 198.51.100.23 |\n| 458 | Dec 11 09:29:20 | invalid user | test | 192.0.2.44 |\n| 459 | Nov 17 08:22:27 | sudo | backup | - |\n| 461 | Jul 12 18:16:31 | invalid user | pi | 10.0.0.8 |\n| 463 | Jul  2 02:40:22 | accepted login | deploy | 203.0.113.7 |\n| 464 | Feb 19 09:37:33 | authentication failure | alice | - |\n| 468 | Aug 22 04:47:04 | sudo | backup | - |\n| 469 | Feb  2 18:22:03 | authentication failure | alice | - |\n| 476 | Feb  6 00:08:30 | accepted login | deploy | 10.0.0.8 |\n| 479 | May 20 17:55:05 | sudo | backup | - |\n| 484 | Aug 26 03:07:01 | failed login | root | 198.51.100.23 |\n| 485 | Apr  9 07:25:10 | authentication failure | alice | - |\n| 488 | Jun 28 01:18:45 | sudo | admin | - |\n| 489 | May  9 08:55:20 | authentication failure | alice | - |\n| 490 | Feb 12 17:19:30 | authentication failure | alice | - |\n| 491 | Sep 21 06:26:55 | accepted login | root | 10.0.0.8 |\n| 492 | May 27 11:26:53 | sudo | backup | - |\n| 493 | Jul 24 07:20:23 | invalid user | oracle | 198.51.100.23 |\n| 494 | Oct 16 16:07:55 | authentication failure | alice | - |\n| 495 | Jun  5 22:31:16 | invalid user | test | 192.0.2.44 |\n| 496 | Oct  3 17:50:09 | authentication failure | alice | - |\n| 500 | Apr  6 10:02:07 | invalid user | test | 192.0.2.44 |\n| 502 | Mar 15 22:30:05 | sudo | root | - |\n| 503 | Sep 13 16:04:17 | failed login \\(invalid user\\) | root | 192.0.2.44 |\n| 509 | May 20 16:12:26 | failed login \\(invalid user\\) | deploy | 203.0.113.7 |\n| 513 | Oct 16 07:57:26 | invalid user | test | 10.0.0.8 |\n| 514 | May 17 01:26:39 | sudo | root | - |\n| 520 | Jul 27 03:29:39 | invalid user | oracle | 198.51.100.23 |\n| 521 | Apr 19 15:59:34 | sudo | admin | - |\n| 522 | Aug 20 18:31:41 | invalid user | pi | 198.51.100.23 |\n| 524 | May 12 20:48:13 | accepted login | alice | 192.0.2.44 |\n| 528 | Jul 18 14:26:58 | authentication failure | alice | - |\n| 530 | May 17 21:41:39 | sudo | deploy | - |\n| 532 | Mar  4 05:18:52 | sudo | alice | - |\n| 534 | Apr 13 17:52:59 | authentication failure | alice | - |\n| 535 | Nov 21 20:16:40 | failed login | backup | 10.0.0.8 |\n| 536 | Apr 13 22:38:50 | failed login \\(invalid user\\) | deploy | 198.51.100.23 |\n| 537 | Aug  5 11:15:53 | failed login \\(invalid user\\) | alice | 203.0.113.7 |\n| 541 | Apr 13 07:08:13 | authentication failure | alice | - |\n| 542 | Sep 23 11:10:29 | accepted login | alice | 203.0.113.7 |\n| 543 | Jul  2 01:19:45 | sudo | admin | - |\n| 544 | Nov 12 02:02:03 | accepted login | backup | 10.0.0.8 |\n| 545 | Dec  7 03:59:08 | authentication failure | alice | - |\n| 546 | Nov 15 16:04:48 | authentication failure | alice | - |\n| 547 | Apr 28 21:21:21 | sudo | deploy | - |\n| 552 | Apr 21 15:18:33 | failed login \\(invalid user\\) | root | 203.0.113.7 |\n| 553 | Feb  6 23:48:08 | authentication failure | alice | - |\n| 556 | Feb 23 08:08:22 | invalid user | test | 203.0.113.7 |\n| 558 | Oct 17 21:14:44 | sudo | deploy | - |\n| 559 | May 12 00:16:11 | invalid user | oracle | 192.0.2.44 |\n| 560 | Feb 12 04:38:48 | sudo | deploy | - |\n| 561 | May 12 23:00:31 | authentication failure | alice | - |\n| 564 | May 10 05:19:54 | invalid user | pi | 203.0.113.7 |\n| 566 | Dec 25 18:54:31 | authentication failure | alice | - |\n| 568 | Jul 18 21:20:56 | sudo | deploy | - |\n| 571 | Jun 21 15:46:45 | authentication failure | alice | - |\n| 572 | Feb  5 03:15:27 | accepted login | deploy | 203.0.113.7 |\n| 575 | Oct 12 11:12:09 | sudo | deploy | - |\n| 576 | Jul 12 11:50:43 | invalid user | pi | 198.51.100.23 |\n| 577 | Jul 22 15:24:45 | failed login | alice | 198.51.100.23 |\n| 579 | Feb 25 22:45:08 | failed login | alice | 203.0.113.7 |\n| 584 | Jun  1 00:30:35 | sudo | deploy | - |\n| 585 | May 20 07:01:11 | authentication failure | alice | - |\n| 586 | Jun 27 13:51:24 | accepted login | backup | 192.0.2.44 |\n| 587 | Jan 15 01:13:52 | sudo | backup | - |\n| 588 | May 28 03:57:38 | sudo | alice | - |\n| 590 | Jul 22 07:07:14 | invalid user | test | 198.51.100.23 |\n| 593 | Dec 21 12:54:29 | authentication failure | alice | - |\n| 597 | Mar 21 04:14:30 | authentication failure | alice | - |\n| 598 | Apr  3 13:52:14 | accepted login | root | 192.0.2.44 |\n| 600 | Feb 16 21:37:37 | invalid user | oracle | 192.0.2.44 |\n| 601 | Feb 18 02:26:38 | sudo | backup | - |\n| 606 | Jun 25 15:38:30 | sudo | deploy | - |\n| 608 | Feb 17 18:16:01 | invalid user | oracle | 10.0.0.8 |\n| 609 | Oct 12 16:24:05 | failed login | backup | 10.0.0.8 |\n| 612 | Jul 21 04:09:29 | failed login | admin | 10.0.0.8 |\n| 614 | Jun 24 09:36:11 | authentication failure | alice | - |\n| 617 | Sep 13 03:40:25 | failed login \\(invalid user\\) | deploy | 192.0.2.44 |\n| 618 | Sep 26 11:07:38 | authentication failure | alice | - |\n| 619 | Mar 26 15:53:58 | accepted login | root | 10.0.0.8 |\n| 620 | Nov 10 21:25:39 | accepted login | backup | 192.0.2.44 |\n| 623 | Apr  5 16:18:45 | failed login \\(invalid user\\) | root | 203.0.113.7 |\n| 624 | Jul  6 06:38:22 | sudo | alice | - |\n| 626 | Dec  3 17:35:25 | authentication failure | alice | - |\n| 627 | Nov 18 23:24:31 | sudo | admin | - |\n| 630 | Sep 24 04:16:42 | sudo | deploy | - |\n| 631 | Apr 22 00:34:43 | authentication failure | alice | - |\n| 632 | Mar 25 04:23:42 | accepted login | backup | 192.0.2.44 |\n| 633 | Mar 23 04:48:28 | accepted login | root | 198.51.100.23 |\n| 634 | Oct 16 14:49:33 | accepted login | admin | 192.0.2.44 |\n| 635 | Mar 11 00:36:29 | failed login | backup | 192.0.2.44 |\n| 636 | Apr  1 17:06:59 | accepted login | deploy | 203.0.113.7 |\n| 637 | Sep 10 00:43:25 | failed login \\(invalid user\\) | backup | 192.0.2.44 |\n| 638 | Aug 23 15:57:19 | authentication failure | alice | - |\n| 640 | Feb  9 01:56:47 | authentication failure | alice | - |\n| 641 | Feb 19 06:11:46 | failed login \\(invalid user\\) | admin | 192.0.2.44 |\n| 642 | Jun 12 22:12:08 | failed login \\(invalid user\\) | backup | 203.0.113.7 |\n| 643 | Apr  7 00:33:17 | invalid user | test | 198.51.100.23 |\n| 644 | Nov  5 17:30:32 | authentication failure | alice | - |\n| 649 | Sep 19 08:49:45 | sudo | backup | - |\n| 650 | Nov  1 14:03:31 | failed login | backup | 203.0.113.7 |\n| 651 | Sep 19 16:38:15 | failed login \\(invalid user\\) | backup | 198.51.100.23 |\n| 652 | Jan 19 22:10:21 | sudo | admin | - |\n| 653 | Aug  6 23:49:28 | accepted login | admin | 192.0.2.44 |\n| 655 | May 19 09:28:53 | authentication failure | alice | - |\n| 657 | Jul 25 20:26:44 | sudo | backup | - |\n| 660 | Feb 20 07:54:54 | authentication failure | alice | - |\n| 662 | Jan  7 18:19:08 | sudo | alice | - |\n| 666 | Apr 20 01:56:32 | accepted login | deploy | 203.0.113.7 |\n| 668 | Aug 23 16:25:32 | accepted login | backup | 203.0.113.7 |\n| 670 | Jan 15 08:55:33 | sudo | admin | - |\n| 672 | Aug 22 17:23:34 | accepted login | backup | 203.0.113.7 |\n| 673 | Oct 21 04:07:20 | failed login | root | 198.51.100.23 |\n| 676 | Nov 22 04:24:39 | sudo | deploy | - |\n| 677 | Dec 10 21:41:57 | failed login | alice | 10.0.0.8 |\n| 678 | Jun  6 14:32:01 | sudo | backup | - |\n| 679 | Sep  1 04:40:17 | authentication failure | alice | - |\n| 680 | Dec 23 06:08:07 | failed login | deploy | 198.51.100.23 |\n| 682 | Jan 15 05:51:23 | failed login \\(invalid user\\) | alice | 203.0.113.7 |\n| 683 | Sep 20 10:18:09 | sudo | root | - |\n| 685 | Apr  8 20:12:44 | accepted login | alice | 203.0.113.7 |\n| 688 | Jan 26 18:02:45 | accepted login | admin | 203.0.113.7 |\n| 689 | Dec  4 14:29:52 | failed login \\(invalid user\\) | backup | 203.0.113.7 |\n| 691 | Dec 14 10:10:35 | invalid user | oracle | 198.51.100.23 |\n| 693 | Oct 21 12:32:01 | invalid user | oracle | 192.0.2.44 |\n| 694 | Feb 27 19:25:43 | failed login | deploy | 192.0.2.44 |\n| 696 | Apr  9 20:29:35 | failed login \\(invalid user\\) | deploy | 10.0.0.8 |\n| 697 | Nov  3 05:52:57 | invalid user | pi | 10.0.0.8 |\n| 703 | Mar 27 20:34:03 | sudo | backup | - |\n| 704 | Jul 12 00:42:08 | invalid user | oracle | 198.51.100.23 |\n| 705 | Apr  9 19:24:02 | authentication failure | alice | - |\n| 708 | Mar 19 08:18:30 | accepted login | root | 198.51.100.23 |\n| 714 | Apr 26 10:46:28 | accepted login | admin | 10.0.0.8 |\n| 715 | Dec 21 16:59:51 | authentication failure | alice | - |\n| 716 | Mar  8 05:45:55 | accepted login | deploy | 10.0.0.8 |\n| 718 | Dec 28 02:45:59 | authentication failure | alice | - |\n| 719 | Jun 17 09:22:13 | failed login | admin | 198.51.100.23 |\n| 721 | Mar 20 08:30:53 | accepted login | backup | 192.0.2.44 |\n| 724 | Sep 16 15:49:47 | failed login \\(invalid user\\) | root | 10.0.0.8 |\n| 727 | Aug 28 08:25:27 | failed login \\(invalid user\\) | admin | 198.51.100.23 |\n| 729 | Apr 10 03:24:44 | authentication failure | alice | - |\n| 730 | Jul 22 05:13:56 | authentication failure | alice | - |\n| 731 | Apr 11 20:56:00 | accepted login | alice | 203.0.113.7 |\n| 732 | Apr 25 18:38:36 | sudo | backup | - |\n| 735 | Oct 25 03:13:40 | invalid user | test | 10.0.0.8 |\n| 737 | Feb 22 20:45:42 | authentication failure | alice | - |\n| 738 | Dec 16 00:47:14 | failed login \\(invalid user\\) | deploy | 203.0.113.7 |\n| 739 | Aug  2 11:19:11 | sudo | admin | - |\n| 742 | May 26 01:21:41 | authentication failure | alice | - |\n| 744 | Apr 10 08:31:14 | failed login \\(invalid user\\) | admin | 10.0.0.8 |\n| 746 | May 15 17:05:54 | sudo | backup | - |\n| 753 | Jul 17 15:51:36 | accepted login | backup | 198.51.100.23 |\n| 754 | Jan 22 14:28:46 | sudo | root | - |\n| 756 | Aug 22 07:02:10 | sudo | alice | - |\n| 757 | Feb  7 18:02:17 | authentication failure | alice | - |\n| 762 | Sep  2 00:12:41 | sudo | admin | - |\n| 763 | Jun 21 21:00:40 | sudo | root | - |\n| 766 | Jun  5 15:31:16 | sudo | backup | - |\n| 767 | Dec 14 19:23:54 | invalid user | test | 10.0.0.8 |\n| 769 | Apr 26 07:58:41 | sudo | root | - |\n| 773 | May 12 04:35:49 | failed login \\(invalid user\\) | backup | 10.0.0.8 |\n| 774 | Jan 27 22:47:32 | sudo | root | - |\n| 775 | Mar 16 19:24:34 | failed login | admin | 192.0.2.44 |\n| 777 | Mar 22 15:13:57 | invalid user | pi | 203.0.113.7 |\n| 778 | Feb  4 06:25:23 | failed login | backup | 198.51.100.23 |\n| 781 | May 24 02:45:43 | accepted login | backup | 198.51.100.23 |\n| 782 | Jan 14 23:00:41 | accepted login | backup | 192.0.2.44 |\n| 785 | Mar 22 23:29:13 | accepted login | deploy | 198.51.100.23 |\n| 786 | Jun  5 01:46:35 | invalid user | pi | 192.0.2.44 |\n| 788 | Aug  9 11:24:08 | invalid user | pi | 10.0.0.8 |\n| 789 | Aug 19 10:04:06 | authentication failure | alice | - |\n| 791 | May  8 02:08:00 | authentication failure | alice | - |\n| 792 | Dec 22 22:31:58 | authentication failure | alice | - |\n| 796 | May 17 05:53:14 | accepted login | deploy | 192.0.2.44 |\n| 799 | Dec 23 13:58:43 | failed login \\(invalid user\\) | deploy | 203.0.113.7 |\n| 801 | Mar 21 06:06:33 | authentication failure | alice | - |\n| 802 | Mar 20 02:07:51 | sudo | backup | - |\n| 804 | Nov  4 12:33:32 | accepted login | root | 203.0.113.7 |\n| 805 | Jun 22 00:00:01 | failed login | admin | 10.0.0.8 |\n| 806 | Mar  9 03:54:56 | failed login | backup | 192.0.2.44 |\n| 810 | Sep 21 18:23:50 | failed login | deploy | 203.0.113.7 |\n| 811 | Apr 20 20:26:26 | authentication failure | alice | - |\n| 812 | Feb 12 07:36:21 | sudo | alice | - |\n| 813 | Feb  4 21:53:56 | invalid user | oracle | 192.0.2.44 |\n| 814 | Dec 12 12:16:06 | failed login \\(invalid user\\) | deploy | 192.0.2.44 |\n| 815 | Jan 23 00:16:55 | authentication failure | alice | - |\n| 817 | Mar 10 04:41:34 | failed login | root | 198.51.100.23 |\n| 818 | Jun 15 03:50:49 | failed login \\(invalid user\\) | backup | 192.0.2.44 |\n| 819 | Feb  4 08:59:49 | accepted login | backup | 203.0.113.7 |\n| 823 | Jan 24 02:27:24 | failed login | backup | 192.0.2.44 |\n| 824 | Jun 10 04:29:19 | failed login \\(invalid user\\) | backup | 198.51.100.23 |\n| 825 | Apr 13 10:02:47 | sudo | deploy | - |\n| 827 | Oct  4 06:47:57 | invalid user | oracle | 192.0.2.44 |\n| 830 | Oct 27 19:36:51 | failed login | alice | 192.0.2.44 |\n| 831 | Jul  6 12:42:39 | invalid user | oracle | 10.0.0.8 |\n| 836 | Feb  4 13:20:23 | sudo | alice | - |\n| 838 | May  9 11:35:04 | failed login \\(invalid user\\) | backup | 10.0.0.8 |\n| 840 | May 25 13:26:59 | accepted login | deploy | 192.0.2.44 |\n| 841 | Apr 20 15:26:38 | accepted login | root | 10.0.0.8 |\n| 842 | Jan 18 09:14:09 | sudo | deploy | - |\n| 843 | May 20 06:32:44 | invalid user | oracle | 10.0.0.8 |\n| 847 | Aug  4 20:58:40 | sudo | admin | - |\n| 848 | Jan 28 21:47:16 | invalid user | oracle | 203.0.113.7 |\n| 849 | Jun 16 00:22:54 | failed login | deploy | 192.0.2.44 |\n| 851 | Sep 13 07:45:08 | failed login | root | 192.0.2.44 |\n| 853 | Apr 27 08:25:40 | failed login \\(invalid user\\) | root | 203.0.113.7 |\n| 854 | Mar 27 19:21:54 | authentication failure | alice | - |\n| 855 | May  2 09:41:46 | sudo | admin | - |\n| 856 | May 10 07:44:36 | authentication failure | alice | - |\n| 858 | Sep 13 05:24:39 | accepted login | alice | 10.0.0.8 |\n| 859 | Jan 28 04:05:02 | sudo | admin | - |\n| 861 | Oct  5 23:46:38 | invalid user | test | 198.51.100.23 |\n| 864 | Dec 15 19:36:46 | failed login \\(invalid user\\) | backup | 203.0.113.7 |\n| 865 | Jun 15 10:15:39 | accepted login | deploy | 192.0.2.44 |\n| 867 | May 19 15:59:58 | authentication failure | alice | - |\n| 868 | Nov  7 15:26:25 | accepted login | deploy | 198.51.100.23 |\n| 871 | May 22 13:21:21 | failed login | deploy | 192.0.2.44 |\n| 872 | Jan 20 04:31:32 | sudo | admin | - |\n| 873 | Oct 20 07:05:25 | invalid user | pi | 10.0.0.8 |\n| 876 | Sep 20 01:17:20 | authentication failure | alice | - |\n| 881 | Oct 15 17:08:27 | sudo | root | - |\n| 883 | May  3 10:12:48 | sudo | alice | - |\n| 885 | Sep  2 17:08:34 | invalid user | oracle | 192.0.2.44 |\n| 886 | Jan 26 09:13:30 | authentication failure | alice | - |\n| 890 | Oct  1 18:51:15 | authentication failure | alice | - |\n| 893 | Oct 19 02:41:54 | sudo | backup | - |\n| 894 | Jul  6 04:00:02 | authentication failure | alice | - |\n| 896 | Mar 14 13:11:50 | accepted login | root | 192.0.2.44 |\n| 897 | Nov 27 18:02:50 | invalid user | test | 192.0.2.44 |\n| 900 | Mar  5 21:38:49 | failed login | root | 192.0.2.44 |\n| 902 | May 19 15:36:29 | failed login \\(invalid user\\) | admin | 192.0.2.44 |\n| 904 | Nov 28 15:47:56 | failed login | root | 198.51.100.23 |\n| 906 | Apr 16 23:41:53 | accepted login | backup | 10.0.0.8 |\n| 912 | Mar 22 21:09:55 | failed login | alice | 203.0.113.7 |\n| 913 | Jan  2 12:13:15 | authentication failure | alice | - |\n| 914 | Apr 19 15:54:40 | authentication failure | alice | - |\n| 916 | Oct  4 03:31:23 | accepted login | backup | 192.0.2.44 |\n| 918 | Mar 15 14:54:59 | sudo | deploy | - |\n| 923 | Feb  7 16:59:19 | authentication failure | alice | - |\n| 924 | Feb 17 19:20:48 | failed login \\(invalid user\\) | deploy | 10.0.0.8 |\n| 926 | Jul  4 08:22:00 | sudo | backup | - |\n| 928 | Nov 16 05:21:08 | invalid user | pi | 198.51.100.23 |\n| 930 | Dec 14 18:26:38 | accepted login | backup | 192.0.2.44 |\n| 932 | Aug 25 16:34:21 | authentication failure | alice | - |\n| 935 | Sep 27 17:41:19 | authentication failure | alice | - |\n| 940 | Sep 11 07:17:00 | failed login | admin | 10.0.0.8 |\n| 941 | May 22 00:59:49 | authentication failure | alice | - |\n| 944 | Dec 27 11:21:47 | invalid user | oracle | 192.0.2.44 |\n| 947 | Sep  1 13:20:05 | invalid user | oracle | 10.0.0.8 |\n| 948 | Apr 16 19:05:55 | invalid user | test | 10.0.0.8 |\n| 949 | Feb 24 02:13:11 | authentication failure | alice | - |\n| 952 | Aug  6 09:17:21 | accepted login | backup | 198.51.100.23 |\n| 953 | Apr  8 09:26:17 | accepted login | deploy | 192.0.2.44 |\n| 954 | Jul  8 15:15:08 | failed login \\(invalid user\\) | root | 10.0.0.8 |\n| 955 | Dec 13 13:02:19 | accepted login | admin | 192.0.2.44 |\n| 956 | May 12 18:06:25 | failed login | admin | 10.0.0.8 |\n| 957 | Feb 25 08:34:29 | authentication failure | alice | - |\n| 962 | Apr  1 02:02:32 | sudo | backup | - |\n| 964 | Jan 18 06:59:00 | accepted login | backup | 192.0.2.44 |\n| 965 | Nov  1 01:59:41 | failed login | alice | 10.0.0.8 |\n| 967 | Sep  7 22:52:23 | authentication failure | alice | - |\n\nShowing the first 500 of 1610 rows."
+  }
+ }
+}
