@@ -1,0 +1,17 @@
+Dec 11 21:37:28 fw1 kernel: [69865.12] Out of memory: Killed process 1234
+Jan 12 02:52:07 web2 kernel: [4040.12] Out of memory: Killed process 1234
+May  3 09:03:17 web2 kernel: [13657.12] segfault at 0 ip 0000
+May 18 06:58:29 fw1 sshd[7081]: Failed password for backup from 203.0.113.7 port 53145 ssh2
+May  7 07:06:59 db1 sshd[3164]: Failed password for alice from 192.0.2.44 port 47295 ssh2
+<38>Jun 16 10:44:18 web2 dhcpd[42]: DHCPACK on 10.0.0.9
+Jun 28 21:55:36 web2 su: pam_unix(su:auth): authentication failure; logname=alice uid=1000 euid=0 tty=pts/1 ruser=alice rhost=  user=root
+May 13 05:32:43 mail.example.test sshd[6732]: Accepted publickey for alice from 203.0.113.7 port 50022 ssh2
+Dec 20 09:25:13 mail.example.test sudo:   deploy : TTY=pts/0 ; PWD=/home ; USER=root ; COMMAND=/usr/bin/apt update
+Jan 18 11:44:56 db1 sshd[8169]: Accepted publickey for root from 198.51.100.23 port 50022 ssh2
+Feb 17 12:58:20 mail.example.test sshd[4769]: Failed password for invalid user deploy from 10.0.0.8 port 51924 ssh2
+Sep 23 02:13:20 mail.example.test sudo:   deploy : TTY=pts/0 ; PWD=/home ; USER=root ; COMMAND=/usr/bin/systemctl restart nginx
+May 11 05:46:30 web1 sshd[5940]: Failed password for admin from 10.0.0.8 port 49895 ssh2
+Nov 27 06:11:14 db1 systemd[1]: Started Session 12 of user deploy.
+Dec 17 12:19:07 db1 sudo:   admin : TTY=pts/0 ; PWD=/home ; USER=root ; COMMAND=/usr/bin/apt update
+May 10 12:38:19 db1 sshd[1388]: Failed password for invalid user alice from 10.0.0.8 port 43486 ssh2
+Jun 14 10:48:31 fw1 systemd[1]: Started Daily apt upgrade.

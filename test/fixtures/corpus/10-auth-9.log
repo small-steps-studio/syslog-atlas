@@ -1,0 +1,27 @@
+Dec 22 13:23:28 mail.example.test sshd[1141]: Invalid user test from 198.51.100.23 port 33333
+<0>Jul 10 03:27:44 fw1 postfix/smtpd[42]: started
+Aug 16 20:28:39 fw1 sudo:   deploy : TTY=pts/0 ; PWD=/home ; USER=root ; COMMAND=/usr/bin/systemctl restart nginx
+May 17 14:49:12 web2 CRON[2065]: (root) CMD (run-parts /etc/cron.hourly)
+Jan  4 08:02:16 fw1 kernel: [59254.12] segfault at 0 ip 0000
+Sep 24 02:13:12 fw1 kernel: [84957.12] eth0: link up
+<11>Sep 12 20:24:50 mail.example.test postfix/smtpd[42]: started
+Feb  1 14:26:21 fw1 sshd[5202]: Accepted publickey for backup from 203.0.113.7 port 50022 ssh2
+Jun 11 02:25:26 web2 sshd[9543]: Invalid user oracle from 192.0.2.44 port 33333
+Jul 18 15:40:52 fw1 sshd[3737]: Invalid user pi from 10.0.0.8 port 33333
+Nov 27 21:48:52 fw1 sshd[4280]: Invalid user pi from 198.51.100.23 port 33333
+Jan 17 17:27:16 db1 kernel: [13996.12] segfault at 0 ip 0000
+Jun 25 14:31:50 fw1 kernel: [91058.12] segfault at 0 ip 0000
+Jul 28 10:54:34 fw1 systemd[1]: Started Session 12 of user deploy.
+Dec  7 19:18:00 mail.example.test sshd[2430]: Invalid user pi from 10.0.0.8 port 33333
+Dec  3 16:36:11 db1 sshd[6865]: Accepted publickey for root from 10.0.0.8 port 50022 ssh2
+Jul  1 12:42:10 mail.example.test CRON[2604]: (root) CMD (run-parts /etc/cron.hourly)
+Mar 18 19:23:56 db1 sshd[7100]: Invalid user oracle from 10.0.0.8 port 33333
+Sep 22 07:21:09 fw1 CRON[2144]: (root) CMD (run-parts /etc/cron.hourly)
+Oct 17 01:08:24 fw1 sudo:   backup : TTY=pts/0 ; PWD=/home ; USER=root ; COMMAND=/usr/bin/cat /etc/shadow
+Dec 16 15:14:34 mail.example.test sshd[7935]: Failed password for admin from 10.0.0.8 port 40545 ssh2
+May  3 06:02:26 fw1 systemd[1]: Started Session 12 of user deploy.
+Oct 28 11:48:27 web2 kernel: [73247.12] segfault at 0 ip 0000
+Nov 27 16:39:13 web2 sshd[3303]: Invalid user test from 203.0.113.7 port 33333
+Sep  1 09:56:05 mail.example.test systemd[1]: Started Session 12 of user deploy.
+Feb 14 10:22:38 db1 systemd[1]: Started Daily apt upgrade.
+<191>Jun 21 18:56:18 db1 postfix/smtpd[42]: connect from unknown

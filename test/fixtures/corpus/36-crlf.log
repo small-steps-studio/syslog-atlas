@@ -1,0 +1,8 @@
+<13>Aug  3 11:56:23 db1 dhcpd[42]: connect from unknown
+<165>Aug  4 01:10:13 web1 dhcpd[42]: started
+Dec 10 15:32:47 db1 su: pam_unix(su:auth): authentication failure; logname=alice uid=1000 euid=0 tty=pts/1 ruser=alice rhost=  user=root
+Mar 18 00:56:12 fw1 sshd[2864]: Accepted publickey for admin from 10.0.0.8 port 50022 ssh2
+<34>Oct 15 07:30:58 mail.example.test postfix/smtpd[42]: started
+Jul  6 08:36:53 mail.example.test systemd[1]: Started Session 12 of user deploy.
+<0>May 26 13:57:53 fw1 postfix/smtpd[42]: started
+Nov 14 06:55:34 db1 sudo:   backup : TTY=pts/0 ; PWD=/home ; USER=root ; COMMAND=/usr/bin/cat /etc/shadow

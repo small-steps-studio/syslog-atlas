@@ -1,0 +1,40 @@
+<14>1 2026-01-19T12:16:00.123Z web2 su 4211 ID47 -
+Oct 27 02:06:02 db1 sshd[5107]: Accepted publickey for backup from 10.0.0.8 port 50022 ssh2
+CEF:0|Example Security|Web Proxy|2.7|1039|Allowed connection|Low|src=192.0.2.44 dst=10.0.0.5
+Sep 14 17:37:10 web2 CRON[2362]: (root) CMD (run-parts /etc/cron.hourly)
+Feb 27 06:32:24 CEF:0|Example Security|Edge FW|2.6|1038|Allowed connection|5|src=203.0.113.7 dst=10.0.0.5 suser=alice
+Aug 11 21:14:14 mail.example.test sshd[2195]: Accepted publickey for deploy from 203.0.113.7 port 50022 ssh2
+<14>1 2026-12-12T19:57:00.123Z web1 app 4211 ID47 [exampleSDID@32473 iut="3" eventSource="Application"][meta x="y"]
+<165>1 2026-08-11T18:56:00.123Z db1 postgres 4211 ID47 [meta sequenceId="1"]
+Feb 19 14:26:55 web2 su: pam_unix(su:auth): authentication failure; logname=alice uid=1000 euid=0 tty=pts/1 ruser=alice rhost=  user=root
+Sep 16 05:11:33 fw1 sudo:   admin : TTY=pts/0 ; PWD=/home ; USER=root ; COMMAND=/usr/bin/systemctl restart nginx
+Jan  7 22:32:15 CEF:0|Example Security|IDS|2.3|1020|Blocked URL|Very-High|src=192.0.2.44 dst=10.0.0.5
+<3>1 2026-06-19T18:39:00+01:00 db1 - - - - 'su root' failed for lonvick on /dev/pts/8
+<14>1 2026-02-11T06:03:00+01:00 mail.example.test app - - [exampleSDID@32473 iut="3" eventSource="Application"][meta x="y"] connection received
+<34>1 2026-08-04T12:35:00+01:00 mail.example.test su - - [meta sequenceId="1"]
+Oct  5 00:22:19 db1 systemd[1]: Started Daily apt upgrade.
+Sep  2 09:44:47 CEF:0|Example Security|IDS|2.5|1040|Malware download blocked|7|src=10.0.0.8 dst=10.0.0.5
+<38>Jun 15 16:49:20 web1 app[42]: DHCPACK on 10.0.0.9
+<165>1 2026-07-09T00:55:00+01:00 fw1 app 4211 ID47 [exampleSDID@32473 iut="3" eventSource="Application"][meta x="y"] 'su root' failed for lonvick on /dev/pts/8
+<190>1 2026-12-27T14:35:00+01:00 db1 postgres - ID47 [meta sequenceId="1"] connection received
+<34>1 2026-01-13T19:10:00Z web1 app - ID47 [exampleSDID@32473 iut="3" eventSource="Application"][meta x="y"]
+<34>1 2026-01-26T18:15:00Z web1 su - ID47 [exampleSDID@32473 iut="3" eventSource="Application"][meta x="y"] ﻿message with byte order mark
+Nov  4 16:59:50 CEF:0|Example Security|Edge FW|2.7|1040|Pipe\|in name|Low|src=198.51.100.23 dst=10.0.0.5 suser=backup
+<14>1 2026-07-27T05:49:00+01:00 web2 app 4211 ID47 [exampleSDID@32473 iut="3" eventSource="Application"][meta x="y"]
+<190>1 2026-02-04T04:35:00.123Z fw1 - 4211 ID47 [meta sequenceId="1"]
+Jan  5 14:58:06 mail.example.test sudo:   root : TTY=pts/0 ; PWD=/home ; USER=root ; COMMAND=/usr/bin/apt update
+CEF:0|Example Security|IDS|2.7|1046|Allowed connection|1|src=198.51.100.23 dst=10.0.0.5
+CEF:0|Example Security|Edge FW|2.3|1042|Port scan detected|Low|src=10.0.0.8 dst=10.0.0.5
+CEF:0|Example Security|IDS|2.6|1049|Malware download blocked|3|src=10.0.0.8 dst=10.0.0.5
+Jan  6 01:34:28 fw1 kernel: [30860.12] segfault at 0 ip 0000
+CEF:0|Example Security|Web Proxy|2.4|1000|Malware download blocked|7|src=203.0.113.7 dst=10.0.0.5
+<165>1 2026-03-04T17:56:00+01:00 web2 su - - [exampleSDID@32473 iut="3" eventSource="Application"][meta x="y"]
+Oct  2 23:19:45 db1 CEF:0|Example Security|Edge FW|2.6|1003|Blocked URL|12|src=10.0.0.8 dst=10.0.0.5 suser=deploy
+<14>1 2026-01-02T06:48:00.123Z fw1 postgres - - [meta sequenceId="1"] connection received
+Sep  5 15:46:26 web1 su: pam_unix(su:auth): authentication failure; logname=alice uid=1000 euid=0 tty=pts/1 ruser=alice rhost=  user=root
+<34>1 2026-03-11T23:26:00.123Z mail.example.test postgres 4211 ID47 [meta sequenceId="1"] connection received
+Jun  9 22:26:53 web1 sshd[4851]: Failed password for backup from 10.0.0.8 port 58675 ssh2
+May 21 15:50:30 db1 sudo:   alice : TTY=pts/0 ; PWD=/home ; USER=root ; COMMAND=/usr/bin/cat /etc/shadow
+Nov  2 06:55:11 web1 kernel: [35344.12] eth0: link up
+Sep 28 10:50:43 mail.example.test kernel: [41231.12] segfault at 0 ip 0000
+<14>1 2026-04-19T17:44:00+01:00 mail.example.test postgres 4211 - -

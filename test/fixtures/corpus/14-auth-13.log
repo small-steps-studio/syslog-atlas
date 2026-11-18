@@ -1,0 +1,8 @@
+Dec  2 10:48:20 mail.example.test sshd[1766]: Invalid user pi from 203.0.113.7 port 33333
+Jul 18 20:54:21 web1 CRON[2985]: (root) CMD (run-parts /etc/cron.hourly)
+Mar 22 14:52:44 web1 su: pam_unix(su:auth): authentication failure; logname=alice uid=1000 euid=0 tty=pts/1 ruser=alice rhost=  user=root
+Jan 18 11:30:54 db1 systemd[1]: Started Daily apt upgrade.
+Oct 17 07:46:14 mail.example.test sshd[6326]: Accepted publickey for alice from 203.0.113.7 port 50022 ssh2
+<34>Jun 27 15:16:12 web1 dhcpd[42]: DHCPACK on 10.0.0.9
+Jan 10 20:21:29 db1 sshd[6638]: Accepted publickey for deploy from 192.0.2.44 port 50022 ssh2
+Aug  7 13:35:02 web2 sudo:   admin : TTY=pts/0 ; PWD=/home ; USER=root ; COMMAND=/usr/bin/systemctl restart nginx

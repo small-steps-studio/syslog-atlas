@@ -1,0 +1,16 @@
+Aug 27 05:14:25 mail.example.test sshd[6410]: Failed password for deploy from 10.0.0.8 port 42437 ssh2
+Jul 12 04:37:42 fw1 kernel: [95149.12] segfault at 0 ip 0000
+<191>Feb 26 10:58:11 fw1 dhcpd[42]: started
+Aug 11 06:46:40 web1 su: pam_unix(su:auth): authentication failure; logname=alice uid=1000 euid=0 tty=pts/1 ruser=alice rhost=  user=root
+Jan  9 17:46:01 db1 su: pam_unix(su:auth): authentication failure; logname=alice uid=1000 euid=0 tty=pts/1 ruser=alice rhost=  user=root
+Jan 28 03:15:26 mail.example.test sshd[3174]: Accepted publickey for root from 192.0.2.44 port 50022 ssh2
+<191>Aug  7 13:10:19 mail.example.test dhcpd[42]: started
+<34>Aug 24 08:09:50 web2 dhcpd[42]: DHCPACK on 10.0.0.9
+Jul  3 15:49:09 db1 sshd[7731]: Failed password for invalid user deploy from 192.0.2.44 port 54342 ssh2
+Aug 25 13:26:33 db1 sshd[3741]: Accepted publickey for deploy from 192.0.2.44 port 50022 ssh2
+Apr 19 16:56:51 mail.example.test su: pam_unix(su:auth): authentication failure; logname=alice uid=1000 euid=0 tty=pts/1 ruser=alice rhost=  user=root
+Apr 27 08:55:18 mail.example.test sshd[2390]: Accepted publickey for admin from 203.0.113.7 port 50022 ssh2
+<0>Jan 16 23:45:31 web2 postfix/smtpd[42]: connect from unknown
+Aug  8 15:21:24 mail.example.test sshd[6501]: Invalid user test from 203.0.113.7 port 33333
+<165>Jul 21 21:30:35 fw1 app[42]: started
+Sep 17 16:48:02 mail.example.test kernel: [43713.12] segfault at 0 ip 0000

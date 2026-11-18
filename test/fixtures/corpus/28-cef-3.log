@@ -1,0 +1,20 @@
+May  6 10:52:42 fw1 CEF:0|Example Security|IDS|2.3|1048|Malware download blocked|1|src=192.0.2.44 dst=10.0.0.5 suser=root
+CEF:0|Example Security|IDS|2.6|1015|Allowed connection|1|src=203.0.113.7 dst=10.0.0.5
+CEF:0|Example Security|IDS|2.1|1039|Blocked URL|10|src=10.0.0.8 dst=10.0.0.5
+CEF:0|Example Security|Web Proxy|2.1|1033|Port scan detected|7|src=192.0.2.44 dst=10.0.0.5 suser=deploy
+Dec 27 06:01:50 db1 CEF:0|Example Security|IDS|2.4|1000|Malware download blocked|1|src=10.0.0.8 dst=10.0.0.5 suser=root
+CEF:0|Example Security|Web Proxy|2.0|1004|Allowed connection|7|src=198.51.100.23 dst=10.0.0.5 suser=admin
+Nov  1 20:05:48 web2 CEF:0|Example Security|Web Proxy|2.8|1007|Port scan detected|7|src=192.0.2.44 dst=10.0.0.5 suser=root
+CEF:0|Example Security|Edge FW|2.0|1016|Pipe\|in name|10|src=192.0.2.44 dst=10.0.0.5
+CEF:0|Example Security|Web Proxy|2.3|1045|Pipe\|in name|Low|src=10.0.0.8 dst=10.0.0.5 suser=backup
+Feb  6 11:59:12 CEF:0|Example Security|IDS|2.2|1021|Malware download blocked|5|src=198.51.100.23 dst=10.0.0.5 suser=deploy
+Nov 10 18:53:29 web2 CEF:0|Example Security|IDS|2.7|1002|Port scan detected|Very-High|src=198.51.100.23 dst=10.0.0.5
+CEF:0|Example Security|Edge FW|2.1|1035|Pipe\|in name|12|src=198.51.100.23 dst=10.0.0.5
+CEF:0|Example Security|Web Proxy|2.7|1011|Allowed connection|8|src=198.51.100.23 dst=10.0.0.5
+Dec  2 12:03:07 db1 CEF:0|Example Security|IDS|2.2|1019|Port scan detected|5|src=10.0.0.8 dst=10.0.0.5
+Mar 12 20:45:37 web1 CEF:0|Example Security|Edge FW|2.0|1045|Port scan detected|12|src=192.0.2.44 dst=10.0.0.5 suser=deploy
+CEF:0|Example Security|Edge FW|2.5|1029|Pipe\|in name|10|src=10.0.0.8 dst=10.0.0.5 suser=backup
+CEF:0|Example Security|Web Proxy|2.1|1019|Allowed connection|Low|src=10.0.0.8 dst=10.0.0.5 suser=alice
+Jan  8 08:53:20 fw1 CEF:0|Example Security|Edge FW|2.5|1021|Pipe\|in name|3|src=192.0.2.44 dst=10.0.0.5
+Jun 25 20:08:55 db1 CEF:0|Example Security|IDS|2.6|1030|Port scan detected|High|src=192.0.2.44 dst=10.0.0.5
+CEF:0|Example Security|Web Proxy|2.0|1044|Allowed connection|5|src=10.0.0.8 dst=10.0.0.5

@@ -1,0 +1,19 @@
+Feb  2 05:20:32 db1 kernel: [2745.12] eth0: link up
+Dec  3 04:13:18 web2 sudo:   alice : TTY=pts/0 ; PWD=/home ; USER=root ; COMMAND=/usr/bin/cat /etc/shadow
+Jul  3 19:42:35 web1 su: pam_unix(su:auth): authentication failure; logname=alice uid=1000 euid=0 tty=pts/1 ruser=alice rhost=  user=root
+Nov  5 16:41:38 mail.example.test sshd[1178]: Accepted publickey for deploy from 203.0.113.7 port 50022 ssh2
+Nov 26 17:02:31 web1 su: pam_unix(su:auth): authentication failure; logname=alice uid=1000 euid=0 tty=pts/1 ruser=alice rhost=  user=root
+May  3 11:50:05 mail.example.test sudo:   alice : TTY=pts/0 ; PWD=/home ; USER=root ; COMMAND=/usr/bin/systemctl restart nginx
+Jul 17 09:32:21 db1 CRON[2626]: (root) CMD (run-parts /etc/cron.hourly)
+Jun 11 12:05:47 web2 sudo:   deploy : TTY=pts/0 ; PWD=/home ; USER=root ; COMMAND=/usr/bin/cat /etc/shadow
+Jul  8 18:35:30 mail.example.test systemd[1]: Started Daily apt upgrade.
+Nov  7 05:56:05 db1 sudo:   alice : TTY=pts/0 ; PWD=/home ; USER=root ; COMMAND=/usr/bin/cat /etc/shadow
+<191>Jun  5 13:51:49 db1 dhcpd[42]: connect from unknown
+Feb 12 19:31:25 fw1 sshd[5991]: Accepted publickey for backup from 10.0.0.8 port 50022 ssh2
+Mar  5 11:12:05 db1 sshd[4548]: Failed password for root from 192.0.2.44 port 45289 ssh2
+Mar  2 22:23:16 fw1 systemd[1]: Started Daily apt upgrade.
+Jul  1 22:55:11 mail.example.test sshd[3642]: Accepted publickey for backup from 10.0.0.8 port 50022 ssh2
+Aug 13 20:07:02 web2 su: pam_unix(su:auth): authentication failure; logname=alice uid=1000 euid=0 tty=pts/1 ruser=alice rhost=  user=root
+Feb 27 04:50:06 db1 sshd[3712]: Failed password for backup from 10.0.0.8 port 48075 ssh2
+May  9 10:03:11 mail.example.test sshd[9533]: Failed password for invalid user backup from 203.0.113.7 port 54394 ssh2
+Oct 13 12:24:00 mail.example.test CRON[2941]: (root) CMD (run-parts /etc/cron.hourly)

@@ -1,0 +1,24 @@
+<11>Mar 26 16:43:03 fw1 app[42]: DHCPACK on 10.0.0.9
+Oct  2 04:08:05 web2 systemd[1]: Started Daily apt upgrade.
+Oct  5 01:54:49 web1 CRON[2877]: (root) CMD (run-parts /etc/cron.hourly)
+<0>Apr  9 07:42:31 mail.example.test dhcpd[42]: DHCPACK on 10.0.0.9
+Jan 21 08:49:09 db1 sudo:   admin : TTY=pts/0 ; PWD=/home ; USER=root ; COMMAND=/usr/bin/apt update
+Jun 25 01:24:02 web2 sshd[8236]: Invalid user pi from 10.0.0.8 port 33333
+Aug  4 20:02:58 mail.example.test systemd[1]: Started Daily apt upgrade.
+May 27 11:08:13 web2 kernel: [7100.12] eth0: link up
+Aug  4 05:31:53 web2 sshd[1078]: Accepted publickey for root from 198.51.100.23 port 50022 ssh2
+Jan 11 23:57:27 web1 sshd[6800]: Failed password for invalid user alice from 203.0.113.7 port 43818 ssh2
+Apr 14 23:25:31 web1 su: pam_unix(su:auth): authentication failure; logname=alice uid=1000 euid=0 tty=pts/1 ruser=alice rhost=  user=root
+Nov  9 19:13:07 db1 systemd[1]: Started nginx.service.
+Jan 13 18:52:38 fw1 CRON[2993]: (root) CMD (run-parts /etc/cron.hourly)
+Mar  3 12:29:15 db1 kernel: [63451.12] segfault at 0 ip 0000
+Sep  5 18:39:02 web1 systemd[1]: Started Daily apt upgrade.
+May 15 18:55:50 db1 sshd[9720]: Accepted publickey for backup from 192.0.2.44 port 50022 ssh2
+Oct  6 02:59:18 web1 kernel: [68168.12] eth0: link up
+Jan 19 01:09:33 web2 sudo:   alice : TTY=pts/0 ; PWD=/home ; USER=root ; COMMAND=/usr/bin/cat /etc/shadow
+<86>Apr 22 20:25:21 web1 app[42]: connect from unknown
+<13>May 28 14:50:46 web2 postfix/smtpd[42]: connect from unknown
+Mar  6 08:28:52 mail.example.test systemd[1]: Started nginx.service.
+May 16 00:30:50 fw1 CRON[2846]: (root) CMD (run-parts /etc/cron.hourly)
+Jul 12 02:06:27 fw1 sshd[3109]: Failed password for alice from 10.0.0.8 port 47022 ssh2
+Oct  3 02:18:35 fw1 sshd[6675]: Failed password for backup from 10.0.0.8 port 44770 ssh2

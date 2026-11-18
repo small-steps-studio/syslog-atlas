@@ -1,0 +1,11 @@
+Oct 20 06:08:43 web2 CEF:0|Example Security|IDS|2.4|1029|Port scan detected|High|src=10.0.0.8 dst=10.0.0.5
+CEF:0|Example Security|IDS|2.1|1031|Port scan detected|10|src=192.0.2.44 dst=10.0.0.5 suser=backup
+CEF:0|Example Security|Edge FW|2.7|1011|Pipe\|in name|12|src=203.0.113.7 dst=10.0.0.5
+CEF:0|Example Security|Web Proxy|2.5|1025|Port scan detected|1|src=203.0.113.7 dst=10.0.0.5 suser=root
+CEF:0|Example Security|Web Proxy|2.3|1049|Pipe\|in name|10|src=203.0.113.7 dst=10.0.0.5 suser=root
+CEF:0|Example Security|Web Proxy|2.7|1020|Blocked URL|Very-High|src=203.0.113.7 dst=10.0.0.5
+CEF:0|Example Security|Edge FW|2.5|1047|Malware download blocked|3|src=192.0.2.44 dst=10.0.0.5
+CEF:0|Example Security|Edge FW|2.2|1032|Pipe\|in name|5|src=192.0.2.44 dst=10.0.0.5 suser=alice
+Nov 13 13:20:53 CEF:0|Example Security|Web Proxy|2.8|1016|Pipe\|in name|High|src=192.0.2.44 dst=10.0.0.5
+Jun  8 20:30:59 CEF:0|Example Security|Web Proxy|2.3|1035|Blocked URL|High|src=192.0.2.44 dst=10.0.0.5
+Nov 10 18:00:14 mail.example.test CEF:0|Example Security|Web Proxy|2.8|1030|Port scan detected|1|src=10.0.0.8 dst=10.0.0.5 suser=alice

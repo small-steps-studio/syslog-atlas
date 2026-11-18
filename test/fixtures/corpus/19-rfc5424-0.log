@@ -1,0 +1,5 @@
+<14>1 2026-03-15T23:37:00Z fw1 app - ID47 -
+<190>1 2026-09-18T21:45:00Z fw1 app 4211 ID47 [exampleSDID@32473 iut="3" eventSource="Application"][meta x="y"] connection received
+<190>1 2026-08-26T04:26:00Z db1 su - ID47 [meta sequenceId="1"]
+<14>1 2026-02-06T21:40:00+01:00 db1 postgres 4211 - [exampleSDID@32473 iut="3" eventSource="Application"][meta x="y"] ﻿message with byte order mark
+<34>1 2026-04-05T10:59:00Z web2 postgres - ID47 -

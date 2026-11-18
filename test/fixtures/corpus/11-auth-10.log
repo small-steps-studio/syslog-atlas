@@ -1,0 +1,14 @@
+<38>Mar 25 07:22:36 fw1 dhcpd[42]: DHCPACK on 10.0.0.9
+Jun  2 02:23:16 web2 sshd[9077]: Accepted publickey for backup from 198.51.100.23 port 50022 ssh2
+Nov  8 20:22:06 web1 sshd[7653]: Failed password for invalid user admin from 203.0.113.7 port 47620 ssh2
+Oct 14 21:56:35 db1 kernel: [6173.12] segfault at 0 ip 0000
+Feb 23 14:26:53 web2 sshd[8852]: Accepted publickey for deploy from 198.51.100.23 port 50022 ssh2
+Sep 14 12:27:20 web2 sshd[8531]: Invalid user test from 198.51.100.23 port 33333
+Jun  5 23:13:00 fw1 sshd[3334]: Failed password for invalid user root from 10.0.0.8 port 49952 ssh2
+Jun 19 06:52:46 db1 systemd[1]: Started nginx.service.
+May 18 22:44:13 fw1 systemd[1]: Started Daily apt upgrade.
+Feb 11 10:46:19 db1 systemd[1]: Started Daily apt upgrade.
+Mar 11 01:14:12 mail.example.test sshd[7865]: Invalid user test from 203.0.113.7 port 33333
+Mar  1 08:27:18 web1 systemd[1]: Started nginx.service.
+<86>Sep 13 17:18:06 mail.example.test postfix/smtpd[42]: DHCPACK on 10.0.0.9
+May  6 08:38:46 fw1 systemd[1]: Started Session 12 of user deploy.

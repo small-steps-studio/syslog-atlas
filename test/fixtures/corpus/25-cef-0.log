@@ -1,0 +1,3 @@
+CEF:0|Example Security|Web Proxy|2.2|1047|Port scan detected|Low|src=192.0.2.44 dst=10.0.0.5 suser=root
+CEF:0|Example Security|Edge FW|2.7|1032|Malware download blocked|7|src=203.0.113.7 dst=10.0.0.5 suser=alice
+Dec 17 03:43:23 CEF:0|Example Security|Web Proxy|2.3|1041|Malware download blocked|12|src=203.0.113.7 dst=10.0.0.5 suser=deploy

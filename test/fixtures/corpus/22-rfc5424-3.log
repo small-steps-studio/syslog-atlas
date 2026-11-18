@@ -1,0 +1,15 @@
+<190>1 2026-10-10T02:47:00+01:00 web1 postgres 4211 ID47 [exampleSDID@32473 iut="3" eventSource="Application"][meta x="y"]
+<34>1 2026-02-10T06:19:00+01:00 fw1 su - - [exampleSDID@32473 iut="3" eventSource="Application"][meta x="y"] connection received
+<190>1 2026-05-25T19:30:00Z mail.example.test - 4211 ID47 -
+<34>1 2026-12-06T00:28:00+01:00 mail.example.test su 4211 - [meta sequenceId="1"]
+<14>1 2026-10-21T03:27:00Z web2 app 4211 - [exampleSDID@32473 iut="3" eventSource="Application"][meta x="y"]
+<165>1 2026-08-23T10:10:00Z web2 app 4211 - [exampleSDID@32473 iut="3" eventSource="Application"][meta x="y"]
+<14>1 2026-04-20T11:21:00+01:00 web1 - - - [exampleSDID@32473 iut="3" eventSource="Application"][meta x="y"] connection received
+<34>1 2026-08-01T12:31:00.123Z web2 postgres - ID47 [exampleSDID@32473 iut="3" eventSource="Application"][meta x="y"] ﻿message with byte order mark
+<34>1 2026-04-15T11:43:00+01:00 web1 - - ID47 [meta sequenceId="1"] connection received
+<165>1 2026-06-19T01:32:00Z web2 app - - [exampleSDID@32473 iut="3" eventSource="Application"][meta x="y"] 'su root' failed for lonvick on /dev/pts/8
+<14>1 2026-12-13T15:41:00+01:00 db1 app 4211 - [exampleSDID@32473 iut="3" eventSource="Application"][meta x="y"] connection received
+<190>1 2026-12-22T03:18:00.123Z web2 app - - [exampleSDID@32473 iut="3" eventSource="Application"][meta x="y"] ﻿message with byte order mark
+<190>1 2026-11-07T12:16:00.123Z db1 - - ID47 -
+<190>1 2026-01-11T10:39:00.123Z fw1 su - ID47 [meta sequenceId="1"]
+<3>1 2026-05-25T15:01:00.123Z web1 - 4211 ID47 [exampleSDID@32473 iut="3" eventSource="Application"][meta x="y"]

@@ -1,0 +1,15 @@
+CEF:0|Example Security|Edge FW|2.5|1036|Port scan detected|Low|src=192.0.2.44 dst=10.0.0.5
+CEF:0|Example Security|Edge FW|2.1|1049|Port scan detected|10|src=10.0.0.8 dst=10.0.0.5
+CEF:0|Example Security|Edge FW|2.3|1037|Blocked URL|5|src=10.0.0.8 dst=10.0.0.5
+CEF:0|Example Security|Edge FW|2.4|1045|Port scan detected|3|src=203.0.113.7 dst=10.0.0.5 suser=root
+Jun  9 05:16:33 CEF:0|Example Security|Web Proxy|2.6|1049|Blocked URL|Very-High|src=198.51.100.23 dst=10.0.0.5
+CEF:0|Example Security|Edge FW|2.4|1042|Allowed connection|Very-High|src=198.51.100.23 dst=10.0.0.5 suser=alice
+CEF:0|Example Security|Edge FW|2.7|1031|Pipe\|in name|High|src=203.0.113.7 dst=10.0.0.5
+CEF:0|Example Security|Web Proxy|2.5|1033|Allowed connection|12|src=203.0.113.7 dst=10.0.0.5 suser=alice
+CEF:0|Example Security|Edge FW|2.2|1002|Blocked URL|3|src=198.51.100.23 dst=10.0.0.5 suser=backup
+CEF:0|Example Security|Edge FW|2.4|1020|Malware download blocked|High|src=10.0.0.8 dst=10.0.0.5
+CEF:0|Example Security|Edge FW|2.4|1031|Pipe\|in name|8|src=192.0.2.44 dst=10.0.0.5
+CEF:0|Example Security|Web Proxy|2.0|1049|Port scan detected|3|src=10.0.0.8 dst=10.0.0.5
+Sep 10 01:21:33 fw1 CEF:0|Example Security|Edge FW|2.3|1043|Pipe\|in name|Low|src=203.0.113.7 dst=10.0.0.5
+May 10 17:42:21 CEF:0|Example Security|Edge FW|2.0|1008|Pipe\|in name|Low|src=198.51.100.23 dst=10.0.0.5
+Aug 10 07:06:15 CEF:0|Example Security|IDS|2.7|1025|Blocked URL|3|src=10.0.0.8 dst=10.0.0.5

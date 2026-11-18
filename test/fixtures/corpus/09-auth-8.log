@@ -1,0 +1,35 @@
+<86>Apr  4 12:43:50 web2 dhcpd[42]: DHCPACK on 10.0.0.9
+Oct 21 23:33:35 db1 sudo:   root : TTY=pts/0 ; PWD=/home ; USER=root ; COMMAND=/usr/bin/cat /etc/shadow
+Oct 28 14:51:33 mail.example.test CRON[2337]: (root) CMD (run-parts /etc/cron.hourly)
+Apr 11 19:38:53 db1 sudo:   alice : TTY=pts/0 ; PWD=/home ; USER=root ; COMMAND=/usr/bin/apt update
+Aug 17 13:58:45 web2 sshd[1719]: Invalid user test from 198.51.100.23 port 33333
+Dec  6 10:55:20 web1 sshd[6404]: Invalid user pi from 10.0.0.8 port 33333
+Jun  1 00:50:26 web2 sshd[5603]: Failed password for backup from 10.0.0.8 port 44741 ssh2
+Nov  2 12:02:12 db1 sshd[5963]: Accepted publickey for alice from 203.0.113.7 port 50022 ssh2
+Oct 16 01:39:19 db1 sshd[2816]: Invalid user pi from 192.0.2.44 port 33333
+Sep 14 13:19:48 web1 sshd[9383]: Invalid user oracle from 192.0.2.44 port 33333
+Mar 26 18:10:53 web2 sudo:   alice : TTY=pts/0 ; PWD=/home ; USER=root ; COMMAND=/usr/bin/cat /etc/shadow
+Aug  4 22:34:13 web1 sshd[7849]: Invalid user test from 203.0.113.7 port 33333
+Aug  2 19:28:35 web2 sshd[4647]: Failed password for invalid user alice from 10.0.0.8 port 48895 ssh2
+Jun 10 00:55:11 web2 CRON[2525]: (root) CMD (run-parts /etc/cron.hourly)
+Mar 10 15:55:06 mail.example.test sudo:   backup : TTY=pts/0 ; PWD=/home ; USER=root ; COMMAND=/usr/bin/apt update
+Dec  8 17:22:25 mail.example.test sudo:   admin : TTY=pts/0 ; PWD=/home ; USER=root ; COMMAND=/usr/bin/cat /etc/shadow
+May 28 22:07:17 fw1 kernel: [55653.12] eth0: link up
+Mar 13 01:02:33 web1 systemd[1]: Started nginx.service.
+Sep  5 03:11:48 web1 su: pam_unix(su:auth): authentication failure; logname=alice uid=1000 euid=0 tty=pts/1 ruser=alice rhost=  user=root
+Aug 22 13:24:26 web1 systemd[1]: Started Session 12 of user deploy.
+Jan 19 11:46:19 web2 systemd[1]: Started Daily apt upgrade.
+Mar 15 02:42:19 web1 kernel: [54222.12] eth0: link up
+<34>Feb  9 14:23:53 web1 dhcpd[42]: connect from unknown
+Sep 27 23:14:50 web2 CRON[2419]: (root) CMD (run-parts /etc/cron.hourly)
+Dec  8 12:53:20 db1 su: pam_unix(su:auth): authentication failure; logname=alice uid=1000 euid=0 tty=pts/1 ruser=alice rhost=  user=root
+Nov  3 13:20:14 mail.example.test kernel: [97257.12] Out of memory: Killed process 1234
+Jan 27 00:24:43 mail.example.test kernel: [87705.12] Out of memory: Killed process 1234
+Jan  1 15:31:54 web2 su: pam_unix(su:auth): authentication failure; logname=alice uid=1000 euid=0 tty=pts/1 ruser=alice rhost=  user=root
+Dec 11 20:35:51 db1 sshd[9909]: Failed password for backup from 203.0.113.7 port 45853 ssh2
+Jul 17 17:31:23 web1 sshd[7591]: Invalid user test from 10.0.0.8 port 33333
+Aug  4 13:33:34 mail.example.test sshd[7979]: Failed password for deploy from 203.0.113.7 port 59961 ssh2
+Jun  8 07:04:21 fw1 su: pam_unix(su:auth): authentication failure; logname=alice uid=1000 euid=0 tty=pts/1 ruser=alice rhost=  user=root
+Feb 20 01:22:47 web1 sshd[6362]: Accepted publickey for alice from 198.51.100.23 port 50022 ssh2
+Apr  7 11:12:12 mail.example.test CRON[2902]: (root) CMD (run-parts /etc/cron.hourly)
+Mar 23 06:25:07 fw1 kernel: [56531.12] eth0: link up

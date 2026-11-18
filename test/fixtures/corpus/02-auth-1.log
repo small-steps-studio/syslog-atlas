@@ -1,0 +1,32 @@
+Jun 28 21:33:28 fw1 systemd[1]: Started Session 12 of user deploy.
+Aug 24 02:49:06 mail.example.test sshd[5870]: Failed password for root from 10.0.0.8 port 51332 ssh2
+Jan  2 03:13:04 fw1 kernel: [67380.12] eth0: link up
+Jul 27 13:07:47 web2 sudo:   backup : TTY=pts/0 ; PWD=/home ; USER=root ; COMMAND=/usr/bin/cat /etc/shadow
+<34>Mar 25 09:16:33 web1 app[42]: connect from unknown
+Dec 19 04:24:33 web2 sshd[9533]: Accepted publickey for alice from 10.0.0.8 port 50022 ssh2
+Jun 16 18:33:25 web1 su: pam_unix(su:auth): authentication failure; logname=alice uid=1000 euid=0 tty=pts/1 ruser=alice rhost=  user=root
+Aug 13 07:34:23 web1 sshd[5521]: Invalid user test from 10.0.0.8 port 33333
+Nov  2 00:56:46 web1 sudo:   alice : TTY=pts/0 ; PWD=/home ; USER=root ; COMMAND=/usr/bin/cat /etc/shadow
+Jul 11 01:12:25 web1 sshd[6726]: Failed password for backup from 192.0.2.44 port 41852 ssh2
+Nov  2 17:05:26 web1 sshd[7871]: Invalid user test from 198.51.100.23 port 33333
+Sep  9 09:55:31 web2 CRON[2959]: (root) CMD (run-parts /etc/cron.hourly)
+Jan 13 06:29:46 web2 su: pam_unix(su:auth): authentication failure; logname=alice uid=1000 euid=0 tty=pts/1 ruser=alice rhost=  user=root
+<11>Oct 16 23:18:13 web1 app[42]: DHCPACK on 10.0.0.9
+May 22 01:23:09 db1 CRON[2018]: (root) CMD (run-parts /etc/cron.hourly)
+Oct  5 10:07:47 mail.example.test sshd[8847]: Invalid user oracle from 10.0.0.8 port 33333
+Feb 10 12:45:51 web2 kernel: [39177.12] Out of memory: Killed process 1234
+Mar  2 12:48:06 web1 sshd[1141]: Failed password for deploy from 198.51.100.23 port 47995 ssh2
+Apr 12 02:58:46 fw1 sshd[9464]: Failed password for root from 10.0.0.8 port 41024 ssh2
+Mar 10 19:42:59 fw1 CRON[2653]: (root) CMD (run-parts /etc/cron.hourly)
+Apr  2 19:20:56 web2 sshd[4908]: Failed password for alice from 203.0.113.7 port 51575 ssh2
+May 11 16:12:49 mail.example.test systemd[1]: Started Daily apt upgrade.
+Mar  7 00:47:11 mail.example.test sudo:   root : TTY=pts/0 ; PWD=/home ; USER=root ; COMMAND=/usr/bin/systemctl restart nginx
+Feb 28 02:35:58 fw1 CRON[2750]: (root) CMD (run-parts /etc/cron.hourly)
+May  7 20:01:23 web2 sshd[9372]: Failed password for invalid user alice from 192.0.2.44 port 40068 ssh2
+Jul 13 23:11:48 mail.example.test systemd[1]: Started Daily apt upgrade.
+Oct 18 10:52:05 db1 su: pam_unix(su:auth): authentication failure; logname=alice uid=1000 euid=0 tty=pts/1 ruser=alice rhost=  user=root
+Apr 12 15:48:44 fw1 systemd[1]: Started Session 12 of user deploy.
+Jul  4 19:54:08 db1 kernel: [95308.12] eth0: link up
+Oct 19 12:54:28 web1 sshd[7582]: Failed password for deploy from 203.0.113.7 port 59917 ssh2
+Jul  5 15:10:33 web2 kernel: [9688.12] Out of memory: Killed process 1234
+Jul  4 23:00:24 web1 kernel: [65538.12] segfault at 0 ip 0000

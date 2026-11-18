@@ -1,0 +1,4 @@
+﻿Sep 20 16:05:14 web2 CRON[2944]: (root) CMD (run-parts /etc/cron.hourly)
+<11>Nov  5 18:31:28 mail.example.test app[42]: DHCPACK on 10.0.0.9
+Nov 12 17:41:07 fw1 systemd[1]: Started nginx.service.
+Feb 25 00:45:22 web2 CRON[2298]: (root) CMD (run-parts /etc/cron.hourly)

@@ -1,0 +1,17 @@
+Aug 27 23:45:04 web1 CEF:0|Example Security|IDS|2.6|1030|Blocked URL|5|src=10.0.0.8 dst=10.0.0.5 suser=deploy
+CEF:0|Example Security|IDS|2.5|1016|Allowed connection|10|src=192.0.2.44 dst=10.0.0.5
+CEF:0|Example Security|IDS|2.8|1045|Blocked URL|5|src=192.0.2.44 dst=10.0.0.5
+CEF:0|Example Security|IDS|2.4|1038|Pipe\|in name|High|src=203.0.113.7 dst=10.0.0.5
+CEF:0|Example Security|Edge FW|2.6|1023|Blocked URL|Low|src=10.0.0.8 dst=10.0.0.5
+CEF:0|Example Security|Web Proxy|2.1|1006|Pipe\|in name|7|src=10.0.0.8 dst=10.0.0.5
+CEF:0|Example Security|Web Proxy|2.2|1023|Blocked URL|High|src=192.0.2.44 dst=10.0.0.5
+CEF:0|Example Security|Edge FW|2.7|1040|Port scan detected|3|src=203.0.113.7 dst=10.0.0.5
+Oct  7 23:53:37 CEF:0|Example Security|Edge FW|2.4|1006|Allowed connection|Low|src=10.0.0.8 dst=10.0.0.5
+CEF:0|Example Security|IDS|2.7|1047|Pipe\|in name|3|src=198.51.100.23 dst=10.0.0.5 suser=admin
+Jan  9 22:48:41 CEF:0|Example Security|Web Proxy|2.8|1017|Port scan detected|1|src=198.51.100.23 dst=10.0.0.5
+Feb 20 16:37:27 mail.example.test CEF:0|Example Security|Web Proxy|2.8|1008|Malware download blocked|12|src=203.0.113.7 dst=10.0.0.5 suser=root
+CEF:0|Example Security|Web Proxy|2.4|1049|Pipe\|in name|12|src=203.0.113.7 dst=10.0.0.5 suser=admin
+Mar 10 01:58:51 CEF:0|Example Security|IDS|2.7|1035|Blocked URL|1|src=198.51.100.23 dst=10.0.0.5
+Jan 21 00:37:14 CEF:0|Example Security|Web Proxy|2.7|1008|Pipe\|in name|5|src=198.51.100.23 dst=10.0.0.5
+Jun 14 16:35:33 CEF:0|Example Security|Edge FW|2.4|1046|Port scan detected|Very-High|src=203.0.113.7 dst=10.0.0.5
+Jan  3 13:53:49 CEF:0|Example Security|Edge FW|2.4|1031|Blocked URL|Low|src=10.0.0.8 dst=10.0.0.5

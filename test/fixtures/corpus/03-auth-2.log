@@ -1,0 +1,30 @@
+Feb  6 21:22:02 web1 sshd[8629]: Invalid user pi from 192.0.2.44 port 33333
+Sep 26 08:34:04 web2 su: pam_unix(su:auth): authentication failure; logname=alice uid=1000 euid=0 tty=pts/1 ruser=alice rhost=  user=root
+Feb  6 02:55:42 web1 systemd[1]: Started Session 12 of user deploy.
+Jan  9 13:06:25 web2 su: pam_unix(su:auth): authentication failure; logname=alice uid=1000 euid=0 tty=pts/1 ruser=alice rhost=  user=root
+Oct 12 00:18:14 web2 sshd[9070]: Invalid user oracle from 192.0.2.44 port 33333
+<38>Jul 24 05:33:54 web1 dhcpd[42]: connect from unknown
+Nov  3 19:16:21 fw1 sshd[5340]: Invalid user oracle from 198.51.100.23 port 33333
+May 12 23:57:45 mail.example.test systemd[1]: Started Session 12 of user deploy.
+Nov 21 07:18:43 web1 sudo:   alice : TTY=pts/0 ; PWD=/home ; USER=root ; COMMAND=/usr/bin/systemctl restart nginx
+Jun 10 10:36:44 web1 sshd[7017]: Accepted publickey for backup from 10.0.0.8 port 50022 ssh2
+Dec 19 11:26:01 web2 CRON[2807]: (root) CMD (run-parts /etc/cron.hourly)
+Jan 19 12:04:13 db1 sshd[9400]: Invalid user test from 192.0.2.44 port 33333
+May 19 09:49:32 web1 sshd[5957]: Accepted publickey for admin from 192.0.2.44 port 50022 ssh2
+Apr 24 20:48:00 web1 sshd[7503]: Failed password for admin from 203.0.113.7 port 44271 ssh2
+Sep  8 17:35:54 web2 sshd[6209]: Invalid user test from 198.51.100.23 port 33333
+<86>May 13 15:50:51 db1 dhcpd[42]: DHCPACK on 10.0.0.9
+Aug 11 20:50:04 web2 sudo:   alice : TTY=pts/0 ; PWD=/home ; USER=root ; COMMAND=/usr/bin/cat /etc/shadow
+Feb 23 19:25:38 fw1 kernel: [80962.12] Out of memory: Killed process 1234
+Sep  3 02:05:47 web1 sshd[8419]: Accepted publickey for root from 198.51.100.23 port 50022 ssh2
+Oct  5 18:20:41 web1 kernel: [25616.12] Out of memory: Killed process 1234
+Jan 17 17:22:04 web2 kernel: [61278.12] segfault at 0 ip 0000
+Dec  3 01:04:43 web1 sshd[2978]: Failed password for invalid user deploy from 192.0.2.44 port 53664 ssh2
+Mar  4 11:00:13 web1 sshd[3437]: Accepted publickey for deploy from 192.0.2.44 port 50022 ssh2
+Aug  4 20:43:19 web2 CRON[2730]: (root) CMD (run-parts /etc/cron.hourly)
+Aug 22 17:49:28 web2 CRON[2551]: (root) CMD (run-parts /etc/cron.hourly)
+Feb 15 09:28:32 db1 sshd[2996]: Invalid user oracle from 10.0.0.8 port 33333
+Nov 27 01:45:27 web1 sshd[3720]: Invalid user oracle from 10.0.0.8 port 33333
+Dec 24 14:24:54 web2 su: pam_unix(su:auth): authentication failure; logname=alice uid=1000 euid=0 tty=pts/1 ruser=alice rhost=  user=root
+May 28 17:36:18 web2 sshd[1798]: Failed password for admin from 10.0.0.8 port 48194 ssh2
+Jan  7 04:29:45 db1 sshd[6579]: Accepted publickey for backup from 10.0.0.8 port 50022 ssh2

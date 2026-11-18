@@ -1,0 +1,15 @@
+<86>May  5 11:43:18 web2 dhcpd[42]: started
+<11>Oct  8 04:49:37 web1 postfix/smtpd[42]: connect from unknown
+May 20 12:30:26 web1 sshd[7880]: Failed password for invalid user deploy from 192.0.2.44 port 42622 ssh2
+Dec  6 01:42:42 web1 sshd[6848]: Invalid user pi from 203.0.113.7 port 33333
+Aug 26 08:38:10 web1 sshd[1886]: Accepted publickey for alice from 198.51.100.23 port 50022 ssh2
+Jul 24 11:24:38 web2 CRON[2374]: (root) CMD (run-parts /etc/cron.hourly)
+Apr  9 12:57:29 web2 sshd[2011]: Failed password for invalid user root from 10.0.0.8 port 55043 ssh2
+Dec 19 00:17:18 db1 sshd[6734]: Invalid user test from 10.0.0.8 port 33333
+Aug 26 08:25:17 fw1 su: pam_unix(su:auth): authentication failure; logname=alice uid=1000 euid=0 tty=pts/1 ruser=alice rhost=  user=root
+Jan 11 03:55:28 web2 systemd[1]: Started Daily apt upgrade.
+Nov 11 13:39:18 web1 sshd[6287]: Failed password for invalid user alice from 198.51.100.23 port 49350 ssh2
+Jul 21 07:06:26 db1 systemd[1]: Started Session 12 of user deploy.
+Jul 13 14:52:29 mail.example.test sudo:   deploy : TTY=pts/0 ; PWD=/home ; USER=root ; COMMAND=/usr/bin/systemctl restart nginx
+Aug 16 05:54:21 fw1 sshd[2466]: Accepted publickey for root from 10.0.0.8 port 50022 ssh2
+Nov 22 10:37:42 web2 CRON[2384]: (root) CMD (run-parts /etc/cron.hourly)

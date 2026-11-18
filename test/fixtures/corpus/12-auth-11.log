@@ -1,0 +1,18 @@
+Apr  6 13:58:53 web2 kernel: [30540.12] eth0: link up
+Jan 10 07:48:25 db1 sshd[5643]: Accepted publickey for deploy from 198.51.100.23 port 50022 ssh2
+Jun 19 09:31:01 fw1 su: pam_unix(su:auth): authentication failure; logname=alice uid=1000 euid=0 tty=pts/1 ruser=alice rhost=  user=root
+Jun 11 14:41:03 mail.example.test systemd[1]: Started nginx.service.
+Oct 23 10:47:34 web2 sshd[7915]: Failed password for admin from 198.51.100.23 port 59501 ssh2
+Dec 26 23:44:14 db1 CRON[2077]: (root) CMD (run-parts /etc/cron.hourly)
+Jun 19 05:31:57 mail.example.test CRON[2592]: (root) CMD (run-parts /etc/cron.hourly)
+Jan 22 10:45:01 db1 sshd[1707]: Failed password for deploy from 192.0.2.44 port 57114 ssh2
+Apr  8 17:33:17 db1 sshd[5138]: Accepted publickey for alice from 192.0.2.44 port 50022 ssh2
+Aug 12 00:05:17 mail.example.test sshd[7492]: Invalid user oracle from 192.0.2.44 port 33333
+<13>May 16 20:07:26 fw1 postfix/smtpd[42]: connect from unknown
+May  4 01:33:08 db1 su: pam_unix(su:auth): authentication failure; logname=alice uid=1000 euid=0 tty=pts/1 ruser=alice rhost=  user=root
+Mar 13 21:42:27 web2 kernel: [74748.12] segfault at 0 ip 0000
+Apr 27 17:08:18 mail.example.test systemd[1]: Started Daily apt upgrade.
+Jul  7 19:50:35 mail.example.test kernel: [66679.12] Out of memory: Killed process 1234
+Jan 12 19:30:28 web2 systemd[1]: Started Daily apt upgrade.
+Nov  3 12:03:03 db1 sshd[6241]: Invalid user pi from 203.0.113.7 port 33333
+Oct 13 02:55:37 web2 systemd[1]: Started nginx.service.

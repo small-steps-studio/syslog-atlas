@@ -1,0 +1,17 @@
+Feb 23 22:21:12 web2 sudo:   admin : TTY=pts/0 ; PWD=/home ; USER=root ; COMMAND=/usr/bin/cat /etc/shadow
+Apr 26 11:44:23 web1 sshd[1284]: Invalid user test from 198.51.100.23 port 33333
+<165>Dec 26 18:30:27 web2 app[42]: started
+Feb  1 17:59:37 fw1 su: pam_unix(su:auth): authentication failure; logname=alice uid=1000 euid=0 tty=pts/1 ruser=alice rhost=  user=root
+Mar 26 08:42:25 web1 sshd[6424]: Accepted publickey for admin from 203.0.113.7 port 50022 ssh2
+Jun 24 04:51:12 mail.example.test sshd[7971]: Invalid user test from 10.0.0.8 port 33333
+Oct 19 02:39:50 db1 sshd[8456]: Failed password for root from 203.0.113.7 port 51950 ssh2
+Aug 12 04:58:22 fw1 sshd[1840]: Accepted publickey for root from 10.0.0.8 port 50022 ssh2
+<0>May 12 17:10:38 db1 dhcpd[42]: DHCPACK on 10.0.0.9
+Jan  4 17:39:02 mail.example.test sudo:   deploy : TTY=pts/0 ; PWD=/home ; USER=root ; COMMAND=/usr/bin/systemctl restart nginx
+Oct 23 17:55:58 mail.example.test kernel: [14076.12] segfault at 0 ip 0000
+<13>Feb 27 22:10:19 fw1 app[42]: connect from unknown
+Dec 15 23:39:25 db1 CRON[2531]: (root) CMD (run-parts /etc/cron.hourly)
+Jan 12 05:12:12 fw1 sshd[8765]: Accepted publickey for alice from 10.0.0.8 port 50022 ssh2
+Sep 20 17:40:05 mail.example.test sshd[2796]: Accepted publickey for backup from 192.0.2.44 port 50022 ssh2
+Sep  3 11:46:12 mail.example.test sshd[4172]: Accepted publickey for alice from 203.0.113.7 port 50022 ssh2
+Sep  3 01:45:03 mail.example.test systemd[1]: Started Daily apt upgrade.

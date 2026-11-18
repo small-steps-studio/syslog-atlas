@@ -1,0 +1,13 @@
+<3>1 2026-07-04T15:35:00.123Z db1 postgres - ID47 [exampleSDID@32473 iut="3" eventSource="Application"][meta x="y"] 'su root' failed for lonvick on /dev/pts/8
+<165>1 2026-01-02T18:52:00.123Z fw1 - 4211 - -
+<34>1 2026-12-08T09:32:00Z mail.example.test app 4211 ID47 - connection received
+<3>1 2026-01-10T19:57:00+01:00 fw1 - 4211 ID47 [meta sequenceId="1"] ﻿message with byte order mark
+<190>1 2026-09-17T22:46:00Z web1 app 4211 - [meta sequenceId="1"]
+<190>1 2026-05-04T08:35:00+01:00 db1 su - - -
+<34>1 2026-07-28T23:53:00.123Z fw1 postgres 4211 - [meta sequenceId="1"] connection received
+<165>1 2026-01-26T16:21:00+01:00 web2 - 4211 ID47 [exampleSDID@32473 iut="3" eventSource="Application"][meta x="y"]
+<34>1 2026-10-24T18:58:00Z db1 - 4211 - [exampleSDID@32473 iut="3" eventSource="Application"][meta x="y"]
+<34>1 2026-06-04T22:11:00+01:00 web1 - 4211 - - 'su root' failed for lonvick on /dev/pts/8
+<14>1 2026-01-14T22:21:00+01:00 fw1 su 4211 ID47 [meta sequenceId="1"]
+<3>1 2026-06-02T18:31:00+01:00 web1 su 4211 - [meta sequenceId="1"]
+<34>1 2026-12-11T17:20:00.123Z web2 postgres 4211 ID47 - connection received

@@ -1,0 +1,15 @@
+Dec 15 10:54:14 CEF:0|Example Security|Web Proxy|2.3|1039|Malware download blocked|5|src=198.51.100.23 dst=10.0.0.5 suser=root
+Feb  7 23:17:30 fw1 CEF:0|Example Security|IDS|2.5|1026|Malware download blocked|10|src=10.0.0.8 dst=10.0.0.5
+CEF:0|Example Security|IDS|2.5|1018|Malware download blocked|8|src=192.0.2.44 dst=10.0.0.5 suser=admin
+Jun  9 13:53:25 CEF:0|Example Security|IDS|2.7|1013|Blocked URL|3|src=10.0.0.8 dst=10.0.0.5
+CEF:0|Example Security|Edge FW|2.5|1006|Malware download blocked|Low|src=10.0.0.8 dst=10.0.0.5 suser=backup
+Sep 20 23:12:19 CEF:0|Example Security|Edge FW|2.7|1048|Port scan detected|High|src=10.0.0.8 dst=10.0.0.5
+Dec  4 10:44:00 web2 CEF:0|Example Security|Edge FW|2.5|1020|Allowed connection|1|src=203.0.113.7 dst=10.0.0.5
+CEF:0|Example Security|IDS|2.0|1025|Blocked URL|12|src=203.0.113.7 dst=10.0.0.5 suser=root
+CEF:0|Example Security|Web Proxy|2.7|1010|Allowed connection|10|src=203.0.113.7 dst=10.0.0.5 suser=admin
+CEF:0|Example Security|IDS|2.2|1035|Pipe\|in name|1|src=192.0.2.44 dst=10.0.0.5 suser=deploy
+Dec 16 04:07:30 db1 CEF:0|Example Security|Web Proxy|2.1|1035|Blocked URL|10|src=192.0.2.44 dst=10.0.0.5 suser=root
+Aug  4 03:00:53 db1 CEF:0|Example Security|Edge FW|2.8|1001|Port scan detected|12|src=192.0.2.44 dst=10.0.0.5
+Jun 11 18:51:55 web2 CEF:0|Example Security|Edge FW|2.8|1003|Pipe\|in name|Very-High|src=192.0.2.44 dst=10.0.0.5 suser=backup
+Feb 18 22:49:40 web1 CEF:0|Example Security|IDS|2.2|1042|Allowed connection|5|src=203.0.113.7 dst=10.0.0.5 suser=deploy
+CEF:0|Example Security|IDS|2.4|1046|Blocked URL|High|src=10.0.0.8 dst=10.0.0.5 suser=backup

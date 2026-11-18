@@ -1,0 +1,12 @@
+<86>Nov 16 07:56:56 mail.example.test dhcpd[42]: DHCPACK on 10.0.0.9
+Nov  1 09:00:50 fw1 su: pam_unix(su:auth): authentication failure; logname=alice uid=1000 euid=0 tty=pts/1 ruser=alice rhost=  user=root
+Jan 20 20:41:09 web1 su: pam_unix(su:auth): authentication failure; logname=alice uid=1000 euid=0 tty=pts/1 ruser=alice rhost=  user=root
+Dec 10 23:46:02 web2 systemd[1]: Started nginx.service.
+Feb  8 22:18:06 fw1 sshd[1178]: Accepted publickey for admin from 203.0.113.7 port 50022 ssh2
+Feb  3 06:23:11 db1 sshd[8848]: Failed password for deploy from 203.0.113.7 port 58929 ssh2
+Jan  5 04:27:41 web2 systemd[1]: Started nginx.service.
+Mar 17 01:25:05 fw1 sshd[1668]: Invalid user test from 10.0.0.8 port 33333
+Feb 28 17:05:44 db1 sshd[8704]: Accepted publickey for backup from 192.0.2.44 port 50022 ssh2
+Feb 28 08:15:25 mail.example.test sshd[5653]: Accepted publickey for alice from 203.0.113.7 port 50022 ssh2
+Nov  6 02:54:32 db1 su: pam_unix(su:auth): authentication failure; logname=alice uid=1000 euid=0 tty=pts/1 ruser=alice rhost=  user=root
+Dec  9 11:33:30 web2 sshd[4215]: Invalid user test from 10.0.0.8 port 33333

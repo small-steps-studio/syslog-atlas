@@ -1,0 +1,14 @@
+Mar 22 23:32:19 fw1 sshd[9939]: Failed password for invalid user deploy from 198.51.100.23 port 48793 ssh2
+Oct  4 23:23:46 web1 sshd[5836]: Accepted publickey for alice from 203.0.113.7 port 50022 ssh2
+Apr 12 07:42:39 web2 sshd[1726]: Failed password for backup from 203.0.113.7 port 41355 ssh2
+Feb 14 09:00:34 web1 CRON[2758]: (root) CMD (run-parts /etc/cron.hourly)
+Aug 27 02:42:32 web2 sshd[3116]: Accepted publickey for backup from 192.0.2.44 port 50022 ssh2
+May  8 20:52:36 mail.example.test sshd[7476]: Invalid user pi from 198.51.100.23 port 33333
+Jan 18 03:49:13 mail.example.test sshd[3491]: Invalid user test from 10.0.0.8 port 33333
+Sep 12 06:18:41 web2 systemd[1]: Started Session 12 of user deploy.
+Apr  8 09:15:22 mail.example.test su: pam_unix(su:auth): authentication failure; logname=alice uid=1000 euid=0 tty=pts/1 ruser=alice rhost=  user=root
+<0>Oct 17 13:21:13 web2 postfix/smtpd[42]: connect from unknown
+May 28 22:44:31 web2 sshd[5041]: Failed password for admin from 198.51.100.23 port 47924 ssh2
+May 13 22:41:06 fw1 sudo:   deploy : TTY=pts/0 ; PWD=/home ; USER=root ; COMMAND=/usr/bin/systemctl restart nginx
+Feb 21 10:19:35 db1 sshd[2129]: Failed password for invalid user backup from 198.51.100.23 port 40676 ssh2
+Jul  7 05:53:57 mail.example.test sshd[2847]: Invalid user test from 192.0.2.44 port 33333
